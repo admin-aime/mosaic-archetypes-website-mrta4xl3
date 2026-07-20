@@ -1,19 +1,11 @@
 # Conversation Summary
 
 **Branch:** main
-**Total Messages:** 42
+**Total Messages:** 44
 
 ---
 
 ## Recent Conversation
-
-### **User**
-
-the login button has not changed, why?
-
-### **Assistant**
-
-Let me look at the current Login button code:The Login button is still using `variant="black"` — the same outline-pill style as the other two buttons. Let me fix it properly. First, let me check the Button component:Now I see the issue. The Login button uses `variant="black"` which gives the same outline pill as the others. I need to add a dedicated gold-fill rectangle style and apply it. Let me fix both the CSS and the Header:Now update the Login buttons in Header.tsx — both desktop and mobile:...
 
 ### **User**
 
@@ -72,4 +64,17 @@ yes please
 ### **Assistant**
 
 Let me read the files I need to modify first.Now I have everything. Let me implement all four changes. Starting with the new Cards page:Now let me update Workshops.tsx with pricing, Download.tsx with direct download, About.tsx with contact details, and wire in the new route.Now add the pricing badge in each workshop card, right after the format badges:Now update Download.tsx — add a direct download button alongside the email delivery message:Now update About.tsx — add a contact details section a...
+
+### **User**
+
+the Mosaic email to use across the site should be hello@mosaic-archetypes.co.uk. Location should be 'Hexham, UK'
+
+### **Assistant**
+
+Done. Both changes applied to the **About** page's Contact section:
+
+| Field | Before | After |
+|---|---|---|
+| Email | `hello@mosaicarchetypes.com` | `hello@mosaic-archetypes.co.uk` |
+| Location | `London, United Kingdom` | `Hexham, UK` |
 

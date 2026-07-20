@@ -233,7 +233,7 @@
     },
     "src/pages/About.tsx": {
       "lines": 239,
-      "lastModified": "2026-07-20T16:31:27.274Z",
+      "lastModified": "2026-07-20T16:37:20.204Z",
       "summary": "About component",
       "exports": [
         "About"
@@ -383,6 +383,24 @@
   "dependencies": {},
   "recentChanges": [
     {
+      "timestamp": "2026-07-20T16:37:20.199Z",
+      "file": "src/pages/About.tsx",
+      "change": "modifyd src/pages/About.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T16:37:18.245Z",
+      "file": "src/pages/About.tsx",
+      "change": "modifyd src/pages/About.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T16:37:15.634Z",
+      "file": "src/pages/About.tsx",
+      "change": "modifyd src/pages/About.tsx",
+      "type": "modify"
+    },
+    {
       "timestamp": "2026-07-20T16:31:40.129Z",
       "file": "src/components/Header.tsx",
       "change": "modifyd src/components/Header.tsx",
@@ -422,24 +440,6 @@
       "timestamp": "2026-07-20T16:31:11.012Z",
       "file": "src/pages/Download.tsx",
       "change": "modifyd src/pages/Download.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T16:30:57.067Z",
-      "file": "src/pages/Workshops.tsx",
-      "change": "modifyd src/pages/Workshops.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T16:30:51.057Z",
-      "file": "src/pages/Workshops.tsx",
-      "change": "modifyd src/pages/Workshops.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T16:30:37.303Z",
-      "file": "src/pages/Cards.tsx",
-      "change": "modifyd src/pages/Cards.tsx",
       "type": "modify"
     }
   ]

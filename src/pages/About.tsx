@@ -124,7 +124,7 @@ export function About() {
                 Email
               </p>
               <a
-                href="mailto:hello@mosaicarchetypes.com"
+                href="mailto:hello@mosaic-archetypes.co.uk"
                 style={{
                   fontFamily: 'var(--font-body)',
                   fontSize: '0.875rem',
@@ -132,7 +132,7 @@ export function About() {
                   textDecoration: 'none',
                 }}
               >
-                hello@mosaicarchetypes.com
+                hello@mosaic-archetypes.co.uk
               </a>
             </div>
 
@@ -208,7 +208,7 @@ export function About() {
                   color: 'rgba(255,255,255,0.6)',
                 }}
               >
-                London, United Kingdom
+                Hexham, UK
               </p>
             </div>
           </div>
