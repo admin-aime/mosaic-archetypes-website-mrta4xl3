@@ -70,7 +70,7 @@ export function Cookies() {
               5. Contact
             </h3>
             <p>
-              For questions about this cookie policy, contact us at hello@mosaicleadership.com.
+              For questions about this cookie policy, contact us at hello@mosaic-archetypes.co.uk.
             </p>
           </div>
         </div>

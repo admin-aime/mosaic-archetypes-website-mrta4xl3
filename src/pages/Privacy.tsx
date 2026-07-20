@@ -69,14 +69,14 @@ export function Privacy() {
             <p className="mb-4">
               Depending on your jurisdiction, you may have rights to access, correct, delete, or
               restrict the processing of your personal data. To exercise these rights, contact us at
-              hello@mosaicleadership.com.
+              hello@mosaic-archetypes.co.uk.
             </p>
 
             <h3 style={{ fontFamily: 'var(--font-header)', fontSize: '1.25rem', color: 'var(--colour-black)', marginBottom: '0.75rem', marginTop: '2rem' }}>
               7. Contact
             </h3>
             <p>
-              For questions about this privacy policy, contact us at hello@mosaicleadership.com.
+              For questions about this privacy policy, contact us at hello@mosaic-archetypes.co.uk.
             </p>
           </div>
         </div>

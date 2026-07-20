@@ -206,8 +206,8 @@
       ]
     },
     "src/pages/Download.tsx": {
-      "lines": 243,
-      "lastModified": "2026-07-20T16:31:11.019Z",
+      "lines": 249,
+      "lastModified": "2026-07-20T17:18:10.001Z",
       "summary": "Download component",
       "exports": [
         "Download"
@@ -245,7 +245,7 @@
     },
     "src/pages/Privacy.tsx": {
       "lines": 87,
-      "lastModified": "2026-07-20T13:57:17.853Z",
+      "lastModified": "2026-07-20T17:18:00.146Z",
       "summary": "Privacy component",
       "exports": [
         "Privacy"
@@ -254,7 +254,7 @@
     },
     "src/pages/Cookies.tsx": {
       "lines": 81,
-      "lastModified": "2026-07-20T13:57:29.850Z",
+      "lastModified": "2026-07-20T17:18:03.265Z",
       "summary": "Cookies component",
       "exports": [
         "Cookies"
@@ -383,6 +383,30 @@
   "dependencies": {},
   "recentChanges": [
     {
+      "timestamp": "2026-07-20T17:18:09.994Z",
+      "file": "src/pages/Download.tsx",
+      "change": "modifyd src/pages/Download.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T17:18:03.254Z",
+      "file": "src/pages/Cookies.tsx",
+      "change": "modifyd src/pages/Cookies.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T17:18:00.133Z",
+      "file": "src/pages/Privacy.tsx",
+      "change": "modifyd src/pages/Privacy.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T17:17:56.804Z",
+      "file": "src/pages/Privacy.tsx",
+      "change": "modifyd src/pages/Privacy.tsx",
+      "type": "modify"
+    },
+    {
       "timestamp": "2026-07-20T17:08:19.964Z",
       "file": "src/index.css",
       "change": "modifyd src/index.css",
@@ -416,30 +440,6 @@
       "timestamp": "2026-07-20T16:57:02.854Z",
       "file": "src/pages/Enquiry.tsx",
       "change": "modifyd src/pages/Enquiry.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T16:57:01.238Z",
-      "file": "src/index.css",
-      "change": "modifyd src/index.css",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T16:37:20.199Z",
-      "file": "src/pages/About.tsx",
-      "change": "modifyd src/pages/About.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T16:37:18.245Z",
-      "file": "src/pages/About.tsx",
-      "change": "modifyd src/pages/About.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T16:37:15.634Z",
-      "file": "src/pages/About.tsx",
-      "change": "modifyd src/pages/About.tsx",
       "type": "modify"
     }
   ]

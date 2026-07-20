@@ -22,11 +22,17 @@ export function Download() {
   };
 
   const handleDirectDownload = useCallback(() => {
-    // Simulated direct download — in production serves the actual PDF file
+    // Simulated direct download — generates a placeholder PDF stub; in production serves the actual file
+    const content = '%PDF-1.4\n% Placeholder — Replace with actual Mosaic Archetypes Guide PDF\n';
+    const blob = new Blob([content], { type: 'application/pdf' });
+    const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
-    link.href = '#';
+    link.href = url;
     link.download = 'Mosaic-Leadership-Archetypes-Guide.pdf';
+    document.body.appendChild(link);
     link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
     if (typeof window !== 'undefined' && (window as any).gtag) {
       (window as any).gtag('event', 'download_click', { asset: 'mosaic_guide' });
     }

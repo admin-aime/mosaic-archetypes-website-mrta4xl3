@@ -1,19 +1,11 @@
 # Conversation Summary
 
 **Branch:** main
-**Total Messages:** 56
+**Total Messages:** 58
 
 ---
 
 ## Recent Conversation
-
-### **User**
-
-increase the size of the video by 50%
-
-### **Assistant**
-
-
 
 ### **User**
 
@@ -70,4 +62,22 @@ Let me also check the browser console to make sure nothing is overriding these s
 The app is running clean — no CSS overrides, no runtime issues. The video container is `1620px` max-width and the hero content is `1350px` max-width.
 
 But let me think about whether the video is actual...
+
+### **User**
+
+fix all bugs
+
+### **Assistant**
+
+Let me do a thorough audit of every source file.Full audit complete. Here's what I found:
+
+---
+
+## Bugs Found
+
+| # | File | Issue |
+|---|---|---|
+| 1 | **Privacy.tsx** (×2) | Wrong email: `hello@mosaicleadership.com` → should be `hello@mosaic-archetypes.co.uk` (sections 6 & 7) |
+| 2 | **Cookies.tsx** | Wrong email: `hello@mosaicleadership.com` → should be `hello@mosaic-archetypes.co.uk` (section 5) |
+| 3 | **Download.tsx** | `handleDirectDownload` creates `<a href="#">` — clicking the "Download ...
 
