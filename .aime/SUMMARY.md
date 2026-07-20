@@ -1,44 +1,11 @@
 # Conversation Summary
 
 **Branch:** main
-**Total Messages:** 18
+**Total Messages:** 22
 
 ---
 
 ## Recent Conversation
-
-### **User**
-
-make the logo three times bigger
-
-### **Assistant**
-
-Now update the header height, mobile menu offset, and hero padding-top to accommodate the larger logo:Now update the inner page headers to clear the taller header:Done. The MLA logo is now **3× larger** at every breakpoint:
-
-| Breakpoint | Before | After |
-|---|---|---|
-| Default | 28px | **84px** |
-| 480px+ | 34px | **102px** |
-| 768px+ | 40px | **120px** |
-| 1024px+ | 48px | **144px** |
-
-Header height, mobile menu offset, hero padding, and page-header padding all scaled up to match so nothing ...
-
-### **User**
-
-reduce logo size by 20%
-
-### **Assistant**
-
-Now I have all the values. Here's what changes (20% reduction):
-
-| | Default | 480px+ | 768px+ | 1024px+ |
-|---|---|---|---|---|
-| Logo | 84→**67** | 102→**82** | 120→**96** | 144→**115** |
-| Header | 100→**80** | 118→**94** | — | 160→**128** |
-| Mobile menu top | 100→**80** | 118→**94** | — | 160→**128** |
-| Hero padding-top | 100→**80** | 118→**94** | — | 160→**128** |
-| Page-header padding | 8→**6.5rem** | 10→**8rem** | 12→**9.5rem** | — |Now let me check for any other rules that reference th...
 
 ### **User**
 
@@ -78,4 +45,45 @@ Archetypes®' on the first screen with MLA_logo.png
 Now I have everything I need. Let me make both changes.Now update the CSS logo sizes and the Home page hero title:Now add the CSS for the hero logo:Now restart the dev server and verify:Clean run — only React Router future-flag warnings (harmless). Let me verify the final file states:All clean:
 
 1. **Header** — both old logos removed, replaced with static `MLA_logo - top.png`. No scroll swap, no `useEffect`. Logo scaled down to 36→42→48→54px across breakpoints, fitting neatly within the existing...
+
+### **User**
+
+replace wheel diagram with MLA_model.png
+
+[SELECTED ELEMENT]
+Tag: div
+Classes: wheel
+Selector: div.wheel.inspector-highlight
+Path: main > section#archetypes-overview > div.section__inner > div.wheel-container > div.wheel
+HTML: <div class="wheel inspector-highlight"></div>
+Text: "MOSAICARCHETYPES"
+Styles: display: flex; position: relative; width: 419.988px; height: 419.988px; margin: 0px; padding: 0px; border: 1.48148px solid rgb(166, 119, 24); background: rgba(59, 130, 246, 0.15) none repeat scr...
+
+### **Assistant**
+
+All clean — no runtime errors.
+
+**Done.** The CSS-drawn wheel diagram (rings + center text) has been replaced with `MLA_model.png` in the archetypes overview section on the Home page. The image scales responsively:
+
+| Breakpoint | Max width |
+|---|---|
+| Default | 240px |
+| 480px+ | 320px |
+| 640px+ | 420px |
+
+All the old wheel CSS (`.wheel`, `.wheel__center`, `.wheel__ring`, `.wheel__ring--1/2/3`) has been removed from the stylesheet.
+
+### **User**
+
+double the size of MLA_model.png
+
+### **Assistant**
+
+Done. `MLA_model.png` doubled at every breakpoint:
+
+| Breakpoint | Before | After |
+|---|---|---|
+| Default | 240px | **480px** |
+| 480px+ | 320px | **640px** |
+| 640px+ | 420px | **840px** |
 

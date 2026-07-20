@@ -72,8 +72,8 @@
       "imports": []
     },
     "src/index.css": {
-      "lines": 1312,
-      "lastModified": "2026-07-20T14:23:34.885Z",
+      "lines": 1259,
+      "lastModified": "2026-07-20T14:26:45.589Z",
       "summary": "Stylesheet",
       "exports": [],
       "imports": []
@@ -138,8 +138,8 @@
       ]
     },
     "src/pages/Home.tsx": {
-      "lines": 161,
-      "lastModified": "2026-07-20T14:23:27.026Z",
+      "lines": 156,
+      "lastModified": "2026-07-20T14:25:37.953Z",
       "summary": "Home component",
       "exports": [
         "Home"
@@ -332,6 +332,24 @@
   "dependencies": {},
   "recentChanges": [
     {
+      "timestamp": "2026-07-20T14:26:45.578Z",
+      "file": "src/index.css",
+      "change": "modifyd src/index.css",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T14:25:50.644Z",
+      "file": "src/index.css",
+      "change": "modifyd src/index.css",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T14:25:37.947Z",
+      "file": "src/pages/Home.tsx",
+      "change": "modifyd src/pages/Home.tsx",
+      "type": "modify"
+    },
+    {
       "timestamp": "2026-07-20T14:23:34.866Z",
       "file": "src/index.css",
       "change": "modifyd src/index.css",
@@ -369,24 +387,6 @@
     },
     {
       "timestamp": "2026-07-20T14:19:53.642Z",
-      "file": "src/index.css",
-      "change": "modifyd src/index.css",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T14:19:49.895Z",
-      "file": "src/index.css",
-      "change": "modifyd src/index.css",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T14:19:45.497Z",
-      "file": "src/index.css",
-      "change": "modifyd src/index.css",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T14:19:41.602Z",
       "file": "src/index.css",
       "change": "modifyd src/index.css",
       "type": "modify"
