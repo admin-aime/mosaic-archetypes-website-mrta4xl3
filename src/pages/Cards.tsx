@@ -98,12 +98,12 @@ export function Cards() {
 
           {/* Cards Grid — rendered as physical card placeholders */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {archetypes.map((a) => {
+            {archetypes.map((a, i) => {
               const Icon = iconMap[a.id];
               return (
                 <div
                   key={a.id}
-                  className="card"
+                  className={`card reveal stagger-${(i % 10) + 1}`}
                   style={{
                     border: '1px solid rgba(166,119,24,0.25)',
                     borderRadius: '0.75rem',

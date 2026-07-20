@@ -72,8 +72,8 @@
       "imports": []
     },
     "src/index.css": {
-      "lines": 1289,
-      "lastModified": "2026-07-20T17:08:19.976Z",
+      "lines": 1386,
+      "lastModified": "2026-07-20T17:54:05.855Z",
       "summary": "Stylesheet",
       "exports": [],
       "imports": []
@@ -138,8 +138,8 @@
       ]
     },
     "src/pages/Home.tsx": {
-      "lines": 156,
-      "lastModified": "2026-07-20T17:34:44.287Z",
+      "lines": 158,
+      "lastModified": "2026-07-20T17:43:05.790Z",
       "summary": "Home component",
       "exports": [
         "Home"
@@ -155,7 +155,7 @@
     },
     "src/pages/Philosophy.tsx": {
       "lines": 231,
-      "lastModified": "2026-07-20T17:35:27.086Z",
+      "lastModified": "2026-07-20T17:43:53.209Z",
       "summary": "Philosophy component",
       "exports": [
         "Philosophy"
@@ -167,7 +167,7 @@
     },
     "src/pages/Workshops.tsx": {
       "lines": 339,
-      "lastModified": "2026-07-20T17:36:24.227Z",
+      "lastModified": "2026-07-20T17:43:20.724Z",
       "summary": "Workshops component",
       "exports": [
         "Workshops"
@@ -178,8 +178,8 @@
       ]
     },
     "src/pages/Model.tsx": {
-      "lines": 124,
-      "lastModified": "2026-07-20T17:35:50.143Z",
+      "lines": 126,
+      "lastModified": "2026-07-20T17:43:14.469Z",
       "summary": "Model component",
       "exports": [
         "Model"
@@ -207,7 +207,7 @@
     },
     "src/pages/Download.tsx": {
       "lines": 249,
-      "lastModified": "2026-07-20T17:36:14.888Z",
+      "lastModified": "2026-07-20T17:51:53.850Z",
       "summary": "Download component",
       "exports": [
         "Download"
@@ -232,8 +232,8 @@
       ]
     },
     "src/pages/About.tsx": {
-      "lines": 239,
-      "lastModified": "2026-07-20T16:37:20.204Z",
+      "lines": 242,
+      "lastModified": "2026-07-20T17:44:17.725Z",
       "summary": "About component",
       "exports": [
         "About"
@@ -263,7 +263,7 @@
     },
     "src/pages/ModelOverview.tsx": {
       "lines": 152,
-      "lastModified": "2026-07-20T17:36:35.175Z",
+      "lastModified": "2026-07-20T17:51:50.747Z",
       "summary": "ModelOverview component",
       "exports": [
         "ModelOverview"
@@ -286,8 +286,8 @@
       ]
     },
     "src/main.tsx": {
-      "lines": 11,
-      "lastModified": "2026-07-20T13:57:55.342Z",
+      "lines": 36,
+      "lastModified": "2026-07-20T17:53:58.605Z",
       "summary": "main component",
       "exports": [],
       "imports": [
@@ -298,8 +298,8 @@
       ]
     },
     "src/App.tsx": {
-      "lines": 115,
-      "lastModified": "2026-07-20T16:31:35.921Z",
+      "lines": 114,
+      "lastModified": "2026-07-20T17:51:46.931Z",
       "summary": "App component",
       "exports": [
         "default:App"
@@ -368,7 +368,7 @@
     },
     "src/pages/Cards.tsx": {
       "lines": 387,
-      "lastModified": "2026-07-20T17:34:24.978Z",
+      "lastModified": "2026-07-20T17:43:27.369Z",
       "summary": "Cards component",
       "exports": [
         "Cards"
@@ -378,68 +378,79 @@
         "../data/archetypes",
         "../components/Button"
       ]
+    },
+    "src/hooks/useScrollReveal.ts": {
+      "lines": 34,
+      "lastModified": "2026-07-20T17:42:37.656Z",
+      "summary": "useScrollReveal hook",
+      "exports": [
+        "useScrollReveal"
+      ],
+      "imports": [
+        "react"
+      ]
     }
   },
   "dependencies": {},
   "recentChanges": [
     {
-      "timestamp": "2026-07-20T17:36:35.168Z",
-      "file": "src/pages/ModelOverview.tsx",
-      "change": "modifyd src/pages/ModelOverview.tsx",
+      "timestamp": "2026-07-20T17:54:05.845Z",
+      "file": "src/index.css",
+      "change": "modifyd src/index.css",
       "type": "modify"
     },
     {
-      "timestamp": "2026-07-20T17:36:32.550Z",
-      "file": "src/pages/ModelOverview.tsx",
-      "change": "modifyd src/pages/ModelOverview.tsx",
+      "timestamp": "2026-07-20T17:53:58.587Z",
+      "file": "src/main.tsx",
+      "change": "modifyd src/main.tsx",
       "type": "modify"
     },
     {
-      "timestamp": "2026-07-20T17:36:24.221Z",
-      "file": "src/pages/Workshops.tsx",
-      "change": "modifyd src/pages/Workshops.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T17:36:20.990Z",
-      "file": "src/pages/ModelOverview.tsx",
-      "change": "modifyd src/pages/ModelOverview.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T17:36:18.009Z",
-      "file": "src/pages/ModelOverview.tsx",
-      "change": "modifyd src/pages/ModelOverview.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T17:36:14.876Z",
+      "timestamp": "2026-07-20T17:51:53.673Z",
       "file": "src/pages/Download.tsx",
       "change": "modifyd src/pages/Download.tsx",
       "type": "modify"
     },
     {
-      "timestamp": "2026-07-20T17:36:11.942Z",
-      "file": "src/pages/Download.tsx",
-      "change": "modifyd src/pages/Download.tsx",
+      "timestamp": "2026-07-20T17:51:50.623Z",
+      "file": "src/pages/ModelOverview.tsx",
+      "change": "modifyd src/pages/ModelOverview.tsx",
       "type": "modify"
     },
     {
-      "timestamp": "2026-07-20T17:35:50.132Z",
-      "file": "src/pages/Model.tsx",
-      "change": "modifyd src/pages/Model.tsx",
+      "timestamp": "2026-07-20T17:51:46.794Z",
+      "file": "src/App.tsx",
+      "change": "modifyd src/App.tsx",
       "type": "modify"
     },
     {
-      "timestamp": "2026-07-20T17:35:46.882Z",
-      "file": "src/pages/ArchetypeDetail.tsx",
-      "change": "modifyd src/pages/ArchetypeDetail.tsx",
+      "timestamp": "2026-07-20T17:48:25.622Z",
+      "file": "src/index.css",
+      "change": "modifyd src/index.css",
       "type": "modify"
     },
     {
-      "timestamp": "2026-07-20T17:35:43.780Z",
-      "file": "src/pages/ArchetypeDetail.tsx",
-      "change": "modifyd src/pages/ArchetypeDetail.tsx",
+      "timestamp": "2026-07-20T17:44:46.902Z",
+      "file": "src/main.tsx",
+      "change": "modifyd src/main.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T17:44:17.718Z",
+      "file": "src/pages/About.tsx",
+      "change": "modifyd src/pages/About.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T17:44:03.766Z",
+      "file": "src/pages/About.tsx",
+      "change": "modifyd src/pages/About.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T17:43:59.386Z",
+      "file": "src/pages/About.tsx",
+      "change": "modifyd src/pages/About.tsx",
       "type": "modify"
     }
   ]

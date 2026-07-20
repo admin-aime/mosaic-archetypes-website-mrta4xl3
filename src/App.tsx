@@ -38,7 +38,6 @@ export default function App() {
       '/archetype/enterprising',
       '/archetype/reluctant',
       '/archetype/innovative',
-      '/archetype/power',
       '/archetype/guardian',
       '/archetype/sagelike',
       '/archetype/architect',

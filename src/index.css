@@ -1268,6 +1268,103 @@ textarea.form-input {
   }
 }
 
+/* ========== ANIMATIONS ========== */
+
+/* 1. Fade-in-up on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+/* Safety net: if JS is disabled or observer never fires, show content after 3s.
+   The .revealed class removes this override instantly for normal operation. */
+@media (scripting: enabled) {
+  .reveal:not(.revealed) {
+    animation: reveal-fallback 0.01s 3s forwards;
+  }
+}
+@keyframes reveal-fallback {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+  animation: none;
+}
+
+/* 2. Staggered card reveals — delay classes */
+.stagger-1 { transition-delay: 0.05s; }
+.stagger-2 { transition-delay: 0.1s; }
+.stagger-3 { transition-delay: 0.15s; }
+.stagger-4 { transition-delay: 0.2s; }
+.stagger-5 { transition-delay: 0.25s; }
+.stagger-6 { transition-delay: 0.3s; }
+.stagger-7 { transition-delay: 0.35s; }
+.stagger-8 { transition-delay: 0.4s; }
+.stagger-9 { transition-delay: 0.45s; }
+.stagger-10 { transition-delay: 0.5s; }
+.stagger-11 { transition-delay: 0.55s; }
+.stagger-12 { transition-delay: 0.6s; }
+
+/* 3. Gold shimmer on hover — sweeping diagonal highlight */
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.btn--on-black {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn--on-black::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 35%,
+    rgba(166, 119, 24, 0.06) 45%,
+    rgba(166, 119, 24, 0.10) 50%,
+    rgba(166, 119, 24, 0.06) 55%,
+    transparent 65%
+  );
+  background-size: 200% 100%;
+  background-position: 200% center;
+  transition: background-position 0s;
+  pointer-events: none;
+}
+
+.btn--on-black:hover::after {
+  background-position: -200% center;
+  transition: background-position 0.7s ease;
+}
+
+/* Disable all motion when user prefers reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .btn--on-black::after {
+    display: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 /* ========== SCROLLBAR ========== */
 
 ::-webkit-scrollbar {

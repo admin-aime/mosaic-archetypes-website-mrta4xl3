@@ -76,7 +76,7 @@ export function Model() {
               </div>
             </div>
 
-            <div className="wheel-container">
+            <div className="wheel-container reveal">
               <img
                 src="https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/5e28fbd7-4f8a-4c6a-a8c9-fe22f7511ef9-1784557508.png"
                 alt="Mosaic Leadership Archetypes® Model"
@@ -86,8 +86,10 @@ export function Model() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-            {filtered.map((a) => (
-              <ArchetypeCard key={a.id} archetype={a} />
+            {filtered.map((a, i) => (
+              <div key={a.id} className={`reveal stagger-${(i % 10) + 1}`}>
+                <ArchetypeCard archetype={a} />
+              </div>
             ))}
           </div>
 

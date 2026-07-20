@@ -91,10 +91,10 @@ export function Workshops() {
           <h2 className="section__title">Workshop Formats</h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
-            {workshops.map((w) => (
+            {workshops.map((w, i) => (
               <div
                 key={w.title}
-                className="workshop-card"
+                className={`workshop-card reveal stagger-${(i % 4) + 1}`}
                 style={{
                   display: 'flex',
                   flexDirection: 'column',

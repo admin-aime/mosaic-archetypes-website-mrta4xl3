@@ -71,8 +71,8 @@ export function About() {
               { title: 'Evidence Over Opinion', body: 'Every archetype in the Mosaic framework is grounded in observed leadership behaviour and field-tested across hundreds of real-world applications.' },
               { title: 'Growth Over Fixing', body: 'Mosaic is not about what is wrong with your leadership. It is about what is possible — expanding range, not correcting flaws.' },
               { title: 'Context Over Dogma', body: 'There is no single "best" archetype. The right leadership pattern depends on context, challenge, and the people you lead.' },
-            ].map((v) => (
-              <div key={v.title}>
+            ].map((v, i) => (
+              <div key={v.title} className={`reveal stagger-${i + 1}`}>
                 <h3 style={{ fontFamily: 'var(--font-header)', fontSize: '1.25rem', marginBottom: '0.5rem', color: 'var(--colour-black)' }}>
                   {v.title}
                 </h3>
@@ -98,6 +98,7 @@ export function About() {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8">
             <div
+              className="reveal stagger-1"
               style={{
                 background: 'rgba(166,119,24,0.05)',
                 border: '1px solid rgba(166,119,24,0.15)',
@@ -137,6 +138,7 @@ export function About() {
             </div>
 
             <div
+              className="reveal stagger-2"
               style={{
                 background: 'rgba(166,119,24,0.05)',
                 border: '1px solid rgba(166,119,24,0.15)',
@@ -176,6 +178,7 @@ export function About() {
             </div>
 
             <div
+              className="reveal stagger-3"
               style={{
                 background: 'rgba(166,119,24,0.05)',
                 border: '1px solid rgba(166,119,24,0.15)',

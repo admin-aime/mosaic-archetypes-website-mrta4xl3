@@ -79,7 +79,7 @@ export function Philosophy() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8">
             {/* Power */}
-            <div style={{ borderLeft: '3px solid var(--colour-mosaic-gold)', paddingLeft: '1.5rem' }}>
+            <div className="reveal stagger-1" style={{ borderLeft: '3px solid var(--colour-mosaic-gold)', paddingLeft: '1.5rem' }}>
               <h3 style={{ fontFamily: 'var(--font-header)', fontSize: '1.5rem', marginBottom: '0.25rem' }}>Power</h3>
               <p style={{ fontFamily: 'var(--font-subheader)', fontSize: '0.8125rem', fontWeight: 600, color: 'var(--colour-mosaic-gold)', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
                 Authority · Drive · Commercial Energy
@@ -93,7 +93,7 @@ export function Philosophy() {
             </div>
 
             {/* Vision */}
-            <div style={{ borderLeft: '3px solid var(--colour-mosaic-gold)', paddingLeft: '1.5rem' }}>
+            <div className="reveal stagger-2" style={{ borderLeft: '3px solid var(--colour-mosaic-gold)', paddingLeft: '1.5rem' }}>
               <h3 style={{ fontFamily: 'var(--font-header)', fontSize: '1.5rem', marginBottom: '0.25rem' }}>Vision</h3>
               <p style={{ fontFamily: 'var(--font-subheader)', fontSize: '0.8125rem', fontWeight: 600, color: 'var(--colour-mosaic-gold)', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
                 Direction · Sense-Making · Transformation
@@ -107,7 +107,7 @@ export function Philosophy() {
             </div>
 
             {/* Process */}
-            <div style={{ borderLeft: '3px solid var(--colour-mosaic-gold)', paddingLeft: '1.5rem' }}>
+            <div className="reveal stagger-3" style={{ borderLeft: '3px solid var(--colour-mosaic-gold)', paddingLeft: '1.5rem' }}>
               <h3 style={{ fontFamily: 'var(--font-header)', fontSize: '1.5rem', marginBottom: '0.25rem' }}>Process</h3>
               <p style={{ fontFamily: 'var(--font-subheader)', fontSize: '0.8125rem', fontWeight: 600, color: 'var(--colour-mosaic-gold)', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
                 Delivery · Reliability · Discipline
@@ -121,7 +121,7 @@ export function Philosophy() {
             </div>
 
             {/* Relationships */}
-            <div style={{ borderLeft: '3px solid var(--colour-mosaic-gold)', paddingLeft: '1.5rem' }}>
+            <div className="reveal stagger-4" style={{ borderLeft: '3px solid var(--colour-mosaic-gold)', paddingLeft: '1.5rem' }}>
               <h3 style={{ fontFamily: 'var(--font-header)', fontSize: '1.5rem', marginBottom: '0.25rem' }}>Relationships</h3>
               <p style={{ fontFamily: 'var(--font-subheader)', fontSize: '0.8125rem', fontWeight: 600, color: 'var(--colour-mosaic-gold)', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
                 Trust · Engagement · Development
@@ -137,7 +137,7 @@ export function Philosophy() {
 
           {/* Diagram */}
           <div className="model-diagram mt-12">
-            <div className="wheel-container" style={{ flexShrink: 0 }}>
+            <div className="wheel-container reveal" style={{ flexShrink: 0 }}>
               <img
                 src="https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/5e28fbd7-4f8a-4c6a-a8c9-fe22f7511ef9-1784557508.png"
                 alt="Mosaic Leadership Archetypes® Model"
@@ -173,10 +173,10 @@ export function Philosophy() {
           <h2 className="section__title">Four Pillars of Application</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-            {pillars.map((p) => {
+            {pillars.map((p, i) => {
               const Icon = p.icon;
               return (
-                <div key={p.title} className="flex gap-4">
+                <div key={p.title} className={`reveal stagger-${i + 1} flex gap-4`}>
                   <div
                     style={{
                       width: 48,

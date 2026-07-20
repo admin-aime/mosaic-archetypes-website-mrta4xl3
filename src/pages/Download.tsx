@@ -145,7 +145,7 @@ export function Download() {
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle size={16} style={{ color: 'var(--colour-mosaic-gold)', marginTop: 3, flexShrink: 0 }} />
-                  The Vision · Process · Relationships axis framework explained
+                  The Power · Vision · Process · Relationships quadrant framework explained
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle size={16} style={{ color: 'var(--colour-mosaic-gold)', marginTop: 3, flexShrink: 0 }} />

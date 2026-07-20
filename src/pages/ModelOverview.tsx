@@ -19,7 +19,7 @@ export function ModelOverview() {
           <p className="section__body">
             The Mosaic Leadership Archetypes® website is the digital home for the Mosaic leadership
             framework — a proprietary model that maps ten distinct leadership archetypes across
-            three core axes: Vision, Process, and Relationships. The site serves as both an
+            four quadrants: Power, Vision, Process, and Relationships. The site serves as both an
             educational resource and a conversion platform, helping visitors understand the framework,
             explore archetypes, and take action through downloads and enquiries.
           </p>
