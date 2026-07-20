@@ -90,10 +90,8 @@ export function Workshops() {
             {workshops.map((w) => (
               <div
                 key={w.title}
+                className="workshop-card"
                 style={{
-                  border: '1px solid rgba(166,119,24,0.15)',
-                  borderRadius: '0.5rem',
-                  padding: '2rem',
                   display: 'flex',
                   flexDirection: 'column',
                 }}

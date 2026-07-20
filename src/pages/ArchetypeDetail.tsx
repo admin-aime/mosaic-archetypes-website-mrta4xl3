@@ -16,7 +16,7 @@ import {
   Flame,
 } from 'lucide-react';
 
-const iconMap: Record<string, any> = {
+const iconMap: Record<string, React.ComponentType<{ size?: number; style?: React.CSSProperties; className?: string }>> = {
   versatile: Compass,
   heroic: Star,
   enterprising: Zap,

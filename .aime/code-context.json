@@ -72,8 +72,8 @@
       "imports": []
     },
     "src/index.css": {
-      "lines": 857,
-      "lastModified": "2026-07-20T13:53:46.112Z",
+      "lines": 1284,
+      "lastModified": "2026-07-20T14:05:15.906Z",
       "summary": "Stylesheet",
       "exports": [],
       "imports": []
@@ -166,8 +166,8 @@
       ]
     },
     "src/pages/Workshops.tsx": {
-      "lines": 190,
-      "lastModified": "2026-07-20T13:55:36.284Z",
+      "lines": 188,
+      "lastModified": "2026-07-20T14:05:11.642Z",
       "summary": "Workshops component",
       "exports": [
         "Workshops"
@@ -193,7 +193,7 @@
     },
     "src/pages/ArchetypeDetail.tsx": {
       "lines": 184,
-      "lastModified": "2026-07-20T13:59:15.239Z",
+      "lastModified": "2026-07-20T14:06:31.650Z",
       "summary": "ArchetypeDetail component",
       "exports": [
         "ArchetypeDetail"
@@ -206,8 +206,8 @@
       ]
     },
     "src/pages/Download.tsx": {
-      "lines": 212,
-      "lastModified": "2026-07-20T13:56:29.345Z",
+      "lines": 206,
+      "lastModified": "2026-07-20T14:05:04.906Z",
       "summary": "Download component",
       "exports": [
         "Download"
@@ -219,8 +219,8 @@
       ]
     },
     "src/pages/Enquiry.tsx": {
-      "lines": 180,
-      "lastModified": "2026-07-20T13:56:46.116Z",
+      "lines": 176,
+      "lastModified": "2026-07-20T14:05:08.008Z",
       "summary": "Enquiry component",
       "exports": [
         "Enquiry"
@@ -332,63 +332,63 @@
   "dependencies": {},
   "recentChanges": [
     {
-      "timestamp": "2026-07-20T13:59:15.233Z",
+      "timestamp": "2026-07-20T14:06:31.645Z",
       "file": "src/pages/ArchetypeDetail.tsx",
       "change": "modifyd src/pages/ArchetypeDetail.tsx",
       "type": "modify"
     },
     {
-      "timestamp": "2026-07-20T13:59:07.600Z",
-      "file": "src/vite-env.d.ts",
-      "change": "modifyd src/vite-env.d.ts",
+      "timestamp": "2026-07-20T14:05:15.753Z",
+      "file": "src/index.css",
+      "change": "modifyd src/index.css",
       "type": "modify"
     },
     {
-      "timestamp": "2026-07-20T13:58:05.114Z",
-      "file": "src/App.tsx",
-      "change": "modifyd src/App.tsx",
+      "timestamp": "2026-07-20T14:05:11.604Z",
+      "file": "src/pages/Workshops.tsx",
+      "change": "modifyd src/pages/Workshops.tsx",
       "type": "modify"
     },
     {
-      "timestamp": "2026-07-20T13:57:55.335Z",
-      "file": "src/main.tsx",
-      "change": "modifyd src/main.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T13:57:52.586Z",
-      "file": "src/components/Layout.tsx",
-      "change": "modifyd src/components/Layout.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T13:57:49.077Z",
-      "file": "src/pages/ModelOverview.tsx",
-      "change": "modifyd src/pages/ModelOverview.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T13:57:29.831Z",
-      "file": "src/pages/Cookies.tsx",
-      "change": "modifyd src/pages/Cookies.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T13:57:17.848Z",
-      "file": "src/pages/Privacy.tsx",
-      "change": "modifyd src/pages/Privacy.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T13:57:04.405Z",
-      "file": "src/pages/About.tsx",
-      "change": "modifyd src/pages/About.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T13:56:46.112Z",
+      "timestamp": "2026-07-20T14:05:07.959Z",
       "file": "src/pages/Enquiry.tsx",
       "change": "modifyd src/pages/Enquiry.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T14:05:04.863Z",
+      "file": "src/pages/Download.tsx",
+      "change": "modifyd src/pages/Download.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T14:05:01.697Z",
+      "file": "src/index.css",
+      "change": "modifyd src/index.css",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T14:04:53.135Z",
+      "file": "src/pages/Download.tsx",
+      "change": "modifyd src/pages/Download.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T14:04:48.935Z",
+      "file": "src/index.css",
+      "change": "modifyd src/index.css",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T14:04:43.466Z",
+      "file": "src/index.css",
+      "change": "modifyd src/index.css",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T14:04:39.922Z",
+      "file": "src/index.css",
+      "change": "modifyd src/index.css",
       "type": "modify"
     }
   ]

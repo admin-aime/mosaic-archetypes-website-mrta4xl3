@@ -96,11 +96,7 @@ export function Enquiry() {
 
           <form
             onSubmit={handleSubmit}
-            style={{
-              padding: '2.5rem',
-              background: 'var(--colour-black)',
-              borderRadius: '0.5rem',
-            }}
+            className="form-card-dark"
           >
             <h3 style={{ fontFamily: 'var(--font-header)', fontSize: '1.5rem', color: 'var(--colour-white)', marginBottom: '2rem' }}>
               Send Us a Message

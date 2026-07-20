@@ -120,13 +120,7 @@ export function Download() {
             </div>
 
             {/* Right: Form */}
-            <div
-              style={{
-                padding: '2rem',
-                background: 'var(--colour-black)',
-                borderRadius: '0.5rem',
-              }}
-            >
+            <div className="form-card-dark">
               <h3 style={{ fontFamily: 'var(--font-header)', fontSize: '1.5rem', color: 'var(--colour-white)', marginBottom: '0.5rem' }}>
                 Get Your Free Guide
               </h3>
