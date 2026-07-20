@@ -1,30 +1,11 @@
 # Conversation Summary
 
 **Branch:** main
-**Total Messages:** 22
+**Total Messages:** 24
 
 ---
 
 ## Recent Conversation
-
-### **User**
-
-reduce logo by a further 20%
-
-### **Assistant**
-
-Clean — the same 7 pre-existing TS errors only (no new ones). The CSS changes applied and HMR picked them up.
-
-Done. MLA logo reduced a further 20%:
-
-| Breakpoint | Before | After |
-|---|---|---|
-| Default | 67px | **54px** |
-| 480px+ | 82px | **66px** |
-| 768px+ | 96px | **77px** |
-| 1024px+ | 115px | **92px** |
-
-Header heights, mobile menu offset, hero padding, and page-header padding all reduced proportionally so everything stays aligned.
 
 ### **User**
 
@@ -86,4 +67,12 @@ Done. `MLA_model.png` doubled at every breakpoint:
 | Default | 240px | **480px** |
 | 480px+ | 320px | **640px** |
 | 640px+ | 420px | **840px** |
+
+### **User**
+
+make any bug fixes necessary
+
+### **Assistant**
+
+Let me read the key files to audit for bugs:I found two bugs: the **Model** and **Philosophy** pages still use the old CSS-drawn wheel that no longer has any styles applied (the `.wheel`, `.wheel__ring`, `.wheel__center` CSS was removed when the Home page switched to `MLA_model.png`). These wheels render as empty invisible divs. Let me fix both:Now let me verify and restart:Only pre-existing `lucide-react` type compatibility warnings (harmless at runtime). No new errors. Let me restart the dev s...
 

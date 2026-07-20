@@ -77,16 +77,11 @@ export function Model() {
             </div>
 
             <div className="wheel-container">
-              <div className="wheel">
-                <div className="wheel__ring wheel__ring--1" />
-                <div className="wheel__ring wheel__ring--2" />
-                <div className="wheel__ring wheel__ring--3" />
-                <div className="wheel__center">
-                  MOSAIC
-                  <br />
-                  ARCHETYPES
-                </div>
-              </div>
+              <img
+                src="https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/5e28fbd7-4f8a-4c6a-a8c9-fe22f7511ef9-1784557508.png"
+                alt="Mosaic Leadership Archetypes® Model"
+                className="wheel-image"
+              />
             </div>
           </div>
 
