@@ -6,7 +6,7 @@ export function Philosophy() {
     {
       icon: Layers,
       title: 'Multi-Dimensional Leadership',
-      body: 'Every leader operates across Vision, Process, and Relationships — not one dimension but all three simultaneously. Mosaic maps these dimensions to reveal the full picture of leadership capability.',
+      body: 'Every leader operates across Power, Vision, Process, and Relationships — not one dimension but all four simultaneously. Mosaic maps these dimensions to reveal the full picture of leadership capability.',
     },
     {
       icon: Lightbulb,
@@ -21,7 +21,7 @@ export function Philosophy() {
     {
       icon: Users,
       title: 'Collective Leadership',
-      body: 'The most effective organisations don\'t rely on a single heroic leader. They build leadership mosaics across teams — complementary archetypes that cover the full spectrum of Vision, Process, and Relationships.',
+      body: 'The most effective organisations don\'t rely on a single heroic leader. They build leadership mosaics across teams — complementary archetypes that cover the full spectrum of Power, Vision, Process, and Relationships.',
     },
   ];
 
@@ -49,7 +49,7 @@ export function Philosophy() {
             Traditional leadership models flatten complexity. They label leaders as one thing —
             visionary, or operational, or people-focused — ignoring the reality that effective
             leadership requires range across all dimensions. Mosaic refuses that trade-off. Our
-            framework identifies eleven distinct archetypes organised across three axes, and
+            framework identifies ten distinct archetypes organised across four quadrants, and
             measures how strongly each archetype shows up in your leadership.
           </p>
           <p className="section__body">
@@ -61,39 +61,76 @@ export function Philosophy() {
         </div>
       </section>
 
-      {/* Three Axes */}
+      {/* The Circumplex Model */}
       <section className="section section--black">
         <div className="section__inner">
-          <p className="section__label">The Three Axes</p>
-          <h2 className="section__title">Vision · Process · Relationships</h2>
+          <p className="section__label">The Circumplex Model</p>
+          <h2 className="section__title">A Compass for Leadership</h2>
           <p className="section__body" style={{ color: 'rgba(255,255,255,0.7)' }}>
-            Every leadership archetype in the Mosaic framework sits on one of three foundational axes.
-            Understanding these axes is the first step toward understanding your own leadership mosaic.
+            The Mosaic Leadership System is built on a circumplex model with four quadrants
+            representing different Influencer Themes. Ten leadership archetypes are positioned
+            around the rim, reflecting different combinations of behavioural traits.
+          </p>
+          <p className="section__body" style={{ color: 'rgba(255,255,255,0.7)' }}>
+            Think of it as a compass for leadership: your position on the circle shows your
+            natural style, and your ability to move around the circle demonstrates your
+            leadership range and adaptability.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8">
+            {/* Power */}
             <div style={{ borderLeft: '3px solid var(--colour-mosaic-gold)', paddingLeft: '1.5rem' }}>
-              <h3 style={{ fontFamily: 'var(--font-header)', fontSize: '1.5rem', marginBottom: '0.75rem' }}>Vision</h3>
+              <h3 style={{ fontFamily: 'var(--font-header)', fontSize: '1.5rem', marginBottom: '0.25rem' }}>Power</h3>
+              <p style={{ fontFamily: 'var(--font-subheader)', fontSize: '0.8125rem', fontWeight: 600, color: 'var(--colour-mosaic-gold)', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+                Authority · Drive · Commercial Energy
+              </p>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9375rem', lineHeight: '1.5', color: 'rgba(255,255,255,0.65)', marginBottom: '0.5rem' }}>
+                <strong>Traits:</strong> Producing, Catalysing
+              </p>
               <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9375rem', lineHeight: '1.5', color: 'rgba(255,255,255,0.65)' }}>
-                The capacity to see beyond the present — to imagine, innovate, and chart a course
-                toward a compelling future. Vision archetypes include Versatile, Heroic, Enterprising,
-                and Innovative leaders.
+                <strong>Focus:</strong> Establishing authority and driving commercial outcomes
               </p>
             </div>
+
+            {/* Vision */}
             <div style={{ borderLeft: '3px solid var(--colour-mosaic-gold)', paddingLeft: '1.5rem' }}>
-              <h3 style={{ fontFamily: 'var(--font-header)', fontSize: '1.5rem', marginBottom: '0.75rem' }}>Process</h3>
+              <h3 style={{ fontFamily: 'var(--font-header)', fontSize: '1.5rem', marginBottom: '0.25rem' }}>Vision</h3>
+              <p style={{ fontFamily: 'var(--font-subheader)', fontSize: '0.8125rem', fontWeight: 600, color: 'var(--colour-mosaic-gold)', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+                Direction · Sense-Making · Transformation
+              </p>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9375rem', lineHeight: '1.5', color: 'rgba(255,255,255,0.65)', marginBottom: '0.5rem' }}>
+                <strong>Traits:</strong> Interpreting, Analysing
+              </p>
               <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9375rem', lineHeight: '1.5', color: 'rgba(255,255,255,0.65)' }}>
-                The capacity to build, structure, and sustain — to turn vision into reality through
-                systems, discipline, and execution. Process archetypes include Reluctant, Power,
-                Guardian, and Architect leaders.
+                <strong>Focus:</strong> Seeing possibilities and driving meaningful change
               </p>
             </div>
+
+            {/* Process */}
             <div style={{ borderLeft: '3px solid var(--colour-mosaic-gold)', paddingLeft: '1.5rem' }}>
-              <h3 style={{ fontFamily: 'var(--font-header)', fontSize: '1.5rem', marginBottom: '0.75rem' }}>Relationships</h3>
+              <h3 style={{ fontFamily: 'var(--font-header)', fontSize: '1.5rem', marginBottom: '0.25rem' }}>Process</h3>
+              <p style={{ fontFamily: 'var(--font-subheader)', fontSize: '0.8125rem', fontWeight: 600, color: 'var(--colour-mosaic-gold)', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+                Delivery · Reliability · Discipline
+              </p>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9375rem', lineHeight: '1.5', color: 'rgba(255,255,255,0.65)', marginBottom: '0.5rem' }}>
+                <strong>Traits:</strong> Orchestrating, Systemising
+              </p>
               <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9375rem', lineHeight: '1.5', color: 'rgba(255,255,255,0.65)' }}>
-                The capacity to connect, develop, and transform through people — to lead with empathy,
-                insight, and human understanding. Relationships archetypes include Sagelike, Nurturing,
-                and Maverick leaders.
+                <strong>Focus:</strong> Getting things done consistently and efficiently
+              </p>
+            </div>
+
+            {/* Relationships */}
+            <div style={{ borderLeft: '3px solid var(--colour-mosaic-gold)', paddingLeft: '1.5rem' }}>
+              <h3 style={{ fontFamily: 'var(--font-header)', fontSize: '1.5rem', marginBottom: '0.25rem' }}>Relationships</h3>
+              <p style={{ fontFamily: 'var(--font-subheader)', fontSize: '0.8125rem', fontWeight: 600, color: 'var(--colour-mosaic-gold)', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+                Trust · Engagement · Development
+              </p>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9375rem', lineHeight: '1.5', color: 'rgba(255,255,255,0.65)', marginBottom: '0.5rem' }}>
+                <strong>Traits:</strong> Supporting, Engaging
+              </p>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9375rem', lineHeight: '1.5', color: 'rgba(255,255,255,0.65)' }}>
+                <strong>Focus:</strong> Building connections and developing people
               </p>
             </div>
           </div>
@@ -108,6 +145,10 @@ export function Philosophy() {
               />
             </div>
             <div className="model-axes" style={{ flex: 1 }}>
+              <div className="model-axis">
+                <span className="model-axis__label">Power</span>
+                <div className="model-axis__bar" />
+              </div>
               <div className="model-axis">
                 <span className="model-axis__label">Vision</span>
                 <div className="model-axis__bar" />

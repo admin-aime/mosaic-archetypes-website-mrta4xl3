@@ -7,7 +7,7 @@ export function Model() {
   const [selectedAxis, setSelectedAxis] = useState<string | null>(null);
 
   const filtered = selectedAxis
-    ? archetypes.filter((a) => a.axis === selectedAxis)
+    ? archetypes.filter((a) => a.axis === selectedAxis || a.id === 'versatile')
     : archetypes;
 
   return (
@@ -19,7 +19,7 @@ export function Model() {
           <p className="section__label">The Framework</p>
           <h1 className="section__title">The Mosaic Archetype Model</h1>
           <p className="section__subtitle" style={{ margin: '0 auto', color: 'rgba(255,255,255,0.7)' }}>
-            Eleven distinct leadership archetypes across three axes — Vision, Process, and
+            Ten distinct leadership archetypes across four quadrants — Power, Vision, Process, and
             Relationships. Every leader embodies multiple archetypes; together they form
             your unique leadership mosaic.
           </p>
@@ -31,10 +31,10 @@ export function Model() {
         <div className="section__inner">
           <div className="two-col items-center">
             <div>
-              <p className="section__label">Filter by Axis</p>
+              <p className="section__label">Filter by Quadrant</p>
               <h2 className="section__title" style={{ fontSize: '2rem' }}>Explore the Archetypes</h2>
               <p className="section__body">
-                Select an axis to see the archetypes within it, or browse all eleven. Click any
+                Select a quadrant to see the archetypes within it, or browse all ten. Click any
                 card to explore that archetype in depth.
               </p>
               <div className="flex flex-wrap gap-3 mb-4">

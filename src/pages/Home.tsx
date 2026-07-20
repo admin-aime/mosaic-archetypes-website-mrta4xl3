@@ -77,8 +77,8 @@ export function Home() {
           <p className="section__label">The Framework</p>
           <h2 className="section__title">Mosaic Archetypes Overview</h2>
           <p className="section__body">
-            Mosaic Leadership Archetypes® maps eleven distinct leadership profiles across three
-            core axes: Vision, Process, and Relationships. Each archetype represents a unique
+            Mosaic Leadership Archetypes® maps ten distinct leadership profiles across four
+            quadrants: Power, Vision, Process, and Relationships. Each archetype represents a unique
             combination of strengths, tendencies, and contributions — and every leader embodies
             multiple archetypes in varying degrees. Understanding your mosaic unlocks deeper
             self-awareness, team dynamics, and development pathways.

@@ -18,7 +18,7 @@ export function ModelOverview() {
           </h2>
           <p className="section__body">
             The Mosaic Leadership Archetypes® website is the digital home for the Mosaic leadership
-            framework — a proprietary model that maps eleven distinct leadership archetypes across
+            framework — a proprietary model that maps ten distinct leadership archetypes across
             three core axes: Vision, Process, and Relationships. The site serves as both an
             educational resource and a conversion platform, helping visitors understand the framework,
             explore archetypes, and take action through downloads and enquiries.
@@ -45,9 +45,9 @@ export function ModelOverview() {
                 Archetype Model
               </p>
               <p>
-                Displays all eleven leadership archetypes as interactive cards, filterable by the
-                three axes (Vision, Process, Relationships). Each card links to a dedicated detail
-                page with a full description, axis context, and related archetypes.
+                Displays all ten leadership archetypes as interactive cards, filterable by the
+                four quadrants (Power, Vision, Process, Relationships). Each card links to a dedicated detail
+                page with a full description, quadrant context, and related archetypes.
               </p>
             </div>
 
@@ -59,7 +59,7 @@ export function ModelOverview() {
                 Explains the Mosaic methodology — the multi-dimensional approach to leadership, the
                 archetypes-not-types principle, and four pillars of application: Multi-Dimensional
                 Leadership, Precision Development, and Collective Leadership. Includes a visual
-                model diagram of the three axes.
+                model diagram of the four quadrants.
               </p>
             </div>
 

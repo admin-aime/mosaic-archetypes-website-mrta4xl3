@@ -79,8 +79,8 @@
       "imports": []
     },
     "src/data/archetypes.ts": {
-      "lines": 113,
-      "lastModified": "2026-07-20T13:54:03.520Z",
+      "lines": 104,
+      "lastModified": "2026-07-20T17:33:46.382Z",
       "summary": "Type definitions",
       "exports": [
         "Archetype",
@@ -101,8 +101,8 @@
       ]
     },
     "src/components/ArchetypeCard.tsx": {
-      "lines": 49,
-      "lastModified": "2026-07-20T13:54:13.448Z",
+      "lines": 47,
+      "lastModified": "2026-07-20T17:34:00.513Z",
       "summary": "ArchetypeCard component",
       "exports": [
         "ArchetypeCard"
@@ -139,7 +139,7 @@
     },
     "src/pages/Home.tsx": {
       "lines": 156,
-      "lastModified": "2026-07-20T14:25:37.953Z",
+      "lastModified": "2026-07-20T17:34:44.287Z",
       "summary": "Home component",
       "exports": [
         "Home"
@@ -154,8 +154,8 @@
       ]
     },
     "src/pages/Philosophy.tsx": {
-      "lines": 190,
-      "lastModified": "2026-07-20T14:37:35.396Z",
+      "lines": 231,
+      "lastModified": "2026-07-20T17:35:27.086Z",
       "summary": "Philosophy component",
       "exports": [
         "Philosophy"
@@ -167,7 +167,7 @@
     },
     "src/pages/Workshops.tsx": {
       "lines": 339,
-      "lastModified": "2026-07-20T16:30:57.072Z",
+      "lastModified": "2026-07-20T17:36:24.227Z",
       "summary": "Workshops component",
       "exports": [
         "Workshops"
@@ -179,7 +179,7 @@
     },
     "src/pages/Model.tsx": {
       "lines": 124,
-      "lastModified": "2026-07-20T14:37:30.583Z",
+      "lastModified": "2026-07-20T17:35:50.143Z",
       "summary": "Model component",
       "exports": [
         "Model"
@@ -192,8 +192,8 @@
       ]
     },
     "src/pages/ArchetypeDetail.tsx": {
-      "lines": 184,
-      "lastModified": "2026-07-20T14:06:31.650Z",
+      "lines": 183,
+      "lastModified": "2026-07-20T17:35:46.893Z",
       "summary": "ArchetypeDetail component",
       "exports": [
         "ArchetypeDetail"
@@ -207,7 +207,7 @@
     },
     "src/pages/Download.tsx": {
       "lines": 249,
-      "lastModified": "2026-07-20T17:18:10.001Z",
+      "lastModified": "2026-07-20T17:36:14.888Z",
       "summary": "Download component",
       "exports": [
         "Download"
@@ -263,7 +263,7 @@
     },
     "src/pages/ModelOverview.tsx": {
       "lines": 152,
-      "lastModified": "2026-07-20T13:57:49.081Z",
+      "lastModified": "2026-07-20T17:36:35.175Z",
       "summary": "ModelOverview component",
       "exports": [
         "ModelOverview"
@@ -367,8 +367,8 @@
       ]
     },
     "src/pages/Cards.tsx": {
-      "lines": 389,
-      "lastModified": "2026-07-20T16:30:37.311Z",
+      "lines": 387,
+      "lastModified": "2026-07-20T17:34:24.978Z",
       "summary": "Cards component",
       "exports": [
         "Cards"
@@ -383,63 +383,63 @@
   "dependencies": {},
   "recentChanges": [
     {
-      "timestamp": "2026-07-20T17:18:09.994Z",
+      "timestamp": "2026-07-20T17:36:35.168Z",
+      "file": "src/pages/ModelOverview.tsx",
+      "change": "modifyd src/pages/ModelOverview.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T17:36:32.550Z",
+      "file": "src/pages/ModelOverview.tsx",
+      "change": "modifyd src/pages/ModelOverview.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T17:36:24.221Z",
+      "file": "src/pages/Workshops.tsx",
+      "change": "modifyd src/pages/Workshops.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T17:36:20.990Z",
+      "file": "src/pages/ModelOverview.tsx",
+      "change": "modifyd src/pages/ModelOverview.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T17:36:18.009Z",
+      "file": "src/pages/ModelOverview.tsx",
+      "change": "modifyd src/pages/ModelOverview.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T17:36:14.876Z",
       "file": "src/pages/Download.tsx",
       "change": "modifyd src/pages/Download.tsx",
       "type": "modify"
     },
     {
-      "timestamp": "2026-07-20T17:18:03.254Z",
-      "file": "src/pages/Cookies.tsx",
-      "change": "modifyd src/pages/Cookies.tsx",
+      "timestamp": "2026-07-20T17:36:11.942Z",
+      "file": "src/pages/Download.tsx",
+      "change": "modifyd src/pages/Download.tsx",
       "type": "modify"
     },
     {
-      "timestamp": "2026-07-20T17:18:00.133Z",
-      "file": "src/pages/Privacy.tsx",
-      "change": "modifyd src/pages/Privacy.tsx",
+      "timestamp": "2026-07-20T17:35:50.132Z",
+      "file": "src/pages/Model.tsx",
+      "change": "modifyd src/pages/Model.tsx",
       "type": "modify"
     },
     {
-      "timestamp": "2026-07-20T17:17:56.804Z",
-      "file": "src/pages/Privacy.tsx",
-      "change": "modifyd src/pages/Privacy.tsx",
+      "timestamp": "2026-07-20T17:35:46.882Z",
+      "file": "src/pages/ArchetypeDetail.tsx",
+      "change": "modifyd src/pages/ArchetypeDetail.tsx",
       "type": "modify"
     },
     {
-      "timestamp": "2026-07-20T17:08:19.964Z",
-      "file": "src/index.css",
-      "change": "modifyd src/index.css",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T17:08:16.309Z",
-      "file": "src/index.css",
-      "change": "modifyd src/index.css",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T17:06:47.438Z",
-      "file": "src/index.css",
-      "change": "modifyd src/index.css",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T17:06:42.642Z",
-      "file": "src/index.css",
-      "change": "modifyd src/index.css",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T16:57:04.363Z",
-      "file": "src/pages/Enquiry.tsx",
-      "change": "modifyd src/pages/Enquiry.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T16:57:02.854Z",
-      "file": "src/pages/Enquiry.tsx",
-      "change": "modifyd src/pages/Enquiry.tsx",
+      "timestamp": "2026-07-20T17:35:43.780Z",
+      "file": "src/pages/ArchetypeDetail.tsx",
+      "change": "modifyd src/pages/ArchetypeDetail.tsx",
       "type": "modify"
     }
   ]

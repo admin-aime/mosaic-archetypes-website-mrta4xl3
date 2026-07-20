@@ -23,7 +23,7 @@ export function Workshops() {
       format: 'In-Person',
       pricing: 'From £3,500 per group',
       description:
-        'A comprehensive exploration of all eleven archetypes with in-depth peer feedback, experiential exercises, and scenario-based application. Participants leave with a detailed leadership map and practical strategies for growth.',
+        'A comprehensive exploration of all ten archetypes with in-depth peer feedback, experiential exercises, and scenario-based application. Participants leave with a detailed leadership map and practical strategies for growth.',
       outcomes: [
         'Master the full Mosaic framework',
         'Receive structured peer feedback',

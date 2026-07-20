@@ -103,7 +103,7 @@ export function Download() {
           <p className="section__label">Resource</p>
           <h1 className="section__title">Download the Mosaic Archetypes Guide</h1>
           <p className="section__subtitle" style={{ margin: '0 auto', color: 'rgba(255,255,255,0.7)' }}>
-            A comprehensive overview of all eleven leadership archetypes, the three axes, and
+            A comprehensive overview of all ten leadership archetypes, the four quadrants, and
             how to apply the Mosaic framework to your leadership development.
           </p>
         </div>
@@ -141,7 +141,7 @@ export function Download() {
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem', fontFamily: 'var(--font-body)', fontSize: '0.9375rem', lineHeight: '1.5', color: 'rgba(0,0,0,0.65)' }}>
                 <li className="flex items-start gap-2">
                   <CheckCircle size={16} style={{ color: 'var(--colour-mosaic-gold)', marginTop: 3, flexShrink: 0 }} />
-                  Full descriptions of all eleven Mosaic Leadership Archetypes®
+                  Full descriptions of all ten Mosaic Leadership Archetypes®
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle size={16} style={{ color: 'var(--colour-mosaic-gold)', marginTop: 3, flexShrink: 0 }} />

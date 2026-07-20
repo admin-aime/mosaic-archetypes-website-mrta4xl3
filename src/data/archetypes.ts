@@ -3,64 +3,37 @@ export interface Archetype {
   leaderType: string;
   role: string;
   tagline: string;
-  axis: 'Vision' | 'Process' | 'Relationships';
+  axis: 'Power' | 'Vision' | 'Process' | 'Relationships';
   description: string;
 }
 
 export const archetypes: Archetype[] = [
   {
-    id: 'versatile',
-    leaderType: 'Versatile',
-    role: 'Leader',
-    tagline: 'QUESTION · EXPLORE · INNOVATE',
-    axis: 'Vision',
+    id: 'reluctant',
+    leaderType: 'Reluctant',
+    role: 'Producer',
+    tagline: 'STEADY · DEPENDABLE · DELIVER',
+    axis: 'Power',
     description:
-      'Versatile Leaders adapt fluidly to changing circumstances, drawing on a broad repertoire of leadership styles. They question assumptions, explore new possibilities, and drive innovation through intellectual curiosity and openness to diverse perspectives.',
-  },
-  {
-    id: 'heroic',
-    leaderType: 'Heroic',
-    role: 'Orchestrator',
-    tagline: 'INSPIRE · MOBILISE · ACHIEVE',
-    axis: 'Vision',
-    description:
-      'Heroic Leaders inspire through bold vision and decisive action. They mobilise teams around a compelling purpose, orchestrating resources and talent to achieve ambitious goals with energy and conviction.',
+      'The dependable doer who leads through consistent delivery. Reluctant Leaders rise to the occasion through duty rather than ambition — producing reliable results without fanfare. They are the quiet engine of organisational stability, bringing a steady, task-focused presence that teams can count on.',
   },
   {
     id: 'enterprising',
     leaderType: 'Enterprising',
     role: 'Catalyser',
     tagline: 'IDENTIFY · IGNITE · ACCELERATE',
-    axis: 'Vision',
+    axis: 'Power',
     description:
-      'Enterprising Leaders spot opportunities others miss and catalyse action. They ignite momentum, accelerate growth, and create value through commercial instinct and a bias toward bold, calculated moves.',
+      'The opportunity seeker who spots potential others miss. Enterprising Leaders are opportunity-seeking, influential, and energetic — they ignite momentum through commercial instinct and a bias toward bold, calculated moves. They catalyse action and accelerate growth wherever they focus their attention.',
   },
   {
-    id: 'reluctant',
-    leaderType: 'Reluctant',
-    role: 'Producer',
-    tagline: 'STEADY · DEPENDABLE · DELIVER',
+    id: 'heroic',
+    leaderType: 'Heroic',
+    role: 'Orchestrator',
+    tagline: 'INSPIRE · MOBILISE · ACHIEVE',
     axis: 'Process',
     description:
-      'Reluctant Leaders rise to the occasion not through ambition but through duty. They are steady, dependable producers who deliver consistent results without fanfare — the quiet engine of organisational stability.',
-  },
-  {
-    id: 'innovative',
-    leaderType: 'Innovative',
-    role: 'Challenger',
-    tagline: 'QUESTION · DISRUPT · REBUILD',
-    axis: 'Vision',
-    description:
-      'Innovative Leaders challenge the status quo and disrupt established patterns. They question orthodoxies, introduce breakthrough ideas, and rebuild systems to be more effective, creative, and forward-looking.',
-  },
-  {
-    id: 'power',
-    leaderType: 'Power',
-    role: 'Organiser',
-    tagline: 'DIRECT · ALIGN · EXECUTE',
-    axis: 'Process',
-    description:
-      'Power Leaders bring structure and order to complexity. They direct resources, align teams around clear priorities, and execute with precision — turning strategy into disciplined, repeatable results.',
+      'The action-oriented achiever who drives results. Decisive, results-focused, and bold, Heroic Leaders inspire through conviction and mobilise teams around a compelling purpose. They orchestrate resources and talent to achieve ambitious goals with energy and determination.',
   },
   {
     id: 'guardian',
@@ -69,25 +42,34 @@ export const archetypes: Archetype[] = [
     tagline: 'PROTECT · SUSTAIN · PRESERVE',
     axis: 'Process',
     description:
-      'Guardian Leaders protect what matters most: culture, values, people, and long-term sustainability. They preserve institutional memory, maintain standards, and ensure the organisation endures beyond any single initiative.',
+      'The systematic organiser who creates stability. Structured, systematic, and process-driven, Guardian Leaders protect what matters most — culture, values, people, and long-term sustainability. They maintain standards, preserve institutional memory, and ensure the organisation endures beyond any single initiative.',
+  },
+  {
+    id: 'architect',
+    leaderType: 'The Architect',
+    role: 'Systemiser',
+    tagline: 'DESIGN · BUILD · OPTIMISE',
+    axis: 'Process',
+    description:
+      'The systems designer who sees the whole picture. A systems thinker who is holistic and integrative, the Architect designs the frameworks that enable organisations to scale. They build robust structures, optimise workflows, and create the blueprints for sustainable, repeatable success.',
   },
   {
     id: 'sagelike',
     leaderType: 'Sagelike',
     role: 'Interpreter',
     tagline: 'REFLECT · DISTIL · GUIDE',
-    axis: 'Relationships',
+    axis: 'Vision',
     description:
-      'Sagelike Leaders bring wisdom and perspective. They reflect deeply, distil complexity into clarity, and guide others through ambiguity — offering insight that shapes better decisions and deeper understanding.',
+      'The wise advisor who provides perspective. Reflective, analytical, and wise, Sagelike Leaders bring depth of thought to every challenge. They distil complexity into clarity and guide others through ambiguity — offering insight that shapes better decisions and deeper understanding.',
   },
   {
-    id: 'architect',
-    leaderType: 'Architect',
-    role: 'Systemiser',
-    tagline: 'DESIGN · BUILD · OPTIMISE',
-    axis: 'Process',
+    id: 'innovative',
+    leaderType: 'Innovative',
+    role: 'Challenger',
+    tagline: 'QUESTION · DISRUPT · REBUILD',
+    axis: 'Vision',
     description:
-      'Architect Leaders design the frameworks and systems that enable organisations to scale. They build robust structures, optimise workflows, and create the blueprints for sustainable, repeatable success.',
+      'The creative thinker who challenges conventions. Creative, experimental, and transformative, Innovative Leaders question orthodoxies and introduce breakthrough ideas. They disrupt established patterns and rebuild systems to be more effective, forward-looking, and alive to new possibilities.',
   },
   {
     id: 'nurturing',
@@ -96,7 +78,7 @@ export const archetypes: Archetype[] = [
     tagline: 'CARE · DEVELOP · EMPOWER',
     axis: 'Relationships',
     description:
-      'Nurturing Leaders invest deeply in people. They care for individual wellbeing, develop potential through coaching and encouragement, and empower others to grow into their best professional selves.',
+      'The people developer who grows others. Empathetic, developmental, and supportive, Nurturing Leaders invest deeply in individual wellbeing. They develop potential through coaching and encouragement, empowering others to grow into their best professional selves.',
   },
   {
     id: 'maverick',
@@ -105,8 +87,17 @@ export const archetypes: Archetype[] = [
     tagline: 'DEFY · PROVOKE · TRANSFORM',
     axis: 'Relationships',
     description:
-      'Maverick Leaders defy convention and provoke necessary disruption. They challenge norms, push boundaries, and transform organisations by refusing to accept "the way things have always been done."',
+      'The change agent who disrupts the status quo. Disruptive, intuitive, and unconventional, Maverick Leaders defy convention and provoke necessary change. They challenge norms, push boundaries, and transform organisations by refusing to accept "the way things have always been done."',
+  },
+  {
+    id: 'versatile',
+    leaderType: 'Versatile',
+    role: 'Adaptable',
+    tagline: 'ADAPT · BALANCE · INTEGRATE',
+    axis: 'Vision',
+    description:
+      'The adaptable leader who encircles the archetypes. A rare individual, Versatile Leaders present as a balance and blend of all the archetypes, able to flex readily between them. Where other leaders operate from a dominant archetype, the Versatile Leader integrates diverse leadership styles, adapting fluidly to whatever the situation demands.',
   },
 ];
 
-export const axes = ['Vision', 'Process', 'Relationships'] as const;
+export const axes = ['Power', 'Vision', 'Process', 'Relationships'] as const;

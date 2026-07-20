@@ -7,7 +7,6 @@ import {
   Zap,
   Shield,
   Lightbulb,
-  Gavel,
   Key,
   BookOpen,
   Building2,
@@ -23,7 +22,6 @@ const iconMap: Record<string, React.ComponentType<{ size?: number; style?: React
   enterprising: Zap,
   reluctant: Shield,
   innovative: Lightbulb,
-  power: Gavel,
   guardian: Key,
   sagelike: BookOpen,
   architect: Building2,
@@ -299,7 +297,7 @@ export function Cards() {
                     letterSpacing: '0.08em',
                   }}
                 >
-                  11 cards · 120 × 80mm · Gold foil accents
+                  10 cards · 120 × 80mm · Gold foil accents
                 </span>
               </div>
             </div>
@@ -362,7 +360,7 @@ export function Cards() {
                     letterSpacing: '0.08em',
                   }}
                 >
-                  11 cards · 120 × 80mm · Gold foil accents
+                  10 cards · 120 × 80mm · Gold foil accents
                 </span>
               </div>
             </div>

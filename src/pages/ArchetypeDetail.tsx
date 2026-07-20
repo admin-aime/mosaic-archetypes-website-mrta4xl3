@@ -1,14 +1,13 @@
 import { useParams, Link } from 'react-router-dom';
 import { archetypes } from '../data/archetypes';
 import { Button } from '../components/Button';
-import { ArrowLeft, ChevronRight } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import {
   Compass,
   Star,
   Zap,
   Shield,
   Lightbulb,
-  Gavel,
   Key,
   BookOpen,
   Building2,
@@ -22,7 +21,6 @@ const iconMap: Record<string, React.ComponentType<{ size?: number; style?: React
   enterprising: Zap,
   reluctant: Shield,
   innovative: Lightbulb,
-  power: Gavel,
   guardian: Key,
   sagelike: BookOpen,
   architect: Building2,
@@ -116,12 +114,13 @@ export function ArchetypeDetail() {
             style={{ background: 'rgba(166,119,24,0.05)', border: '1px solid rgba(166,119,24,0.1)' }}
           >
             <p style={{ fontFamily: 'var(--font-subheader)', fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.15em', color: 'var(--colour-mosaic-gold)', marginBottom: '0.5rem' }}>
-              Axis
+              Quadrant
             </p>
             <p style={{ fontFamily: 'var(--font-body)', fontSize: '1rem', color: 'var(--colour-black)' }}>
-              The {archetype.leaderType} Leader operates on the <strong>{archetype.axis}</strong> axis.
-              This axis shapes how the archetype contributes to leadership — whether through
-              forward-looking vision, disciplined execution, or transformative human connection.
+              The {archetype.leaderType} Leader operates in the <strong>{archetype.axis}</strong> quadrant.
+              This quadrant shapes how the archetype contributes to leadership — whether through
+              commercial drive and authority, forward-looking vision, disciplined execution, or
+              transformative human connection.
             </p>
           </div>
         </div>
@@ -131,7 +130,7 @@ export function ArchetypeDetail() {
       {related.length > 0 && (
         <section className="section section--black">
           <div className="section__inner">
-            <p className="section__label">Same Axis</p>
+            <p className="section__label">Same Quadrant</p>
             <h2 className="section__title" style={{ fontSize: '2rem' }}>
               Other {archetype.axis} Archetypes
             </h2>

@@ -1,25 +1,11 @@
 # Conversation Summary
 
 **Branch:** main
-**Total Messages:** 58
+**Total Messages:** 60
 
 ---
 
 ## Recent Conversation
-
-### **User**
-
-was this completed?
-
-### **Assistant**
-
-Let me check the current video styling to see what's there.The video hasn't been increased yet — it's still at the original `1080px` max-width. Let me apply the 50% increase now.
-
-I need to update the video container max-width and also the hero content max-width so the video actually renders larger:Now increase the hero content max-width so the video isn't constrained:Clean — only the same 11 pre-existing `lucide-react` type warnings. No new errors.
-
-**Done.** Video size increased by 50%:
-
-| Pro...
 
 ### **User**
 
@@ -80,4 +66,23 @@ Let me do a thorough audit of every source file.Full audit complete. Here's what
 | 1 | **Privacy.tsx** (×2) | Wrong email: `hello@mosaicleadership.com` → should be `hello@mosaic-archetypes.co.uk` (sections 6 & 7) |
 | 2 | **Cookies.tsx** | Wrong email: `hello@mosaicleadership.com` → should be `hello@mosaic-archetypes.co.uk` (section 5) |
 | 3 | **Download.tsx** | `handleDirectDownload` creates `<a href="#">` — clicking the "Download ...
+
+### **User**
+
+ensure content is consistent with the following:
+
+1. The Circumplex Model
+The Mosaic Leadership System is built on a circumplex model with four quadrants representing different Influencer Themes. Nine leadership archetypes are positioned around the rim, reflecting different combinations of behavioural traits.
+
+Think of it as a compass for leadership: your position on the circle shows your natural style, and your ability to move around the circle demonstrates your leadership range and adaptabilit...
+
+### **Assistant**
+
+Let me audit all files that reference the archetypes to understand the full scope of changes needed.Now let me read the remaining files I need to update:Now I have a complete picture. Here are all the changes needed:
+
+- **archetypes.ts**: Remove Power, update all 10 archetypes with new roles/descriptions, add 'Power' axis
+- **Model.tsx**: "eleven"→"ten", add Power filter, always show Versatile
+- **Home.tsx**: "eleven"→"ten"
+- **Philosophy.tsx**: Add Circumplex Model, update axes
+- **ArchetypeCar...
 
