@@ -51,7 +51,7 @@ export function Header() {
             Book a Call
           </Button>
           <Button variant="black" href="/download">
-            Download Guide
+            Download Handbook
           </Button>
           <Button variant="black" href="/login" className="btn--login">
             Login
@@ -83,7 +83,7 @@ export function Header() {
             Book a Call
           </Button>
           <Button variant="black" href="/download" onClick={closeMobile}>
-            Download Guide
+            Download Handbook
           </Button>
           <Button variant="black" href="/login" onClick={closeMobile} className="btn--login">
             Login

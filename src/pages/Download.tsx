@@ -23,12 +23,12 @@ export function Download() {
 
   const handleDirectDownload = useCallback(() => {
     // Simulated direct download — generates a placeholder PDF stub; in production serves the actual file
-    const content = '%PDF-1.4\n% Placeholder — Replace with actual Mosaic Archetypes Guide PDF\n';
+    const content = '%PDF-1.4\n% Placeholder — Replace with actual Mosaic Leadership Archetype Handbook PDF\n';
     const blob = new Blob([content], { type: 'application/pdf' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = 'Mosaic-Leadership-Archetypes-Guide.pdf';
+    link.download = 'Mosaic-Leadership-Archetype-Handbook.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -54,7 +54,7 @@ export function Download() {
               <div className="confirmation__icon">
                 <CheckCircle size={32} />
               </div>
-              <h2 className="confirmation__title">Your Guide Is Ready</h2>
+              <h2 className="confirmation__title">Your Handbook Is Ready</h2>
               <p className="confirmation__text">
                 Thank you for your interest in Mosaic Leadership Archetypes®.
               </p>
@@ -75,7 +75,7 @@ export function Download() {
                     cursor: 'pointer',
                   }}
                 >
-                  <ArrowDown size={18} /> Download Guide Now
+                  <ArrowDown size={18} /> Download Handbook Now
                 </button>
               </div>
 
@@ -101,10 +101,9 @@ export function Download() {
         <div className="page-header__texture" />
         <div className="page-header__inner">
           <p className="section__label">Resource</p>
-          <h1 className="section__title">Download the Mosaic Archetypes Guide</h1>
+          <h1 className="section__title">Mosaic Leadership Archetype Handbook</h1>
           <p className="section__subtitle" style={{ margin: '0 auto', color: 'rgba(255,255,255,0.7)' }}>
-            A comprehensive overview of all ten leadership archetypes, the four quadrants, and
-            how to apply the Mosaic framework to your leadership development.
+            A comprehensive guide to the ten leadership archetypes, leadership traits and how to apply them.
           </p>
         </div>
       </div>
@@ -127,7 +126,7 @@ export function Download() {
                 <FileText size={36} style={{ color: 'var(--colour-mosaic-gold)' }} />
                 <div>
                   <p style={{ fontFamily: 'var(--font-subheader)', fontSize: '0.875rem', fontWeight: 700, color: 'var(--colour-black)' }}>
-                    Mosaic Leadership Archetypes® Guide
+                    Mosaic Leadership Archetype Handbook
                   </p>
                   <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8125rem', color: 'rgba(0,0,0,0.5)' }}>
                     PDF · 24 pages · Free
@@ -141,23 +140,15 @@ export function Download() {
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem', fontFamily: 'var(--font-body)', fontSize: '0.9375rem', lineHeight: '1.5', color: 'rgba(0,0,0,0.65)' }}>
                 <li className="flex items-start gap-2">
                   <CheckCircle size={16} style={{ color: 'var(--colour-mosaic-gold)', marginTop: 3, flexShrink: 0 }} />
-                  Full descriptions of all ten Mosaic Leadership Archetypes®
+                  Understand all 10 archetypes in depth
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle size={16} style={{ color: 'var(--colour-mosaic-gold)', marginTop: 3, flexShrink: 0 }} />
-                  The Power · Vision · Process · Relationships quadrant framework explained
+                  Explore leadership traits and behaviours
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle size={16} style={{ color: 'var(--colour-mosaic-gold)', marginTop: 3, flexShrink: 0 }} />
-                  Self-assessment prompts to explore your own archetype profile
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle size={16} style={{ color: 'var(--colour-mosaic-gold)', marginTop: 3, flexShrink: 0 }} />
-                  Practical guidance for applying Mosaic to team development
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle size={16} style={{ color: 'var(--colour-mosaic-gold)', marginTop: 3, flexShrink: 0 }} />
-                  Case examples of archetype combinations in real leadership contexts
+                  Practical tools and real-world applications
                 </li>
               </ul>
             </div>
@@ -165,10 +156,10 @@ export function Download() {
             {/* Right: Form */}
             <div className="form-card-dark">
               <h3 style={{ fontFamily: 'var(--font-header)', fontSize: '1.5rem', color: 'var(--colour-white)', marginBottom: '0.5rem' }}>
-                Get Your Free Guide
+                Get Your Free Handbook
               </h3>
               <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.875rem', color: 'rgba(255,255,255,0.55)', marginBottom: '2rem' }}>
-                Enter your details to receive the Mosaic Archetypes Guide by email.
+                Enter your details to receive the Mosaic Leadership Archetype Handbook by email.
               </p>
 
               <form onSubmit={handleSubmit}>
@@ -236,7 +227,7 @@ export function Download() {
                   style={{ padding: '0.875rem 1.5rem' }}
                 >
                   <DownloadIcon size={16} />
-                  Download the Guide
+                  Download the Handbook
                 </button>
               </form>
             </div>

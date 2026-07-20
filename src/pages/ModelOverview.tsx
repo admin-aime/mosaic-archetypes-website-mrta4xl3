@@ -56,9 +56,9 @@ export function ModelOverview() {
                 Philosophy
               </p>
               <p>
-                Explains the Mosaic methodology — the multi-dimensional approach to leadership, the
-                archetypes-not-types principle, and four pillars of application: Multi-Dimensional
-                Leadership, Precision Development, and Collective Leadership. Includes a visual
+                Explains the Mosaic methodology — the multi-dimensional approach to leadership and
+                four pillars of application: Multi-Dimensional Leadership, Archetypes Not Types,
+                Precision Development, and Collective Leadership. Includes a visual
                 model diagram of the four quadrants.
               </p>
             </div>
@@ -76,11 +76,11 @@ export function ModelOverview() {
 
             <div>
               <p style={{ fontWeight: 700, color: 'var(--colour-black)', marginBottom: '0.25rem' }}>
-                Download Guide (Gated)
+                Download Handbook (Gated)
               </p>
               <p>
                 A lead-capture page where visitors submit their name, email, organisation, and phone
-                to receive the Mosaic Archetypes Guide. After submission, a thank-you confirmation
+                to receive the Mosaic Leadership Archetype Handbook. After submission, a thank-you confirmation
                 screen appears with delivery instructions.
               </p>
             </div>

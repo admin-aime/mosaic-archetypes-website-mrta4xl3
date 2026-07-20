@@ -114,7 +114,7 @@
     },
     "src/components/Header.tsx": {
       "lines": 96,
-      "lastModified": "2026-07-20T16:31:40.143Z",
+      "lastModified": "2026-07-20T18:22:35.633Z",
       "summary": "Header component",
       "exports": [
         "Header"
@@ -128,7 +128,7 @@
     },
     "src/components/Footer.tsx": {
       "lines": 60,
-      "lastModified": "2026-07-20T13:54:27.228Z",
+      "lastModified": "2026-07-20T18:22:41.154Z",
       "summary": "Footer component",
       "exports": [
         "Footer"
@@ -139,7 +139,7 @@
     },
     "src/pages/Home.tsx": {
       "lines": 158,
-      "lastModified": "2026-07-20T17:43:05.790Z",
+      "lastModified": "2026-07-20T18:22:53.164Z",
       "summary": "Home component",
       "exports": [
         "Home"
@@ -179,7 +179,7 @@
     },
     "src/pages/Model.tsx": {
       "lines": 126,
-      "lastModified": "2026-07-20T17:43:14.469Z",
+      "lastModified": "2026-07-20T18:22:55.953Z",
       "summary": "Model component",
       "exports": [
         "Model"
@@ -193,7 +193,7 @@
     },
     "src/pages/ArchetypeDetail.tsx": {
       "lines": 183,
-      "lastModified": "2026-07-20T17:35:46.893Z",
+      "lastModified": "2026-07-20T18:23:02.019Z",
       "summary": "ArchetypeDetail component",
       "exports": [
         "ArchetypeDetail"
@@ -206,8 +206,8 @@
       ]
     },
     "src/pages/Download.tsx": {
-      "lines": 249,
-      "lastModified": "2026-07-20T17:51:53.850Z",
+      "lines": 240,
+      "lastModified": "2026-07-20T18:22:24.751Z",
       "summary": "Download component",
       "exports": [
         "Download"
@@ -233,7 +233,7 @@
     },
     "src/pages/About.tsx": {
       "lines": 242,
-      "lastModified": "2026-07-20T17:44:17.725Z",
+      "lastModified": "2026-07-20T18:22:58.746Z",
       "summary": "About component",
       "exports": [
         "About"
@@ -245,7 +245,7 @@
     },
     "src/pages/Privacy.tsx": {
       "lines": 87,
-      "lastModified": "2026-07-20T17:18:00.146Z",
+      "lastModified": "2026-07-20T18:23:08.551Z",
       "summary": "Privacy component",
       "exports": [
         "Privacy"
@@ -263,7 +263,7 @@
     },
     "src/pages/ModelOverview.tsx": {
       "lines": 152,
-      "lastModified": "2026-07-20T17:51:50.747Z",
+      "lastModified": "2026-07-20T18:23:05.402Z",
       "summary": "ModelOverview component",
       "exports": [
         "ModelOverview"
@@ -334,8 +334,8 @@
       "imports": []
     },
     "src/pages/Login.tsx": {
-      "lines": 18,
-      "lastModified": "2026-07-20T14:52:04.129Z",
+      "lines": 19,
+      "lastModified": "2026-07-20T18:02:52.721Z",
       "summary": "Login component",
       "exports": [
         "Login"
@@ -394,63 +394,63 @@
   "dependencies": {},
   "recentChanges": [
     {
-      "timestamp": "2026-07-20T17:54:05.845Z",
-      "file": "src/index.css",
-      "change": "modifyd src/index.css",
+      "timestamp": "2026-07-20T18:23:08.532Z",
+      "file": "src/pages/Privacy.tsx",
+      "change": "modifyd src/pages/Privacy.tsx",
       "type": "modify"
     },
     {
-      "timestamp": "2026-07-20T17:53:58.587Z",
-      "file": "src/main.tsx",
-      "change": "modifyd src/main.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T17:51:53.673Z",
-      "file": "src/pages/Download.tsx",
-      "change": "modifyd src/pages/Download.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T17:51:50.623Z",
+      "timestamp": "2026-07-20T18:23:05.392Z",
       "file": "src/pages/ModelOverview.tsx",
       "change": "modifyd src/pages/ModelOverview.tsx",
       "type": "modify"
     },
     {
-      "timestamp": "2026-07-20T17:51:46.794Z",
-      "file": "src/App.tsx",
-      "change": "modifyd src/App.tsx",
+      "timestamp": "2026-07-20T18:23:02.002Z",
+      "file": "src/pages/ArchetypeDetail.tsx",
+      "change": "modifyd src/pages/ArchetypeDetail.tsx",
       "type": "modify"
     },
     {
-      "timestamp": "2026-07-20T17:48:25.622Z",
-      "file": "src/index.css",
-      "change": "modifyd src/index.css",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T17:44:46.902Z",
-      "file": "src/main.tsx",
-      "change": "modifyd src/main.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T17:44:17.718Z",
+      "timestamp": "2026-07-20T18:22:58.726Z",
       "file": "src/pages/About.tsx",
       "change": "modifyd src/pages/About.tsx",
       "type": "modify"
     },
     {
-      "timestamp": "2026-07-20T17:44:03.766Z",
-      "file": "src/pages/About.tsx",
-      "change": "modifyd src/pages/About.tsx",
+      "timestamp": "2026-07-20T18:22:55.938Z",
+      "file": "src/pages/Model.tsx",
+      "change": "modifyd src/pages/Model.tsx",
       "type": "modify"
     },
     {
-      "timestamp": "2026-07-20T17:43:59.386Z",
-      "file": "src/pages/About.tsx",
-      "change": "modifyd src/pages/About.tsx",
+      "timestamp": "2026-07-20T18:22:53.152Z",
+      "file": "src/pages/Home.tsx",
+      "change": "modifyd src/pages/Home.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T18:22:41.145Z",
+      "file": "src/components/Footer.tsx",
+      "change": "modifyd src/components/Footer.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T18:22:35.624Z",
+      "file": "src/components/Header.tsx",
+      "change": "modifyd src/components/Header.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T18:22:31.650Z",
+      "file": "src/components/Header.tsx",
+      "change": "modifyd src/components/Header.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T18:22:24.681Z",
+      "file": "src/pages/Download.tsx",
+      "change": "modifyd src/pages/Download.tsx",
       "type": "modify"
     }
   ]

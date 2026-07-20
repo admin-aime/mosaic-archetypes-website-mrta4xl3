@@ -9,6 +9,7 @@ export function Login() {
         justifyContent: 'center',
       }}
     >
+      <div className="page-header__texture" />
       <div className="page-header__inner">
         <h1 className="section__title">Replace with Mosaic Archetype Tool Login Page</h1>
       </div>

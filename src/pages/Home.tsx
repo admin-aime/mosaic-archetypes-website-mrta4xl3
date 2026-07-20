@@ -62,7 +62,7 @@ export function Home() {
 
           <div className="hero__cta">
             <Button variant="black" href="/download">
-              Download the Mosaic Archetypes Guide
+              Download the Mosaic Leadership Archetype Handbook
             </Button>
             <Button variant="black" href="/enquiry">
               Request a Call Back

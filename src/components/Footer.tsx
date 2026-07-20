@@ -26,7 +26,7 @@ export function Footer() {
               <Link to="/workshops">Workshops</Link>
             </li>
             <li>
-              <Link to="/download">Download Guide</Link>
+              <Link to="/download">Download Handbook</Link>
             </li>
           </ul>
         </div>

@@ -40,7 +40,7 @@ export function Privacy() {
             </h3>
             <p className="mb-4">
               We use your information to respond to enquiries, deliver requested resources (such as
-              the Mosaic Archetypes Guide), improve our website and services, and — with your consent —
+              the Mosaic Leadership Archetype Handbook), improve our website and services, and — with your consent —
               send you relevant information about Mosaic Leadership Archetypes®. We never sell your
               personal data to third parties.
             </p>

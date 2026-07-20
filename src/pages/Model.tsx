@@ -112,7 +112,7 @@ export function Model() {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Button variant="gold" href="/download">
-              Download Guide
+              Download Handbook
             </Button>
             <Button variant="gold" href="/enquiry">
               Book a Call

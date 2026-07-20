@@ -231,7 +231,7 @@ export function About() {
               Enquire Now
             </Button>
             <Button variant="gold" href="/download">
-              Download Guide
+              Download Handbook
             </Button>
           </div>
         </div>

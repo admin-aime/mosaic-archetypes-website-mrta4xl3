@@ -1,36 +1,11 @@
 # Conversation Summary
 
 **Branch:** main
-**Total Messages:** 70
+**Total Messages:** 74
 
 ---
 
 ## Recent Conversation
-
-### **User**
-
-what dynamic or animated elements can we add? Theme is leadership, requirement is subtle
-
-### **Assistant**
-
-Let me read the current CSS and key pages to plan precise changes.
-
-Now let me check the current CSS for any existing animations and the key pages I'll modify:
-
-Now I have everything. Let me implement four subtle animations:
-
-1. **Fade-in-up on scroll** — sections and cards emerge as they enter viewport
-2. **Gentle breathing pulse on the wheel** — the circumplex model feels alive
-3. **Staggered card reveals** — cards appear in sequence (order, emergence)
-4. **Gold shimmer on CTA hover** — subtle...
-
-### **User**
-
-implement Fade-in-up on scroll, Staggered card reveals, and Gold shimmer on hover
-
-### **Assistant**
-
-Let me check the current state of these animations in the codebase.They were discussed but never written to files. Building all three from scratch now.Now let me add all the animation CSS:Now let me update each component. Starting with the pages that have cards:Now let me apply the animations to each page. Starting with Home.tsx:Now add reveal to the hero video and CTA:Now Model.tsx — staggered cards and wheel reveal:Now Workshops.tsx — stagger the workshop cards:Now Cards.tsx — stagger card moc...
 
 ### **User**
 
@@ -75,4 +50,36 @@ Found it. The `IntersectionObserver` poll in `main.tsx` stops after 15 seconds. 
 ---
 
 ## Root Cause: W...
+
+### **User**
+
+fix any bugs
+
+### **Assistant**
+
+No compile or runtime errors. Let me now do a systematic code audit — reading all the key files modified recently.Complete audit. Found 2 bugs:
+
+**Bug 1:** `ModelOverview.tsx` — says "four pillars of application" but only lists 3. Missing "Archetypes, Not Types."
+**Bug 2:** `Login.tsx` — missing the `page-header__texture` div that every other page header includes.
+
+Fixing both:Login.tsx fixed. Let me re-read ModelOverview.tsx to get the exact text:Both fixes applied. Let me restart and verify:Th...
+
+### **User**
+
+ensure content is consistent with:
+
+1. Download Guide should be: 'Mosaic Leadership Archetype Handbook'
+A comprehensive guide to the ten leadership archetypes, leadership traits and how to apply them. Understand all 10 archetypes in depth
+Explore leadership traits and behaviours
+Practical tools and real-world applications
+
+### **Assistant**
+
+Now I'll update all 9 files. Let me apply every fix:Now let me apply all the Download.tsx content changes:Now let me update all the other files:Now let me update Footer.tsx, Home.tsx, Model.tsx, About.tsx, ArchetypeDetail.tsx, ModelOverview.tsx, and Privacy.tsx:Those HMR errors are transient artifacts from edits made before the last restart — the current server instance is clean. Let me do a final verification:Done. Here's a summary:
+
+---
+
+## Content Update — Complete
+
+Renamed "Mosaic Archetypes...
 
