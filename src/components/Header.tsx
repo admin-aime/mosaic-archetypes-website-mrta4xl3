@@ -3,10 +3,11 @@ import { Link, useLocation } from 'react-router-dom';
 import { Button } from './Button';
 import { Menu, X } from 'lucide-react';
 
+const LOGO_TOP = 'https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/749318a9-bf24-4de6-b086-059a6af59ff3-1784557285.png';
+
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
-  const isHome = location.pathname === '/';
 
   const closeMobile = () => setMobileOpen(false);
 
@@ -24,8 +25,12 @@ export function Header() {
       <div className="site-header__texture" />
       <div className="site-header__gradient" />
       <div className="site-header__inner">
-        <Link to="/" className="no-underline" onClick={closeMobile}>
-          <span className="logo__text">MOSAIC® LEADERSHIP ARCHETYPES®</span>
+        <Link to="/" className="logo" onClick={closeMobile}>
+          <img
+            src={LOGO_TOP}
+            alt="Mosaic Leadership Archetypes"
+            className="logo__image"
+          />
         </Link>
 
         <nav className="main-nav">

@@ -18,9 +18,11 @@ export function Home() {
         <div className="hero__gradient" />
         <div className="hero__content">
           <p className="hero__tagline">Discover Your Leadership DNA</p>
-          <h1 className="hero__title">
-            Mosaic Leadership<br />Archetypes®
-          </h1>
+          <img
+            src="https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/0b38331b-e451-4680-ac34-cb7ccd7f1042-1784556518.png"
+            alt="Mosaic Leadership Archetypes®"
+            className="hero__logo"
+          />
           <p className="hero__subtitle">
             A proprietary framework revealing the full spectrum of leadership archetypes present in
             every individual and organisation. Understand your natural strengths, hidden potential,
