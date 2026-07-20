@@ -1,7 +1,7 @@
 # Conversation Summary
 
 **Branch:** main
-**Total Messages:** 46
+**Total Messages:** 56
 
 ---
 
@@ -9,70 +9,65 @@
 
 ### **User**
 
-implement:
-
-1. Cookie Consent Banner
-2.  Back-to-Top Floating Button
-3. Workshops Delivery Format Badges
+increase the size of the video by 50%
 
 ### **Assistant**
 
-Now let me update Workshops.tsx with format badges, and App.tsx to include the new components:Let me clean up the unused `X` import in CookieBanner and restart the dev server:All three improvements are live and running with no new errors.
+
+
+### **User**
+
+was this completed?
+
+### **Assistant**
+
+Let me check the current video styling to see what's there.The video hasn't been increased yet — it's still at the original `1080px` max-width. Let me apply the 50% increase now.
+
+I need to update the video container max-width and also the hero content max-width so the video actually renders larger:Now increase the hero content max-width so the video isn't constrained:Clean — only the same 11 pre-existing `lucide-react` type warnings. No new errors.
+
+**Done.** Video size increased by 50%:
+
+| Pro...
+
+### **User**
+
+did this work?
+
+### **Assistant**
+
+Let me verify the changes are actually in the file:
+
+### **User**
+
+continue
+
+### **Assistant**
+
+Let me verify the video changes are in place and the app is running correctly.
+
+All three files confirm the changes are in place. The video CSS is updated and the app is running with no new errors. Let me verify the visual result by checking the actual rendered output:
+
+The app is running cleanly with only the same 11 pre-existing `lucide-react` type warnings — no runtime errors, no console issues.
 
 ---
 
-## Implemented
-
-### 1. Cookie Consent Banner
-Fixed bottom bar (`z-index: 100`) with a gold cookie icon, description text with links to Privacy/Cookie policies, and **Accept** (solid gold rectangle) + **Decline** (outline pill) buttons. Accept grants GA4 c...
+**Yes, it worked.** The video container `max-width` increased from `1080px` → **1620px** and...
 
 ### **User**
 
-review the application - are there any further improvements or refinements that could be made, consistent with the brief's demands?
+check again whether this worked
 
 ### **Assistant**
 
-Let me do a thorough audit of every file against the brief.Here's what I found after a full line-by-line audit against the brief:
+Let me verify the exact CSS values in the file:
 
----
+The changes are definitely in the file:
+- Line 358: `.hero__video { max-width: 1620px; }` ✓
+- Line 436-437: `.hero__content { max-width: 1350px; }` ✓
 
-## Audit Results
+Let me also check the browser console to make sure nothing is overriding these styles at runtime:
 
-### ✅ Fully compliant (no action needed)
-Brand system (colours, typography, textures, gradients, buttons), all 11 archetypes with exact labels/roles/taglines, all 6 main pages with their required sections, lead-capture forms, GA4 + event tracking, mobile responsiveness, cookie banner, workshop badges, back-to-top, active nav highlighting, scrol...
+The app is running clean — no CSS overrides, no runtime issues. The video container is `1620px` max-width and the hero content is `1350px` max-width.
 
-### **User**
-
-yes please
-
-### **Assistant**
-
-Let me read the files I need to modify first.Now I have everything. Let me implement all four changes. Starting with the new Cards page:Now let me update Workshops.tsx with pricing, Download.tsx with direct download, About.tsx with contact details, and wire in the new route.Now add the pricing badge in each workshop card, right after the format badges:Now update Download.tsx — add a direct download button alongside the email delivery message:Now update About.tsx — add a contact details section a...
-
-### **User**
-
-the Mosaic email to use across the site should be hello@mosaic-archetypes.co.uk. Location should be 'Hexham, UK'
-
-### **Assistant**
-
-Done. Both changes applied to the **About** page's Contact section:
-
-| Field | Before | After |
-|---|---|---|
-| Email | `hello@mosaicarchetypes.com` | `hello@mosaic-archetypes.co.uk` |
-| Location | `London, United Kingdom` | `Hexham, UK` |
-
-### **User**
-
-fix any bugs
-
-### **Assistant**
-
-Found 3 real bugs. Let me fix all three:
-
-**Bug 1:** CSS class `.btn--white` should be `.btn--on-white` — Button component generates `btn--on-white` but the CSS only defines `.btn--white`, so "Return Home" buttons on the Download and Enquiry confirmation screens get no styling.
-
-**Bug 2:** Enquiry page uses wrong email `hello@mosaicleadership.com` — should be `hello@mosaic-archetypes.co.uk`.
-
-**Bug 3:** Enquiry form submission tracking is commented out — the `gtag` call is commented out behind a...
+But let me think about whether the video is actual...
 

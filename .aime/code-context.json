@@ -73,7 +73,7 @@
     },
     "src/index.css": {
       "lines": 1289,
-      "lastModified": "2026-07-20T16:57:01.247Z",
+      "lastModified": "2026-07-20T17:08:19.976Z",
       "summary": "Stylesheet",
       "exports": [],
       "imports": []
@@ -383,6 +383,30 @@
   "dependencies": {},
   "recentChanges": [
     {
+      "timestamp": "2026-07-20T17:08:19.964Z",
+      "file": "src/index.css",
+      "change": "modifyd src/index.css",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T17:08:16.309Z",
+      "file": "src/index.css",
+      "change": "modifyd src/index.css",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T17:06:47.438Z",
+      "file": "src/index.css",
+      "change": "modifyd src/index.css",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T17:06:42.642Z",
+      "file": "src/index.css",
+      "change": "modifyd src/index.css",
+      "type": "modify"
+    },
+    {
       "timestamp": "2026-07-20T16:57:04.363Z",
       "file": "src/pages/Enquiry.tsx",
       "change": "modifyd src/pages/Enquiry.tsx",
@@ -416,30 +440,6 @@
       "timestamp": "2026-07-20T16:37:15.634Z",
       "file": "src/pages/About.tsx",
       "change": "modifyd src/pages/About.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T16:31:40.129Z",
-      "file": "src/components/Header.tsx",
-      "change": "modifyd src/components/Header.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T16:31:35.912Z",
-      "file": "src/App.tsx",
-      "change": "modifyd src/App.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T16:31:33.072Z",
-      "file": "src/App.tsx",
-      "change": "modifyd src/App.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T16:31:30.606Z",
-      "file": "src/App.tsx",
-      "change": "modifyd src/App.tsx",
       "type": "modify"
     }
   ]
