@@ -138,15 +138,14 @@
       ]
     },
     "src/pages/Home.tsx": {
-      "lines": 160,
-      "lastModified": "2026-07-20T18:36:19.643Z",
+      "lines": 166,
+      "lastModified": "2026-07-20T19:06:39.577Z",
       "summary": "Home component",
       "exports": [
         "Home"
       ],
       "imports": [
         "react",
-        "react-router-dom",
         "../components/Button",
         "../components/ArchetypeCard",
         "../data/archetypes",
@@ -413,6 +412,42 @@
   "dependencies": {},
   "recentChanges": [
     {
+      "timestamp": "2026-07-20T19:06:39.402Z",
+      "file": "src/pages/Home.tsx",
+      "change": "modifyd src/pages/Home.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T19:06:35.761Z",
+      "file": "src/pages/Home.tsx",
+      "change": "modifyd src/pages/Home.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T19:05:32.756Z",
+      "file": "src/pages/Home.tsx",
+      "change": "modifyd src/pages/Home.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T19:05:20.912Z",
+      "file": "src/pages/Home.tsx",
+      "change": "modifyd src/pages/Home.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T19:02:26.130Z",
+      "file": "src/pages/Home.tsx",
+      "change": "modifyd src/pages/Home.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T19:02:11.432Z",
+      "file": "src/pages/Home.tsx",
+      "change": "modifyd src/pages/Home.tsx",
+      "type": "modify"
+    },
+    {
       "timestamp": "2026-07-20T18:53:04.541Z",
       "file": "src/App.tsx",
       "change": "modifyd src/App.tsx",
@@ -434,42 +469,6 @@
       "timestamp": "2026-07-20T18:52:56.276Z",
       "file": "src/App.tsx",
       "change": "modifyd src/App.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T18:52:55.492Z",
-      "file": "src/pages/Cards.tsx",
-      "change": "deleted src/pages/Cards.tsx",
-      "type": "delete"
-    },
-    {
-      "timestamp": "2026-07-20T18:36:49.481Z",
-      "file": "src/pages/Cards.tsx",
-      "change": "modifyd src/pages/Cards.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T18:36:46.088Z",
-      "file": "src/pages/Cards.tsx",
-      "change": "modifyd src/pages/Cards.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T18:36:39.874Z",
-      "file": "src/pages/ArchetypeDetail.tsx",
-      "change": "modifyd src/pages/ArchetypeDetail.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T18:36:32.434Z",
-      "file": "src/pages/Login.tsx",
-      "change": "modifyd src/pages/Login.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T18:36:31.581Z",
-      "file": "src/pages/ModelOverview.tsx",
-      "change": "modifyd src/pages/ModelOverview.tsx",
       "type": "modify"
     }
   ]

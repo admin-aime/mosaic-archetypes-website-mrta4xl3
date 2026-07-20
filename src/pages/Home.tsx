@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useCallback } from 'react';
 import { Button } from '../components/Button';
 import { ArchetypeCard } from '../components/ArchetypeCard';
 import { archetypes } from '../data/archetypes';
@@ -9,8 +8,13 @@ import { useDocumentTitle } from '../hooks/useDocumentTitle';
 export function Home() {
   useDocumentTitle('Home');
   const [videoPlaying, setVideoPlaying] = useState(false);
+  const [showAllArchetypes, setShowAllArchetypes] = useState(false);
 
-  const featuredArchetypes = archetypes.slice(0, 6);
+  const featuredArchetypes = showAllArchetypes ? archetypes : archetypes.slice(0, 6);
+
+  const handleExploreAll = useCallback(() => {
+    setShowAllArchetypes(true);
+  }, []);
 
   return (
     <>
@@ -103,16 +107,18 @@ export function Home() {
             ))}
           </div>
 
-          <div className="text-center mt-10">
-            <Link
-              to="/model"
-              className="inline-flex items-center gap-2 font-semibold text-sm uppercase tracking-wider"
-              style={{ color: 'var(--colour-mosaic-gold)' }}
-            >
-              Explore the Full Archetype Model
-              <ChevronRight size={16} />
-            </Link>
-          </div>
+          {!showAllArchetypes && (
+            <div className="text-center mt-10">
+              <button
+                onClick={handleExploreAll}
+                className="inline-flex items-center gap-2 font-semibold text-sm uppercase tracking-wider"
+                style={{ color: 'var(--colour-mosaic-gold)', background: 'none', border: 'none', cursor: 'pointer' }}
+              >
+                Explore the Full Archetype Model
+                <ChevronRight size={16} />
+              </button>
+            </div>
+          )}
         </div>
       </section>
 
