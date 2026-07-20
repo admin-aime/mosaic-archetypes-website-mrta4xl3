@@ -1,19 +1,11 @@
 # Conversation Summary
 
 **Branch:** main
-**Total Messages:** 24
+**Total Messages:** 26
 
 ---
 
 ## Recent Conversation
-
-### **User**
-
-increase logo by 20%. On scroll logoi should be replaced seamlessly with MLA_logo - post scroll.png. Use horizontal file width to ensure alignment. post scroll version maintains top alignment with original
-
-### **Assistant**
-
-Now I have the full picture. Let me apply all changes — CSS logo sizes +20%, header heights, hero/menu/page-header offsets, and the scroll-based logo swap in Header.tsx.Now let me update the `.logo` CSS to be a relative container so the absolute/fade swap works correctly, and set a width to maintain horizontal alignment:The HMR errors were transient during the restart cycle. The app compiles and serves fine (same 7 pre-existing TS errors only). Let me verify the Header component rendered correct...
 
 ### **User**
 
@@ -75,4 +67,16 @@ make any bug fixes necessary
 ### **Assistant**
 
 Let me read the key files to audit for bugs:I found two bugs: the **Model** and **Philosophy** pages still use the old CSS-drawn wheel that no longer has any styles applied (the `.wheel`, `.wheel__ring`, `.wheel__center` CSS was removed when the Home page switched to `MLA_model.png`). These wheels render as empty invisible divs. Let me fix both:Now let me verify and restart:Only pre-existing `lucide-react` type compatibility warnings (harmless at runtime). No new errors. Let me restart the dev s...
+
+### **User**
+
+when you click on a top nav link, it goes to the right section but appears to automatically go to where the user last scrolled, as opposed to the top of that section. Am I right and should this change?
+
+### **Assistant**
+
+Good catch — you're right, and it should change. HashRouter doesn't auto-scroll to top on navigation. Let me add a scroll-reset on every route change.Clean — same 11 pre-existing `lucide-react` type errors only, nothing new. The scroll fix is live.
+
+---
+
+**Fixed.** Added a `<ScrollToTop />` component inside `HashRouter` that watches `useLocation().pathname` and calls `window.scrollTo(0, 0)` on every route change. Now clicking any nav link always lands at the top of the page, not wherever you las...
 

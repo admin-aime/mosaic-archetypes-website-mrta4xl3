@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { HashRouter, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { FeedbackProvider } from '@aime-platform/aime-feedback-module';
 import { Layout } from './components/Layout';
 import { Home } from './pages/Home';
@@ -13,6 +13,14 @@ import { About } from './pages/About';
 import { Privacy } from './pages/Privacy';
 import { Cookies } from './pages/Cookies';
 import { ModelOverview } from './pages/ModelOverview';
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
 
 export default function App() {
   useEffect(() => {
@@ -52,6 +60,7 @@ export default function App() {
       notifyUsers={import.meta.env.VITE_FEEDBACK_NOTIFY_USERS}
     >
       <HashRouter>
+        <ScrollToTop />
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />

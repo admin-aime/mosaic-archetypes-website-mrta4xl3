@@ -297,8 +297,8 @@
       ]
     },
     "src/App.tsx": {
-      "lines": 96,
-      "lastModified": "2026-07-20T13:58:05.119Z",
+      "lines": 105,
+      "lastModified": "2026-07-20T14:46:39.883Z",
       "summary": "App component",
       "exports": [
         "default:App"
@@ -331,6 +331,24 @@
   },
   "dependencies": {},
   "recentChanges": [
+    {
+      "timestamp": "2026-07-20T14:46:39.878Z",
+      "file": "src/App.tsx",
+      "change": "modifyd src/App.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T14:46:37.462Z",
+      "file": "src/App.tsx",
+      "change": "modifyd src/App.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T14:46:34.420Z",
+      "file": "src/App.tsx",
+      "change": "modifyd src/App.tsx",
+      "type": "modify"
+    },
     {
       "timestamp": "2026-07-20T14:37:35.308Z",
       "file": "src/pages/Philosophy.tsx",
@@ -371,24 +389,6 @@
       "timestamp": "2026-07-20T14:23:27.013Z",
       "file": "src/pages/Home.tsx",
       "change": "modifyd src/pages/Home.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T14:23:23.074Z",
-      "file": "src/index.css",
-      "change": "modifyd src/index.css",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T14:23:17.063Z",
-      "file": "src/components/Header.tsx",
-      "change": "modifyd src/components/Header.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T14:20:08.862Z",
-      "file": "src/index.css",
-      "change": "modifyd src/index.css",
       "type": "modify"
     }
   ]
