@@ -1,4 +1,5 @@
 import { Button } from '../components/Button';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 export function About() {
   return (
@@ -80,6 +81,136 @@ export function About() {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Details */}
+      <section className="section section--black">
+        <div className="section__inner" style={{ maxWidth: '800px' }}>
+          <p className="section__label">Get in Touch</p>
+          <h2 className="section__title">Contact Mosaic</h2>
+          <p className="section__body" style={{ color: 'rgba(255,255,255,0.7)' }}>
+            Whether you're exploring Mosaic for your own development, considering a programme
+            for your team, or interested in becoming a certified practitioner — we'd love to
+            hear from you.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8">
+            <div
+              style={{
+                background: 'rgba(166,119,24,0.05)',
+                border: '1px solid rgba(166,119,24,0.15)',
+                borderRadius: '0.5rem',
+                padding: '1.25rem',
+                textAlign: 'center',
+              }}
+            >
+              <div
+                style={{
+                  width: 40,
+                  height: 40,
+                  borderRadius: '50%',
+                  background: 'var(--colour-mosaic-gold)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  margin: '0 auto 0.75rem',
+                }}
+              >
+                <Mail size={18} style={{ color: 'var(--colour-black)' }} />
+              </div>
+              <p style={{ fontFamily: 'var(--font-subheader)', fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--colour-white)', marginBottom: '0.5rem' }}>
+                Email
+              </p>
+              <a
+                href="mailto:hello@mosaicarchetypes.com"
+                style={{
+                  fontFamily: 'var(--font-body)',
+                  fontSize: '0.875rem',
+                  color: 'var(--colour-mosaic-gold)',
+                  textDecoration: 'none',
+                }}
+              >
+                hello@mosaicarchetypes.com
+              </a>
+            </div>
+
+            <div
+              style={{
+                background: 'rgba(166,119,24,0.05)',
+                border: '1px solid rgba(166,119,24,0.15)',
+                borderRadius: '0.5rem',
+                padding: '1.25rem',
+                textAlign: 'center',
+              }}
+            >
+              <div
+                style={{
+                  width: 40,
+                  height: 40,
+                  borderRadius: '50%',
+                  background: 'var(--colour-mosaic-gold)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  margin: '0 auto 0.75rem',
+                }}
+              >
+                <Phone size={18} style={{ color: 'var(--colour-black)' }} />
+              </div>
+              <p style={{ fontFamily: 'var(--font-subheader)', fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--colour-white)', marginBottom: '0.5rem' }}>
+                Phone
+              </p>
+              <a
+                href="tel:+442070000000"
+                style={{
+                  fontFamily: 'var(--font-body)',
+                  fontSize: '0.875rem',
+                  color: 'var(--colour-mosaic-gold)',
+                  textDecoration: 'none',
+                }}
+              >
+                +44 (0)20 7000 0000
+              </a>
+            </div>
+
+            <div
+              style={{
+                background: 'rgba(166,119,24,0.05)',
+                border: '1px solid rgba(166,119,24,0.15)',
+                borderRadius: '0.5rem',
+                padding: '1.25rem',
+                textAlign: 'center',
+              }}
+            >
+              <div
+                style={{
+                  width: 40,
+                  height: 40,
+                  borderRadius: '50%',
+                  background: 'var(--colour-mosaic-gold)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  margin: '0 auto 0.75rem',
+                }}
+              >
+                <MapPin size={18} style={{ color: 'var(--colour-black)' }} />
+              </div>
+              <p style={{ fontFamily: 'var(--font-subheader)', fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--colour-white)', marginBottom: '0.5rem' }}>
+                Location
+              </p>
+              <p
+                style={{
+                  fontFamily: 'var(--font-body)',
+                  fontSize: '0.875rem',
+                  color: 'rgba(255,255,255,0.6)',
+                }}
+              >
+                London, United Kingdom
+              </p>
+            </div>
           </div>
         </div>
       </section>

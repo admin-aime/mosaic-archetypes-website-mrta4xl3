@@ -1,6 +1,6 @@
-import { useState, FormEvent } from 'react';
+import { useState, FormEvent, useCallback } from 'react';
 import { Button } from '../components/Button';
-import { Download as DownloadIcon, CheckCircle, FileText } from 'lucide-react';
+import { Download as DownloadIcon, CheckCircle, FileText, ArrowDown } from 'lucide-react';
 
 export function Download() {
   const [submitted, setSubmitted] = useState(false);
@@ -16,8 +16,21 @@ export function Download() {
     if (!form.name || !form.email) return;
     // In production, submit to CRM/email/Google Sheets
     setSubmitted(true);
-    // Track event: window.gtag?.('event', 'download_form_submit')
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'submit_form', { form_type: 'download' });
+    }
   };
+
+  const handleDirectDownload = useCallback(() => {
+    // Simulated direct download — in production serves the actual PDF file
+    const link = document.createElement('a');
+    link.href = '#';
+    link.download = 'Mosaic-Leadership-Archetypes-Guide.pdf';
+    link.click();
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'download_click', { asset: 'mosaic_guide' });
+    }
+  }, []);
 
   if (submitted) {
     return (
@@ -37,10 +50,34 @@ export function Download() {
               </div>
               <h2 className="confirmation__title">Your Guide Is Ready</h2>
               <p className="confirmation__text">
-                Thank you for your interest in Mosaic Leadership Archetypes®. Your download link
-                has been sent to <strong>{form.email}</strong>. If you don't receive it within a few
-                minutes, please check your spam folder.
+                Thank you for your interest in Mosaic Leadership Archetypes®.
               </p>
+
+              {/* Direct download button */}
+              <div style={{ marginBottom: '2rem' }}>
+                <button
+                  onClick={handleDirectDownload}
+                  className="btn flex items-center gap-2 mx-auto"
+                  style={{
+                    background: 'var(--colour-mosaic-gold)',
+                    color: 'var(--colour-black)',
+                    border: 'none',
+                    borderRadius: 6,
+                    padding: '0.875rem 2rem',
+                    fontSize: '0.9375rem',
+                    fontWeight: 700,
+                    cursor: 'pointer',
+                  }}
+                >
+                  <ArrowDown size={18} /> Download Guide Now
+                </button>
+              </div>
+
+              <p className="confirmation__text" style={{ fontSize: '0.875rem', marginBottom: '2rem' }}>
+                We've also sent a copy to <strong>{form.email}</strong>. If you don't receive it
+                within a few minutes, please check your spam folder.
+              </p>
+
               <Button variant="white" href="/">
                 Return Home
               </Button>

@@ -113,8 +113,8 @@
       ]
     },
     "src/components/Header.tsx": {
-      "lines": 95,
-      "lastModified": "2026-07-20T16:10:37.343Z",
+      "lines": 96,
+      "lastModified": "2026-07-20T16:31:40.143Z",
       "summary": "Header component",
       "exports": [
         "Header"
@@ -166,8 +166,8 @@
       ]
     },
     "src/pages/Workshops.tsx": {
-      "lines": 312,
-      "lastModified": "2026-07-20T16:18:32.033Z",
+      "lines": 339,
+      "lastModified": "2026-07-20T16:30:57.072Z",
       "summary": "Workshops component",
       "exports": [
         "Workshops"
@@ -206,8 +206,8 @@
       ]
     },
     "src/pages/Download.tsx": {
-      "lines": 206,
-      "lastModified": "2026-07-20T14:05:04.906Z",
+      "lines": 243,
+      "lastModified": "2026-07-20T16:31:11.019Z",
       "summary": "Download component",
       "exports": [
         "Download"
@@ -232,14 +232,15 @@
       ]
     },
     "src/pages/About.tsx": {
-      "lines": 108,
-      "lastModified": "2026-07-20T13:57:04.413Z",
+      "lines": 239,
+      "lastModified": "2026-07-20T16:31:27.274Z",
       "summary": "About component",
       "exports": [
         "About"
       ],
       "imports": [
-        "../components/Button"
+        "../components/Button",
+        "lucide-react"
       ]
     },
     "src/pages/Privacy.tsx": {
@@ -297,8 +298,8 @@
       ]
     },
     "src/App.tsx": {
-      "lines": 112,
-      "lastModified": "2026-07-20T16:18:38.001Z",
+      "lines": 115,
+      "lastModified": "2026-07-20T16:31:35.921Z",
       "summary": "App component",
       "exports": [
         "default:App"
@@ -321,7 +322,8 @@
         "./pages/Privacy",
         "./pages/Cookies",
         "./pages/ModelOverview",
-        "./pages/Login"
+        "./pages/Login",
+        "./pages/Cards"
       ]
     },
     "src/vite-env.d.ts": {
@@ -363,68 +365,81 @@
         "react",
         "lucide-react"
       ]
+    },
+    "src/pages/Cards.tsx": {
+      "lines": 389,
+      "lastModified": "2026-07-20T16:30:37.311Z",
+      "summary": "Cards component",
+      "exports": [
+        "Cards"
+      ],
+      "imports": [
+        "react",
+        "../data/archetypes",
+        "../components/Button"
+      ]
     }
   },
   "dependencies": {},
   "recentChanges": [
     {
-      "timestamp": "2026-07-20T16:18:41.241Z",
-      "file": "src/components/CookieBanner.tsx",
-      "change": "modifyd src/components/CookieBanner.tsx",
+      "timestamp": "2026-07-20T16:31:40.129Z",
+      "file": "src/components/Header.tsx",
+      "change": "modifyd src/components/Header.tsx",
       "type": "modify"
     },
     {
-      "timestamp": "2026-07-20T16:18:37.998Z",
+      "timestamp": "2026-07-20T16:31:35.912Z",
       "file": "src/App.tsx",
       "change": "modifyd src/App.tsx",
       "type": "modify"
     },
     {
-      "timestamp": "2026-07-20T16:18:35.002Z",
+      "timestamp": "2026-07-20T16:31:33.072Z",
       "file": "src/App.tsx",
       "change": "modifyd src/App.tsx",
       "type": "modify"
     },
     {
-      "timestamp": "2026-07-20T16:18:32.030Z",
+      "timestamp": "2026-07-20T16:31:30.606Z",
+      "file": "src/App.tsx",
+      "change": "modifyd src/App.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T16:31:27.263Z",
+      "file": "src/pages/About.tsx",
+      "change": "modifyd src/pages/About.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T16:31:14.135Z",
+      "file": "src/pages/About.tsx",
+      "change": "modifyd src/pages/About.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T16:31:11.012Z",
+      "file": "src/pages/Download.tsx",
+      "change": "modifyd src/pages/Download.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T16:30:57.067Z",
       "file": "src/pages/Workshops.tsx",
       "change": "modifyd src/pages/Workshops.tsx",
       "type": "modify"
     },
     {
-      "timestamp": "2026-07-20T16:18:16.741Z",
-      "file": "src/components/BackToTop.tsx",
-      "change": "modifyd src/components/BackToTop.tsx",
+      "timestamp": "2026-07-20T16:30:51.057Z",
+      "file": "src/pages/Workshops.tsx",
+      "change": "modifyd src/pages/Workshops.tsx",
       "type": "modify"
     },
     {
-      "timestamp": "2026-07-20T16:18:11.033Z",
-      "file": "src/components/CookieBanner.tsx",
-      "change": "modifyd src/components/CookieBanner.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T16:10:37.338Z",
-      "file": "src/components/Header.tsx",
-      "change": "modifyd src/components/Header.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T16:10:34.608Z",
-      "file": "src/components/Header.tsx",
-      "change": "modifyd src/components/Header.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T16:10:31.302Z",
-      "file": "src/index.css",
-      "change": "modifyd src/index.css",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T14:52:18.761Z",
-      "file": "src/App.tsx",
-      "change": "modifyd src/App.tsx",
+      "timestamp": "2026-07-20T16:30:37.303Z",
+      "file": "src/pages/Cards.tsx",
+      "change": "modifyd src/pages/Cards.tsx",
       "type": "modify"
     }
   ]

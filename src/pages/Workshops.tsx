@@ -1,5 +1,5 @@
 import { Button } from '../components/Button';
-import { Users, Monitor, Clock, Award, Target, BarChart3, CheckCircle } from 'lucide-react';
+import { Users, Monitor, Clock, Award, Target, BarChart3, CheckCircle, Tag } from 'lucide-react';
 
 export function Workshops() {
   const workshops = [
@@ -7,6 +7,7 @@ export function Workshops() {
       title: 'Mosaic Discovery',
       duration: 'Half Day',
       format: 'In-Person or Virtual',
+      pricing: 'From £1,500 per group',
       description:
         'An immersive introduction to the Mosaic Leadership Archetypes®. Participants complete a self-assessment, explore their personal archetype profile, and begin mapping their development journey. Ideal for teams and leadership cohorts.',
       outcomes: [
@@ -20,6 +21,7 @@ export function Workshops() {
       title: 'Mosaic Deep Dive',
       duration: 'Full Day',
       format: 'In-Person',
+      pricing: 'From £3,500 per group',
       description:
         'A comprehensive exploration of all eleven archetypes with in-depth peer feedback, experiential exercises, and scenario-based application. Participants leave with a detailed leadership map and practical strategies for growth.',
       outcomes: [
@@ -33,6 +35,7 @@ export function Workshops() {
       title: 'Mosaic Leadership Journey',
       duration: '3–6 Months',
       format: 'Blended (Virtual + In-Person)',
+      pricing: 'From £12,000 per participant',
       description:
         'A sustained leadership development programme combining workshops, one-to-one coaching, 360-degree feedback, and applied projects. Designed for senior leaders and high-potential talent ready for transformative growth.',
       outcomes: [
@@ -47,6 +50,7 @@ export function Workshops() {
       title: 'Mosaic Team Alignment',
       duration: 'Custom',
       format: 'In-Person or Virtual',
+      pricing: 'Tailored to scope',
       description:
         'A team-focused programme that maps the collective mosaic of a leadership team, revealing complementary strengths, potential gaps, and dynamics that shape team performance. Includes facilitated dialogue and action planning.',
       outcomes: [
@@ -231,6 +235,29 @@ export function Workshops() {
                     </>
                   )}
                 </div>
+                {w.pricing && (
+                  <span
+                    className="badge badge--pricing"
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '0.4rem',
+                      fontFamily: 'var(--font-subheader)',
+                      fontSize: '0.6875rem',
+                      fontWeight: 700,
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.05em',
+                      padding: '0.25rem 0.625rem',
+                      borderRadius: 999,
+                      background: 'var(--colour-mosaic-gold)',
+                      color: 'var(--colour-black)',
+                      marginBottom: '1rem',
+                      width: 'fit-content',
+                    }}
+                  >
+                    <Tag size={12} /> {w.pricing}
+                  </span>
+                )}
                 <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9375rem', lineHeight: '1.5', color: 'rgba(0,0,0,0.65)', marginBottom: '1.5rem' }}>
                   {w.description}
                 </p>
