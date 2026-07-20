@@ -52,7 +52,7 @@ export function Header() {
           <Button variant="black" href="/download">
             Download Guide
           </Button>
-          <Button variant="black" href="/login">
+          <Button variant="black" href="/login" className="btn--login">
             Login
           </Button>
         </div>
@@ -84,7 +84,7 @@ export function Header() {
           <Button variant="black" href="/download" onClick={closeMobile}>
             Download Guide
           </Button>
-          <Button variant="black" href="/login" onClick={closeMobile}>
+          <Button variant="black" href="/login" onClick={closeMobile} className="btn--login">
             Login
           </Button>
         </div>

@@ -105,6 +105,36 @@ h1, h2, h3, h4, h5, h6 {
   border-color: var(--colour-black);
 }
 
+/* Solid gold rectangle — distinct login button */
+.btn--login {
+  font-family: var(--font-body);
+  line-height: var(--line-height-default);
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  background: var(--colour-mosaic-gold);
+  color: var(--colour-black);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: background 0.2s;
+  font-size: 0.8125rem;
+}
+
+.btn--login:hover {
+  background: #8b6314;
+}
+
+@media (min-width: 480px) {
+  .btn--login { font-size: 0.875rem; }
+}
+
+@media (min-width: 768px) {
+  .btn--login { font-size: 0.9375rem; }
+}
+
 .btn--white {
   border: 1px solid var(--colour-mosaic-gold);
   background-color: var(--colour-white);
