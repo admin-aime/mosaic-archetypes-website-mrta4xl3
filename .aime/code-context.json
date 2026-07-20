@@ -113,8 +113,8 @@
       ]
     },
     "src/components/Header.tsx": {
-      "lines": 89,
-      "lastModified": "2026-07-20T14:23:17.139Z",
+      "lines": 95,
+      "lastModified": "2026-07-20T14:52:10.700Z",
       "summary": "Header component",
       "exports": [
         "Header"
@@ -297,8 +297,8 @@
       ]
     },
     "src/App.tsx": {
-      "lines": 105,
-      "lastModified": "2026-07-20T14:46:39.883Z",
+      "lines": 108,
+      "lastModified": "2026-07-20T14:52:18.767Z",
       "summary": "App component",
       "exports": [
         "default:App"
@@ -318,7 +318,8 @@
         "./pages/About",
         "./pages/Privacy",
         "./pages/Cookies",
-        "./pages/ModelOverview"
+        "./pages/ModelOverview",
+        "./pages/Login"
       ]
     },
     "src/vite-env.d.ts": {
@@ -327,10 +328,55 @@
       "summary": "vite-env.d.ts",
       "exports": [],
       "imports": []
+    },
+    "src/pages/Login.tsx": {
+      "lines": 18,
+      "lastModified": "2026-07-20T14:52:04.129Z",
+      "summary": "Login component",
+      "exports": [
+        "Login"
+      ],
+      "imports": []
     }
   },
   "dependencies": {},
   "recentChanges": [
+    {
+      "timestamp": "2026-07-20T14:52:18.761Z",
+      "file": "src/App.tsx",
+      "change": "modifyd src/App.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T14:52:16.308Z",
+      "file": "src/App.tsx",
+      "change": "modifyd src/App.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T14:52:13.371Z",
+      "file": "src/App.tsx",
+      "change": "modifyd src/App.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T14:52:10.695Z",
+      "file": "src/components/Header.tsx",
+      "change": "modifyd src/components/Header.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T14:52:07.782Z",
+      "file": "src/components/Header.tsx",
+      "change": "modifyd src/components/Header.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T14:52:04.121Z",
+      "file": "src/pages/Login.tsx",
+      "change": "modifyd src/pages/Login.tsx",
+      "type": "modify"
+    },
     {
       "timestamp": "2026-07-20T14:46:39.878Z",
       "file": "src/App.tsx",
@@ -353,42 +399,6 @@
       "timestamp": "2026-07-20T14:37:35.308Z",
       "file": "src/pages/Philosophy.tsx",
       "change": "modifyd src/pages/Philosophy.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T14:37:30.506Z",
-      "file": "src/pages/Model.tsx",
-      "change": "modifyd src/pages/Model.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T14:26:45.578Z",
-      "file": "src/index.css",
-      "change": "modifyd src/index.css",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T14:25:50.644Z",
-      "file": "src/index.css",
-      "change": "modifyd src/index.css",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T14:25:37.947Z",
-      "file": "src/pages/Home.tsx",
-      "change": "modifyd src/pages/Home.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T14:23:34.866Z",
-      "file": "src/index.css",
-      "change": "modifyd src/index.css",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T14:23:27.013Z",
-      "file": "src/pages/Home.tsx",
-      "change": "modifyd src/pages/Home.tsx",
       "type": "modify"
     }
   ]

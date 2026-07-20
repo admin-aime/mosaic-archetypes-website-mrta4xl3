@@ -1,23 +1,11 @@
 # Conversation Summary
 
 **Branch:** main
-**Total Messages:** 26
+**Total Messages:** 28
 
 ---
 
 ## Recent Conversation
-
-### **User**
-
-1. remove both logos, replace with MLA_logo - top.png. Scale down to maintain height of existing top nav
-2. Replace the words 'Mosaic Leadership
-Archetypes®' on the first screen with MLA_logo.png
-
-### **Assistant**
-
-Now I have everything I need. Let me make both changes.Now update the CSS logo sizes and the Home page hero title:Now add the CSS for the hero logo:Now restart the dev server and verify:Clean run — only React Router future-flag warnings (harmless). Let me verify the final file states:All clean:
-
-1. **Header** — both old logos removed, replaced with static `MLA_logo - top.png`. No scroll swap, no `useEffect`. Logo scaled down to 36→42→48→54px across breakpoints, fitting neatly within the existing...
 
 ### **User**
 
@@ -79,4 +67,20 @@ Good catch — you're right, and it should change. HashRouter doesn't auto-scrol
 ---
 
 **Fixed.** Added a `<ScrollToTop />` component inside `HashRouter` that watches `useLocation().pathname` and calls `window.scrollTo(0, 0)` on every route change. Now clicking any nav link always lands at the top of the page, not wherever you las...
+
+### **User**
+
+On the right side of the top nav (after 'download guide') add a login button. When it is clicked it should take the user to a holding page that simply says 'Replace with Mosaic Archetype Tool Login Page'.
+
+### **Assistant**
+
+Clean — only the same 11 pre-existing `lucide-react` type compatibility warnings. The Login button and page are live.
+
+---
+
+**Done.** Two changes:
+
+1. **"Login" button** added to the header nav (desktop + mobile), positioned after "Download Guide". Same `btn--on-black` styling as the other CTA buttons.
+
+2. **`/login` route** → a holding page that displays "Replace with Mosaic Archetype Tool Login Page" in the standard Mosaic page-header layout.
 
