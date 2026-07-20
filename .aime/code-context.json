@@ -113,8 +113,8 @@
       ]
     },
     "src/components/Header.tsx": {
-      "lines": 96,
-      "lastModified": "2026-07-20T18:22:35.633Z",
+      "lines": 95,
+      "lastModified": "2026-07-20T18:52:57.520Z",
       "summary": "Header component",
       "exports": [
         "Header"
@@ -311,8 +311,8 @@
       ]
     },
     "src/App.tsx": {
-      "lines": 132,
-      "lastModified": "2026-07-20T18:36:05.916Z",
+      "lines": 129,
+      "lastModified": "2026-07-20T18:53:04.648Z",
       "summary": "App component",
       "exports": [
         "default:App"
@@ -335,8 +335,7 @@
         "./pages/Privacy",
         "./pages/Cookies",
         "./pages/ModelOverview",
-        "./pages/Login",
-        "./pages/Cards"
+        "./pages/Login"
       ]
     },
     "src/vite-env.d.ts": {
@@ -381,20 +380,6 @@
         "lucide-react"
       ]
     },
-    "src/pages/Cards.tsx": {
-      "lines": 389,
-      "lastModified": "2026-07-20T18:36:49.613Z",
-      "summary": "Cards component",
-      "exports": [
-        "Cards"
-      ],
-      "imports": [
-        "react",
-        "../data/archetypes",
-        "../components/Button",
-        "../hooks/useDocumentTitle"
-      ]
-    },
     "src/hooks/useScrollReveal.ts": {
       "lines": 34,
       "lastModified": "2026-07-20T17:42:37.656Z",
@@ -428,6 +413,36 @@
   "dependencies": {},
   "recentChanges": [
     {
+      "timestamp": "2026-07-20T18:53:04.541Z",
+      "file": "src/App.tsx",
+      "change": "modifyd src/App.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T18:52:57.441Z",
+      "file": "src/components/Header.tsx",
+      "change": "modifyd src/components/Header.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T18:52:57.227Z",
+      "file": "src/App.tsx",
+      "change": "modifyd src/App.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T18:52:56.276Z",
+      "file": "src/App.tsx",
+      "change": "modifyd src/App.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T18:52:55.492Z",
+      "file": "src/pages/Cards.tsx",
+      "change": "deleted src/pages/Cards.tsx",
+      "type": "delete"
+    },
+    {
       "timestamp": "2026-07-20T18:36:49.481Z",
       "file": "src/pages/Cards.tsx",
       "change": "modifyd src/pages/Cards.tsx",
@@ -455,36 +470,6 @@
       "timestamp": "2026-07-20T18:36:31.581Z",
       "file": "src/pages/ModelOverview.tsx",
       "change": "modifyd src/pages/ModelOverview.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T18:36:30.512Z",
-      "file": "src/pages/Cookies.tsx",
-      "change": "modifyd src/pages/Cookies.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T18:36:29.725Z",
-      "file": "src/pages/Privacy.tsx",
-      "change": "modifyd src/pages/Privacy.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T18:36:28.812Z",
-      "file": "src/pages/About.tsx",
-      "change": "modifyd src/pages/About.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T18:36:27.633Z",
-      "file": "src/pages/Enquiry.tsx",
-      "change": "modifyd src/pages/Enquiry.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T18:36:26.321Z",
-      "file": "src/pages/Download.tsx",
-      "change": "modifyd src/pages/Download.tsx",
       "type": "modify"
     }
   ]

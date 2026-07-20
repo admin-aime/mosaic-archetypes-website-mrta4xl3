@@ -16,7 +16,6 @@ import { Privacy } from './pages/Privacy';
 import { Cookies } from './pages/Cookies';
 import { ModelOverview } from './pages/ModelOverview';
 import { Login } from './pages/Login';
-import { Cards } from './pages/Cards';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -66,7 +65,6 @@ export default function App() {
       '/cookies',
       '/model-overview',
       '/login',
-      '/cards',
     ];
   }, []);
 
@@ -99,7 +97,6 @@ export default function App() {
               <Route path="/cookies" element={<Cookies />} />
               <Route path="/model-overview" element={<ModelOverview />} />
               <Route path="/login" element={<Login />} />
-              <Route path="/cards" element={<Cards />} />
             </Route>
             <Route
               path="*"

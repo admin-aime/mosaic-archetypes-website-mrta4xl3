@@ -13,7 +13,6 @@ export function Header() {
 
   const navLinks = [
     { to: '/model', label: 'Archetype Model' },
-    { to: '/cards', label: 'Cards' },
     { to: '/philosophy', label: 'Philosophy' },
     { to: '/workshops', label: 'Workshops' },
     { to: '/about', label: 'About' },
