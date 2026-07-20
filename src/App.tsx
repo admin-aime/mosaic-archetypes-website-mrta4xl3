@@ -2,6 +2,8 @@ import { useEffect } from 'react';
 import { HashRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { FeedbackProvider } from '@aime-platform/aime-feedback-module';
 import { Layout } from './components/Layout';
+import { CookieBanner } from './components/CookieBanner';
+import { BackToTop } from './components/BackToTop';
 import { Home } from './pages/Home';
 import { Philosophy } from './pages/Philosophy';
 import { Workshops } from './pages/Workshops';
@@ -63,6 +65,8 @@ export default function App() {
     >
       <HashRouter>
         <ScrollToTop />
+        <CookieBanner />
+        <BackToTop />
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />

@@ -1,39 +1,11 @@
 # Conversation Summary
 
 **Branch:** main
-**Total Messages:** 34
+**Total Messages:** 38
 
 ---
 
 ## Recent Conversation
-
-### **User**
-
-when you click on a top nav link, it goes to the right section but appears to automatically go to where the user last scrolled, as opposed to the top of that section. Am I right and should this change?
-
-### **Assistant**
-
-Good catch — you're right, and it should change. HashRouter doesn't auto-scroll to top on navigation. Let me add a scroll-reset on every route change.Clean — same 11 pre-existing `lucide-react` type errors only, nothing new. The scroll fix is live.
-
----
-
-**Fixed.** Added a `<ScrollToTop />` component inside `HashRouter` that watches `useLocation().pathname` and calls `window.scrollTo(0, 0)` on every route change. Now clicking any nav link always lands at the top of the page, not wherever you las...
-
-### **User**
-
-On the right side of the top nav (after 'download guide') add a login button. When it is clicked it should take the user to a holding page that simply says 'Replace with Mosaic Archetype Tool Login Page'.
-
-### **Assistant**
-
-Clean — only the same 11 pre-existing `lucide-react` type compatibility warnings. The Login button and page are live.
-
----
-
-**Done.** Two changes:
-
-1. **"Login" button** added to the header nav (desktop + mobile), positioned after "Download Guide". Same `btn--on-black` styling as the other CTA buttons.
-
-2. **`/login` route** → a holding page that displays "Replace with Mosaic Archetype Tool Login Page" in the standard Mosaic page-header layout.
 
 ### **User**
 
@@ -68,4 +40,39 @@ the login button has not changed, why?
 ### **Assistant**
 
 Let me look at the current Login button code:The Login button is still using `variant="black"` — the same outline-pill style as the other two buttons. Let me fix it properly. First, let me check the Button component:Now I see the issue. The Login button uses `variant="black"` which gives the same outline pill as the others. I need to add a dedicated gold-fill rectangle style and apply it. Let me fix both the CSS and the Header:Now update the Login buttons in Header.tsx — both desktop and mobile:...
+
+### **User**
+
+what improvements can we make, whilst remaining consistent with the brief's demands?
+
+### **Assistant**
+
+Let me review what's built versus the brief to identify meaningful, brief-compliant improvements.
+
+Here are the improvements I'd recommend, all consistent with the brief:
+
+### 1. Cookie Consent Banner
+The brief explicitly requires a **cookie notice** and GA4 tracking. The GA4 script is already in place, but there's no consent banner. Legally and practically, a banner with Accept/Decline that controls GA4 loading would complete this.
+
+### 2. Archetype Cards Showcase Page (`#cards`)
+The brief's na...
+
+### **User**
+
+implement:
+
+1. Cookie Consent Banner
+2.  Back-to-Top Floating Button
+3. Workshops Delivery Format Badges
+
+### **Assistant**
+
+Now let me update Workshops.tsx with format badges, and App.tsx to include the new components:Let me clean up the unused `X` import in CookieBanner and restart the dev server:All three improvements are live and running with no new errors.
+
+---
+
+## Implemented
+
+### 1. Cookie Consent Banner
+Fixed bottom bar (`z-index: 100`) with a gold cookie icon, description text with links to Privacy/Cookie policies, and **Accept** (solid gold rectangle) + **Decline** (outline pill) buttons. Accept grants GA4 c...
 

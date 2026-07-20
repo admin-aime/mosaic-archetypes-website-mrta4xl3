@@ -99,13 +99,137 @@ export function Workshops() {
                 <h3 style={{ fontFamily: 'var(--font-header)', fontSize: '1.5rem', marginBottom: '0.5rem', color: 'var(--colour-black)' }}>
                   {w.title}
                 </h3>
-                <div className="flex flex-wrap gap-4 mb-4" style={{ fontFamily: 'var(--font-body)', fontSize: '0.8125rem', color: 'var(--colour-mosaic-gold)' }}>
-                  <span className="inline-flex items-center gap-1">
-                    <Clock size={14} /> {w.duration}
+                <div className="flex flex-wrap items-center gap-3 mb-4">
+                  <span
+                    className="badge badge--duration"
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '0.4rem',
+                      fontFamily: 'var(--font-subheader)',
+                      fontSize: '0.6875rem',
+                      fontWeight: 700,
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.05em',
+                      padding: '0.25rem 0.625rem',
+                      borderRadius: 999,
+                      background: 'rgba(166, 119, 24, 0.1)',
+                      color: 'var(--colour-mosaic-gold)',
+                      border: '1px solid rgba(166, 119, 24, 0.25)',
+                    }}
+                  >
+                    <Clock size={12} /> {w.duration}
                   </span>
-                  <span className="inline-flex items-center gap-1">
-                    <Monitor size={14} /> {w.format}
-                  </span>
+                  {w.format === 'In-Person' && (
+                    <span
+                      className="badge badge--in-person"
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '0.4rem',
+                        fontFamily: 'var(--font-subheader)',
+                        fontSize: '0.6875rem',
+                        fontWeight: 700,
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.05em',
+                        padding: '0.25rem 0.625rem',
+                        borderRadius: 999,
+                        background: 'rgba(166, 119, 24, 0.15)',
+                        color: '#5a3e0c',
+                        border: '1px solid rgba(166, 119, 24, 0.4)',
+                      }}
+                    >
+                      <Monitor size={12} /> In Person
+                    </span>
+                  )}
+                  {w.format === 'In-Person or Virtual' && (
+                    <>
+                      <span
+                        className="badge badge--in-person"
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '0.4rem',
+                          fontFamily: 'var(--font-subheader)',
+                          fontSize: '0.6875rem',
+                          fontWeight: 700,
+                          textTransform: 'uppercase',
+                          letterSpacing: '0.05em',
+                          padding: '0.25rem 0.625rem',
+                          borderRadius: 999,
+                          background: 'rgba(166, 119, 24, 0.15)',
+                          color: '#5a3e0c',
+                          border: '1px solid rgba(166, 119, 24, 0.4)',
+                        }}
+                      >
+                        <Monitor size={12} /> In Person
+                      </span>
+                      <span
+                        className="badge badge--virtual"
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '0.4rem',
+                          fontFamily: 'var(--font-subheader)',
+                          fontSize: '0.6875rem',
+                          fontWeight: 700,
+                          textTransform: 'uppercase',
+                          letterSpacing: '0.05em',
+                          padding: '0.25rem 0.625rem',
+                          borderRadius: 999,
+                          background: 'rgba(0, 0, 0, 0.05)',
+                          color: 'rgba(0, 0, 0, 0.6)',
+                          border: '1px solid rgba(0, 0, 0, 0.15)',
+                        }}
+                      >
+                        <Monitor size={12} /> Virtual
+                      </span>
+                    </>
+                  )}
+                  {w.format === 'Blended (Virtual + In-Person)' && (
+                    <>
+                      <span
+                        className="badge badge--in-person"
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '0.4rem',
+                          fontFamily: 'var(--font-subheader)',
+                          fontSize: '0.6875rem',
+                          fontWeight: 700,
+                          textTransform: 'uppercase',
+                          letterSpacing: '0.05em',
+                          padding: '0.25rem 0.625rem',
+                          borderRadius: 999,
+                          background: 'rgba(166, 119, 24, 0.15)',
+                          color: '#5a3e0c',
+                          border: '1px solid rgba(166, 119, 24, 0.4)',
+                        }}
+                      >
+                        <Monitor size={12} /> In Person
+                      </span>
+                      <span
+                        className="badge badge--virtual"
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '0.4rem',
+                          fontFamily: 'var(--font-subheader)',
+                          fontSize: '0.6875rem',
+                          fontWeight: 700,
+                          textTransform: 'uppercase',
+                          letterSpacing: '0.05em',
+                          padding: '0.25rem 0.625rem',
+                          borderRadius: 999,
+                          background: 'rgba(0, 0, 0, 0.05)',
+                          color: 'rgba(0, 0, 0, 0.6)',
+                          border: '1px solid rgba(0, 0, 0, 0.15)',
+                        }}
+                      >
+                        <Monitor size={12} /> Virtual
+                      </span>
+                    </>
+                  )}
                 </div>
                 <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9375rem', lineHeight: '1.5', color: 'rgba(0,0,0,0.65)', marginBottom: '1.5rem' }}>
                   {w.description}

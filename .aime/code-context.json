@@ -166,8 +166,8 @@
       ]
     },
     "src/pages/Workshops.tsx": {
-      "lines": 188,
-      "lastModified": "2026-07-20T14:05:11.642Z",
+      "lines": 312,
+      "lastModified": "2026-07-20T16:18:32.033Z",
       "summary": "Workshops component",
       "exports": [
         "Workshops"
@@ -297,8 +297,8 @@
       ]
     },
     "src/App.tsx": {
-      "lines": 108,
-      "lastModified": "2026-07-20T14:52:18.767Z",
+      "lines": 112,
+      "lastModified": "2026-07-20T16:18:38.001Z",
       "summary": "App component",
       "exports": [
         "default:App"
@@ -308,6 +308,8 @@
         "react-router-dom",
         "@aime-platform/aime-feedback-module",
         "./components/Layout",
+        "./components/CookieBanner",
+        "./components/BackToTop",
         "./pages/Home",
         "./pages/Philosophy",
         "./pages/Workshops",
@@ -337,10 +339,70 @@
         "Login"
       ],
       "imports": []
+    },
+    "src/components/CookieBanner.tsx": {
+      "lines": 199,
+      "lastModified": "2026-07-20T16:18:41.250Z",
+      "summary": "CookieBanner component",
+      "exports": [
+        "CookieBanner"
+      ],
+      "imports": [
+        "react",
+        "lucide-react"
+      ]
+    },
+    "src/components/BackToTop.tsx": {
+      "lines": 55,
+      "lastModified": "2026-07-20T16:18:16.749Z",
+      "summary": "BackToTop component",
+      "exports": [
+        "BackToTop"
+      ],
+      "imports": [
+        "react",
+        "lucide-react"
+      ]
     }
   },
   "dependencies": {},
   "recentChanges": [
+    {
+      "timestamp": "2026-07-20T16:18:41.241Z",
+      "file": "src/components/CookieBanner.tsx",
+      "change": "modifyd src/components/CookieBanner.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T16:18:37.998Z",
+      "file": "src/App.tsx",
+      "change": "modifyd src/App.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T16:18:35.002Z",
+      "file": "src/App.tsx",
+      "change": "modifyd src/App.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T16:18:32.030Z",
+      "file": "src/pages/Workshops.tsx",
+      "change": "modifyd src/pages/Workshops.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T16:18:16.741Z",
+      "file": "src/components/BackToTop.tsx",
+      "change": "modifyd src/components/BackToTop.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T16:18:11.033Z",
+      "file": "src/components/CookieBanner.tsx",
+      "change": "modifyd src/components/CookieBanner.tsx",
+      "type": "modify"
+    },
     {
       "timestamp": "2026-07-20T16:10:37.338Z",
       "file": "src/components/Header.tsx",
@@ -361,42 +423,6 @@
     },
     {
       "timestamp": "2026-07-20T14:52:18.761Z",
-      "file": "src/App.tsx",
-      "change": "modifyd src/App.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T14:52:16.308Z",
-      "file": "src/App.tsx",
-      "change": "modifyd src/App.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T14:52:13.371Z",
-      "file": "src/App.tsx",
-      "change": "modifyd src/App.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T14:52:10.695Z",
-      "file": "src/components/Header.tsx",
-      "change": "modifyd src/components/Header.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T14:52:07.782Z",
-      "file": "src/components/Header.tsx",
-      "change": "modifyd src/components/Header.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T14:52:04.121Z",
-      "file": "src/pages/Login.tsx",
-      "change": "modifyd src/pages/Login.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T14:46:39.878Z",
       "file": "src/App.tsx",
       "change": "modifyd src/App.tsx",
       "type": "modify"
