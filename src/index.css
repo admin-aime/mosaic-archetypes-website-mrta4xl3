@@ -135,14 +135,14 @@ h1, h2, h3, h4, h5, h6 {
   .btn--login { font-size: 0.9375rem; }
 }
 
-.btn--white {
+.btn--on-white {
   border: 1px solid var(--colour-mosaic-gold);
   background-color: var(--colour-white);
   color: var(--colour-black);
 }
 
-.btn--white:hover {
-  background-color: rgba(167, 119, 24, 0.1);
+.btn--on-white:hover {
+  background-color: rgba(166, 119, 24, 0.1);
   border-color: var(--colour-mosaic-gold);
 }
 

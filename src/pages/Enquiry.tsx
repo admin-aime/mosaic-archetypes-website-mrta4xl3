@@ -16,7 +16,9 @@ export function Enquiry() {
     if (!form.name || !form.email || !form.message) return;
     // In production, submit to CRM/email/Google Sheets
     setSubmitted(true);
-    // Track event: window.gtag?.('event', 'enquiry_form_submit')
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'submit_form', { form_type: 'enquiry' });
+    }
   };
 
   if (submitted) {
@@ -88,7 +90,7 @@ export function Enquiry() {
                   Email Us
                 </p>
                 <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9375rem', color: 'rgba(0,0,0,0.6)' }}>
-                  hello@mosaicleadership.com
+                  hello@mosaic-archetypes.co.uk
                 </p>
               </div>
             </div>

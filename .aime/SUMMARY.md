@@ -1,27 +1,11 @@
 # Conversation Summary
 
 **Branch:** main
-**Total Messages:** 44
+**Total Messages:** 46
 
 ---
 
 ## Recent Conversation
-
-### **User**
-
-what improvements can we make, whilst remaining consistent with the brief's demands?
-
-### **Assistant**
-
-Let me review what's built versus the brief to identify meaningful, brief-compliant improvements.
-
-Here are the improvements I'd recommend, all consistent with the brief:
-
-### 1. Cookie Consent Banner
-The brief explicitly requires a **cookie notice** and GA4 tracking. The GA4 script is already in place, but there's no consent banner. Legally and practically, a banner with Accept/Decline that controls GA4 loading would complete this.
-
-### 2. Archetype Cards Showcase Page (`#cards`)
-The brief's na...
 
 ### **User**
 
@@ -77,4 +61,18 @@ Done. Both changes applied to the **About** page's Contact section:
 |---|---|---|
 | Email | `hello@mosaicarchetypes.com` | `hello@mosaic-archetypes.co.uk` |
 | Location | `London, United Kingdom` | `Hexham, UK` |
+
+### **User**
+
+fix any bugs
+
+### **Assistant**
+
+Found 3 real bugs. Let me fix all three:
+
+**Bug 1:** CSS class `.btn--white` should be `.btn--on-white` — Button component generates `btn--on-white` but the CSS only defines `.btn--white`, so "Return Home" buttons on the Download and Enquiry confirmation screens get no styling.
+
+**Bug 2:** Enquiry page uses wrong email `hello@mosaicleadership.com` — should be `hello@mosaic-archetypes.co.uk`.
+
+**Bug 3:** Enquiry form submission tracking is commented out — the `gtag` call is commented out behind a...
 
