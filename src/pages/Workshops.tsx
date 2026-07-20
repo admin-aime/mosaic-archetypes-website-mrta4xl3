@@ -1,7 +1,9 @@
 import { Button } from '../components/Button';
 import { Users, Monitor, Clock, Award, Target, BarChart3, CheckCircle, Tag } from 'lucide-react';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 export function Workshops() {
+  useDocumentTitle('Workshops');
   const workshops = [
     {
       title: 'Mosaic Discovery',

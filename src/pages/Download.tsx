@@ -1,8 +1,10 @@
 import { useState, FormEvent, useCallback } from 'react';
 import { Button } from '../components/Button';
 import { Download as DownloadIcon, CheckCircle, FileText, ArrowDown } from 'lucide-react';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 export function Download() {
+  useDocumentTitle('Download Handbook');
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({
     name: '',

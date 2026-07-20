@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { archetypes } from '../data/archetypes';
 import { Button } from '../components/Button';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 import {
   Compass,
   Star,
@@ -32,6 +33,7 @@ const iconMap: Record<string, React.ComponentType<{ size?: number; style?: React
 type CardSet = 'women' | 'men';
 
 export function Cards() {
+  useDocumentTitle('Archetype Cards');
   const [activeSet, setActiveSet] = useState<CardSet>('women');
 
   return (

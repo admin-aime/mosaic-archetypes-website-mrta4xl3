@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 export function ModelOverview() {
+  useDocumentTitle('Model Overview');
   return (
     <>
       <div className="page-header">

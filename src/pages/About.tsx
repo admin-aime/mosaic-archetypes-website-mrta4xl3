@@ -1,7 +1,9 @@
 import { Button } from '../components/Button';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 export function About() {
+  useDocumentTitle('About');
   return (
     <>
       {/* Page Header */}

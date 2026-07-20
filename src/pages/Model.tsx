@@ -2,8 +2,10 @@ import { useState } from 'react';
 import { ArchetypeCard } from '../components/ArchetypeCard';
 import { archetypes, axes } from '../data/archetypes';
 import { Button } from '../components/Button';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 export function Model() {
+  useDocumentTitle('Archetype Model');
   const [selectedAxis, setSelectedAxis] = useState<string | null>(null);
 
   const filtered = selectedAxis

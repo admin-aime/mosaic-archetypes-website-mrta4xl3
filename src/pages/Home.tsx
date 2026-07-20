@@ -4,8 +4,10 @@ import { Button } from '../components/Button';
 import { ArchetypeCard } from '../components/ArchetypeCard';
 import { archetypes } from '../data/archetypes';
 import { Play, ChevronRight } from 'lucide-react';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 export function Home() {
+  useDocumentTitle('Home');
   const [videoPlaying, setVideoPlaying] = useState(false);
 
   const featuredArchetypes = archetypes.slice(0, 6);

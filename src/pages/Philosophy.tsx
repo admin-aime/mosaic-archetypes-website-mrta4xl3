@@ -1,7 +1,9 @@
 import { Button } from '../components/Button';
 import { Lightbulb, Layers, Target, Users } from 'lucide-react';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 export function Philosophy() {
+  useDocumentTitle('Philosophy');
   const pillars = [
     {
       icon: Layers,

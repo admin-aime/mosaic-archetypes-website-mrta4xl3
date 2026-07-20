@@ -1,52 +1,11 @@
 # Conversation Summary
 
 **Branch:** main
-**Total Messages:** 76
+**Total Messages:** 82
 
 ---
 
 ## Recent Conversation
-
-### **User**
-
-fix all bugs
-
-### **Assistant**
-
-Let me audit the recently modified files for bugs — starting with Philosophy.tsx (most recent changes), About.tsx, then the core files.Found 3 bugs. Let me read the exact lines to fix and apply all patches.3 bugs confirmed. Fixing all three now:Clean logs, no errors. All three fixes applied and the app is running.
-
----
-
-## 3 Bugs Fixed
-
-| # | File | Bug | Fix |
-|---|---|---|---|
-| 1 | **App.tsx** | Route manifest included `'/archetype/power'` — the Power archetype was deleted from data when the ...
-
-### **User**
-
-in 'Workshop Formats' the workshops no longer appear. This may be due to an issue with the stagger effect we implemented. Please review
-
-### **Assistant**
-
-Found it. The `IntersectionObserver` poll in `main.tsx` stops after 15 seconds. If a user navigates to `/workshops` after that window, new `.reveal` elements are never observed — they stay at `opacity: 0` permanently. Let me fix this.Now let me add a CSS safety net so content is never permanently invisible even if the observer fails:Clean logs — no compile or runtime errors. Let me verify the fix is correct:The app is running clean. Here's what was broken and what I fixed:
-
----
-
-## Root Cause: W...
-
-### **User**
-
-fix any bugs
-
-### **Assistant**
-
-No compile or runtime errors. Let me now do a systematic code audit — reading all the key files modified recently.Complete audit. Found 2 bugs:
-
-**Bug 1:** `ModelOverview.tsx` — says "four pillars of application" but only lists 3. Missing "Archetypes, Not Types."
-**Bug 2:** `Login.tsx` — missing the `page-header__texture` div that every other page header includes.
-
-Fixing both:Login.tsx fixed. Let me re-read ModelOverview.tsx to get the exact text:Both fixes applied. Let me restart and verify:Th...
 
 ### **User**
 
@@ -84,4 +43,51 @@ Now let me check the Tailwind config to see if `inner` is a custom value, and al
 Let me also check if there's a `Philosophy_snapshot` reference somewhere (there was a Philosophy page rename in the history):
 
 All clean. Now let me look at the actu...
+
+### **User**
+
+are there any other improvements or refinements we can make?
+
+### **Assistant**
+
+Here are the refinements I'd recommend, grouped by impact:
+
+---
+
+### Accessibility (high impact, low effort)
+| # | Improvement | Why |
+|---|---|---|
+| 1 | **Skip-to-content link** | Keyboard users can bypass the nav. WCAG requirement. |
+| 2 | **Visible focus rings** | Currently focus styles are browser-default or missing — tabbing through the site is nearly invisible. |
+| 3 | **Per-page `<title>`** | Every page shows "App" in the browser tab. Should read "Mosaic Leadership Archetypes® — [Page]" ...
+
+### **User**
+
+implement these:
+
+1. Every page shows "App" in the browser tab. Should read "Mosaic Leadership Archetypes® — [Page]"
+2. Browser tab + bookmarks show a blank/default icon. A simple gold "M" SVG would complete the brand presence
+3. A subtle crossfade (200ms) when navigating between pages. Feels premium without being flashy.
+
+### **Assistant**
+
+Now let me implement all three. Starting with the infrastructure:
+
+Now let me update `index.html` for the favicon and default title:
+
+Now let me update `App.tsx` to wrap routes in a transition component:
+
+Now let me add the `useDocumentTitle` hook to every page. Let me first read the pages to find good insertion points:
+
+Let me add the hook to all 12 page files. I'll use apply_patch for each:
+
+Now let me restart and verify everything:
+
+### **User**
+
+is this complete?
+
+### **Assistant**
+
+Not complete — the files weren't written. Let me fix everything properly now.Now add the favicon to index.html and the page transition CSS + App wrapper:Now add the page transition CSS:Now add page transition CSS and update App.tsx with the fade wrapper:Now update App.tsx with the page transition wrapper:Now wrap the routes in the PageTransition component:Now add `useDocumentTitle` to all 12 page files. Let me read a few to find the right insertion pattern:Now I'll add the import and hook call t...
 

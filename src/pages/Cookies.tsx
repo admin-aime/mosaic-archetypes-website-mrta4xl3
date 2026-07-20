@@ -1,4 +1,7 @@
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
+
 export function Cookies() {
+  useDocumentTitle('Cookie Policy');
   return (
     <>
       <div className="page-header">

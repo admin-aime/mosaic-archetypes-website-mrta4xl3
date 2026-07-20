@@ -58,8 +58,8 @@
       "imports": []
     },
     "index.html": {
-      "lines": 16,
-      "lastModified": "2026-07-20T13:52:53.410Z",
+      "lines": 17,
+      "lastModified": "2026-07-20T18:35:43.670Z",
       "summary": "HTML entry point",
       "exports": [],
       "imports": []
@@ -72,8 +72,8 @@
       "imports": []
     },
     "src/index.css": {
-      "lines": 1386,
-      "lastModified": "2026-07-20T17:54:05.855Z",
+      "lines": 1403,
+      "lastModified": "2026-07-20T18:35:51.453Z",
       "summary": "Stylesheet",
       "exports": [],
       "imports": []
@@ -138,8 +138,8 @@
       ]
     },
     "src/pages/Home.tsx": {
-      "lines": 158,
-      "lastModified": "2026-07-20T18:22:53.164Z",
+      "lines": 160,
+      "lastModified": "2026-07-20T18:36:19.643Z",
       "summary": "Home component",
       "exports": [
         "Home"
@@ -150,36 +150,39 @@
         "../components/Button",
         "../components/ArchetypeCard",
         "../data/archetypes",
-        "lucide-react"
+        "lucide-react",
+        "../hooks/useDocumentTitle"
       ]
     },
     "src/pages/Philosophy.tsx": {
-      "lines": 231,
-      "lastModified": "2026-07-20T17:43:53.209Z",
+      "lines": 233,
+      "lastModified": "2026-07-20T18:36:20.884Z",
       "summary": "Philosophy component",
       "exports": [
         "Philosophy"
       ],
       "imports": [
         "../components/Button",
-        "lucide-react"
+        "lucide-react",
+        "../hooks/useDocumentTitle"
       ]
     },
     "src/pages/Workshops.tsx": {
-      "lines": 339,
-      "lastModified": "2026-07-20T17:43:20.724Z",
+      "lines": 341,
+      "lastModified": "2026-07-20T18:36:22.260Z",
       "summary": "Workshops component",
       "exports": [
         "Workshops"
       ],
       "imports": [
         "../components/Button",
-        "lucide-react"
+        "lucide-react",
+        "../hooks/useDocumentTitle"
       ]
     },
     "src/pages/Model.tsx": {
-      "lines": 126,
-      "lastModified": "2026-07-20T18:22:55.953Z",
+      "lines": 128,
+      "lastModified": "2026-07-20T18:36:23.549Z",
       "summary": "Model component",
       "exports": [
         "Model"
@@ -188,12 +191,13 @@
         "react",
         "../components/ArchetypeCard",
         "../data/archetypes",
-        "../components/Button"
+        "../components/Button",
+        "../hooks/useDocumentTitle"
       ]
     },
     "src/pages/ArchetypeDetail.tsx": {
-      "lines": 183,
-      "lastModified": "2026-07-20T18:23:02.019Z",
+      "lines": 185,
+      "lastModified": "2026-07-20T18:36:40.056Z",
       "summary": "ArchetypeDetail component",
       "exports": [
         "ArchetypeDetail"
@@ -202,12 +206,13 @@
         "react-router-dom",
         "../data/archetypes",
         "../components/Button",
-        "lucide-react"
+        "lucide-react",
+        "../hooks/useDocumentTitle"
       ]
     },
     "src/pages/Download.tsx": {
-      "lines": 240,
-      "lastModified": "2026-07-20T18:22:24.751Z",
+      "lines": 242,
+      "lastModified": "2026-07-20T18:36:26.332Z",
       "summary": "Download component",
       "exports": [
         "Download"
@@ -215,12 +220,13 @@
       "imports": [
         "react",
         "../components/Button",
-        "lucide-react"
+        "lucide-react",
+        "../hooks/useDocumentTitle"
       ]
     },
     "src/pages/Enquiry.tsx": {
-      "lines": 178,
-      "lastModified": "2026-07-20T16:57:04.375Z",
+      "lines": 180,
+      "lastModified": "2026-07-20T18:36:27.649Z",
       "summary": "Enquiry component",
       "exports": [
         "Enquiry"
@@ -228,48 +234,55 @@
       "imports": [
         "react",
         "../components/Button",
-        "lucide-react"
+        "lucide-react",
+        "../hooks/useDocumentTitle"
       ]
     },
     "src/pages/About.tsx": {
-      "lines": 242,
-      "lastModified": "2026-07-20T18:22:58.746Z",
+      "lines": 244,
+      "lastModified": "2026-07-20T18:36:28.824Z",
       "summary": "About component",
       "exports": [
         "About"
       ],
       "imports": [
         "../components/Button",
-        "lucide-react"
+        "lucide-react",
+        "../hooks/useDocumentTitle"
       ]
     },
     "src/pages/Privacy.tsx": {
-      "lines": 87,
-      "lastModified": "2026-07-20T18:23:08.551Z",
+      "lines": 90,
+      "lastModified": "2026-07-20T18:36:29.749Z",
       "summary": "Privacy component",
       "exports": [
         "Privacy"
       ],
-      "imports": []
+      "imports": [
+        "../hooks/useDocumentTitle"
+      ]
     },
     "src/pages/Cookies.tsx": {
-      "lines": 81,
-      "lastModified": "2026-07-20T17:18:03.265Z",
+      "lines": 84,
+      "lastModified": "2026-07-20T18:36:30.521Z",
       "summary": "Cookies component",
       "exports": [
         "Cookies"
       ],
-      "imports": []
+      "imports": [
+        "../hooks/useDocumentTitle"
+      ]
     },
     "src/pages/ModelOverview.tsx": {
-      "lines": 152,
-      "lastModified": "2026-07-20T18:23:05.402Z",
+      "lines": 154,
+      "lastModified": "2026-07-20T18:36:31.593Z",
       "summary": "ModelOverview component",
       "exports": [
         "ModelOverview"
       ],
       "imports": [
-        "react-router-dom"
+        "react-router-dom",
+        "../hooks/useDocumentTitle"
       ]
     },
     "src/components/Layout.tsx": {
@@ -298,8 +311,8 @@
       ]
     },
     "src/App.tsx": {
-      "lines": 114,
-      "lastModified": "2026-07-20T17:51:46.931Z",
+      "lines": 132,
+      "lastModified": "2026-07-20T18:36:05.916Z",
       "summary": "App component",
       "exports": [
         "default:App"
@@ -334,13 +347,15 @@
       "imports": []
     },
     "src/pages/Login.tsx": {
-      "lines": 19,
-      "lastModified": "2026-07-20T18:02:52.721Z",
+      "lines": 22,
+      "lastModified": "2026-07-20T18:36:32.455Z",
       "summary": "Login component",
       "exports": [
         "Login"
       ],
-      "imports": []
+      "imports": [
+        "../hooks/useDocumentTitle"
+      ]
     },
     "src/components/CookieBanner.tsx": {
       "lines": 199,
@@ -367,8 +382,8 @@
       ]
     },
     "src/pages/Cards.tsx": {
-      "lines": 387,
-      "lastModified": "2026-07-20T17:43:27.369Z",
+      "lines": 389,
+      "lastModified": "2026-07-20T18:36:49.613Z",
       "summary": "Cards component",
       "exports": [
         "Cards"
@@ -376,7 +391,8 @@
       "imports": [
         "react",
         "../data/archetypes",
-        "../components/Button"
+        "../components/Button",
+        "../hooks/useDocumentTitle"
       ]
     },
     "src/hooks/useScrollReveal.ts": {
@@ -389,66 +405,84 @@
       "imports": [
         "react"
       ]
+    },
+    "public/favicon.svg": {
+      "lines": 5,
+      "lastModified": "2026-07-20T18:35:38.528Z",
+      "summary": "favicon.svg",
+      "exports": [],
+      "imports": []
+    },
+    "src/hooks/useDocumentTitle.ts": {
+      "lines": 8,
+      "lastModified": "2026-07-20T18:35:39.424Z",
+      "summary": "useDocumentTitle hook",
+      "exports": [
+        "useDocumentTitle"
+      ],
+      "imports": [
+        "react"
+      ]
     }
   },
   "dependencies": {},
   "recentChanges": [
     {
-      "timestamp": "2026-07-20T18:23:08.532Z",
-      "file": "src/pages/Privacy.tsx",
-      "change": "modifyd src/pages/Privacy.tsx",
+      "timestamp": "2026-07-20T18:36:49.481Z",
+      "file": "src/pages/Cards.tsx",
+      "change": "modifyd src/pages/Cards.tsx",
       "type": "modify"
     },
     {
-      "timestamp": "2026-07-20T18:23:05.392Z",
-      "file": "src/pages/ModelOverview.tsx",
-      "change": "modifyd src/pages/ModelOverview.tsx",
+      "timestamp": "2026-07-20T18:36:46.088Z",
+      "file": "src/pages/Cards.tsx",
+      "change": "modifyd src/pages/Cards.tsx",
       "type": "modify"
     },
     {
-      "timestamp": "2026-07-20T18:23:02.002Z",
+      "timestamp": "2026-07-20T18:36:39.874Z",
       "file": "src/pages/ArchetypeDetail.tsx",
       "change": "modifyd src/pages/ArchetypeDetail.tsx",
       "type": "modify"
     },
     {
-      "timestamp": "2026-07-20T18:22:58.726Z",
+      "timestamp": "2026-07-20T18:36:32.434Z",
+      "file": "src/pages/Login.tsx",
+      "change": "modifyd src/pages/Login.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T18:36:31.581Z",
+      "file": "src/pages/ModelOverview.tsx",
+      "change": "modifyd src/pages/ModelOverview.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T18:36:30.512Z",
+      "file": "src/pages/Cookies.tsx",
+      "change": "modifyd src/pages/Cookies.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T18:36:29.725Z",
+      "file": "src/pages/Privacy.tsx",
+      "change": "modifyd src/pages/Privacy.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T18:36:28.812Z",
       "file": "src/pages/About.tsx",
       "change": "modifyd src/pages/About.tsx",
       "type": "modify"
     },
     {
-      "timestamp": "2026-07-20T18:22:55.938Z",
-      "file": "src/pages/Model.tsx",
-      "change": "modifyd src/pages/Model.tsx",
+      "timestamp": "2026-07-20T18:36:27.633Z",
+      "file": "src/pages/Enquiry.tsx",
+      "change": "modifyd src/pages/Enquiry.tsx",
       "type": "modify"
     },
     {
-      "timestamp": "2026-07-20T18:22:53.152Z",
-      "file": "src/pages/Home.tsx",
-      "change": "modifyd src/pages/Home.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T18:22:41.145Z",
-      "file": "src/components/Footer.tsx",
-      "change": "modifyd src/components/Footer.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T18:22:35.624Z",
-      "file": "src/components/Header.tsx",
-      "change": "modifyd src/components/Header.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T18:22:31.650Z",
-      "file": "src/components/Header.tsx",
-      "change": "modifyd src/components/Header.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-20T18:22:24.681Z",
+      "timestamp": "2026-07-20T18:36:26.321Z",
       "file": "src/pages/Download.tsx",
       "change": "modifyd src/pages/Download.tsx",
       "type": "modify"

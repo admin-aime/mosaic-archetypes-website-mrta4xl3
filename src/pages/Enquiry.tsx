@@ -1,8 +1,10 @@
 import { useState, FormEvent } from 'react';
 import { Button } from '../components/Button';
 import { CheckCircle, Phone, Mail } from 'lucide-react';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 export function Enquiry() {
+  useDocumentTitle('Enquire Now');
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({
     name: '',

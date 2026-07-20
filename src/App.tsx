@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import { HashRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
+import { useEffect, useRef } from 'react';
+import { HashRouter, Routes, Route, Link, useLocation, useOutlet } from 'react-router-dom';
 import { FeedbackProvider } from '@aime-platform/aime-feedback-module';
 import { Layout } from './components/Layout';
 import { CookieBanner } from './components/CookieBanner';
@@ -24,6 +24,22 @@ function ScrollToTop() {
     window.scrollTo(0, 0);
   }, [pathname]);
   return null;
+}
+
+function PageTransition() {
+  const outlet = useOutlet();
+  const { pathname } = useLocation();
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (ref.current) {
+      ref.current.classList.remove('page-transition');
+      void (ref.current as any).offsetWidth;
+      ref.current.classList.add('page-transition');
+    }
+  }, [pathname]);
+
+  return <div ref={ref}>{outlet}</div>;
 }
 
 export default function App() {
@@ -70,19 +86,21 @@ export default function App() {
         <BackToTop />
         <Routes>
           <Route element={<Layout />}>
-            <Route path="/" element={<Home />} />
-            <Route path="/philosophy" element={<Philosophy />} />
-            <Route path="/workshops" element={<Workshops />} />
-            <Route path="/model" element={<Model />} />
-            <Route path="/archetype/:id" element={<ArchetypeDetail />} />
-            <Route path="/download" element={<Download />} />
-            <Route path="/enquiry" element={<Enquiry />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/privacy" element={<Privacy />} />
-            <Route path="/cookies" element={<Cookies />} />
-            <Route path="/model-overview" element={<ModelOverview />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/cards" element={<Cards />} />
+            <Route element={<PageTransition />}>
+              <Route path="/" element={<Home />} />
+              <Route path="/philosophy" element={<Philosophy />} />
+              <Route path="/workshops" element={<Workshops />} />
+              <Route path="/model" element={<Model />} />
+              <Route path="/archetype/:id" element={<ArchetypeDetail />} />
+              <Route path="/download" element={<Download />} />
+              <Route path="/enquiry" element={<Enquiry />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/privacy" element={<Privacy />} />
+              <Route path="/cookies" element={<Cookies />} />
+              <Route path="/model-overview" element={<ModelOverview />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/cards" element={<Cards />} />
+            </Route>
             <Route
               path="*"
               element={

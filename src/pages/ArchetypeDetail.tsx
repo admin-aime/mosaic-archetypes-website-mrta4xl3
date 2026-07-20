@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import { archetypes } from '../data/archetypes';
 import { Button } from '../components/Button';
 import { ArrowLeft } from 'lucide-react';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 import {
   Compass,
   Star,
@@ -31,6 +32,7 @@ const iconMap: Record<string, React.ComponentType<{ size?: number; style?: React
 export function ArchetypeDetail() {
   const { id } = useParams<{ id: string }>();
   const archetype = archetypes.find((a) => a.id === id);
+  useDocumentTitle(archetype ? `${archetype.leaderType} Leader` : 'Archetype');
 
   if (!archetype) {
     return (
