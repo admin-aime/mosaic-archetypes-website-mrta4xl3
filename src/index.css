@@ -360,8 +360,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section--black {
+  position: relative;
   background-color: var(--colour-black);
   color: var(--colour-white);
+}
+
+.section--black::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/9a5cde9b-c66b-4e13-9021-2d2a4304066b-1784724590.jpg');
+  background-size: 100%;
+  background-repeat: repeat;
+  image-rendering: auto;
+  opacity: 0.35;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .section--white {
@@ -370,6 +384,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section__inner {
+  position: relative;
+  z-index: 1;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -849,9 +865,23 @@ textarea.form-input {
 /* ========== FOOTER ========== */
 
 .site-footer {
+  position: relative;
+  overflow: hidden;
   background: var(--colour-black);
   border-top: 1px solid rgba(166, 119, 24, 0.2);
   padding: 2rem 1rem;
+}
+
+.site-footer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/9a5cde9b-c66b-4e13-9021-2d2a4304066b-1784724590.jpg');
+  background-size: 100%;
+  background-repeat: repeat;
+  opacity: 0.35;
+  z-index: 0;
+  pointer-events: none;
 }
 
 @media (min-width: 480px) {
@@ -867,6 +897,8 @@ textarea.form-input {
 }
 
 .site-footer__inner {
+  position: relative;
+  z-index: 1;
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -1208,9 +1240,24 @@ textarea.form-input {
 
 .page-header {
   padding: 6.25rem 1rem 2.5rem;
-  background: var(--colour-black);
+  background-color: var(--colour-black);
   text-align: center;
   position: relative;
+  /* leather texture drawn by the ::before pseudo so it can
+     sit at 35 % opacity without affecting the gradient overlay */
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/9a5cde9b-c66b-4e13-9021-2d2a4304066b-1784724590.jpg');
+  background-size: 100%;
+  background-repeat: repeat;
+  image-rendering: auto;
+  opacity: 0.35;
+  z-index: 0;
+  pointer-events: none;
 }
 
 @media (min-width: 480px) {
@@ -1236,13 +1283,14 @@ textarea.form-input {
       rgba(166, 119, 24, 0.05) 2px,
       rgba(166, 119, 24, 0.05) 4px
     );
-  opacity: var(--texture-leather-opacity);
+  opacity: 1;
+  z-index: 1;
   pointer-events: none;
 }
 
 .page-header__inner {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   max-width: 800px;
   margin: 0 auto;
 }
