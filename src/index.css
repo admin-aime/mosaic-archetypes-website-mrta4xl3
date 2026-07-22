@@ -370,7 +370,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   inset: 0;
   background-image: url('https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/06280475-4346-4e59-99ba-94209c1f43c9-1784740592.jpeg');
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   image-rendering: auto;
@@ -494,7 +494,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   background-color: var(--colour-black);
   background-image: url('https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/06280475-4346-4e59-99ba-94209c1f43c9-1784740592.jpeg');
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   overflow: hidden;
@@ -781,20 +781,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .wheel-image {
   width: 100%;
-  max-width: 408px;
+  max-width: 347px;
   height: auto;
   display: block;
 }
 
 @media (min-width: 480px) {
   .wheel-image {
-    max-width: 544px;
+    max-width: 462px;
   }
 }
 
 @media (min-width: 640px) {
   .wheel-image {
-    max-width: 714px;
+    max-width: 607px;
   }
 }
 
@@ -892,7 +892,7 @@ textarea.form-input {
   position: absolute;
   inset: 0;
   background-image: url('https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/06280475-4346-4e59-99ba-94209c1f43c9-1784740592.jpeg');
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.65;
@@ -1281,7 +1281,7 @@ textarea.form-input {
   position: absolute;
   inset: 0;
   background-image: url('https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/06280475-4346-4e59-99ba-94209c1f43c9-1784740592.jpeg');
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   image-rendering: auto;
@@ -1294,7 +1294,7 @@ textarea.form-input {
   content: '';
   position: absolute;
   inset: 0;
-  background: none;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.25) 55%, rgba(0,0,0,0) 100%);
   z-index: 0;
   pointer-events: none;
 }
