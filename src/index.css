@@ -220,26 +220,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo__image {
-  height: 54px;
+  height: 66px;
   width: auto;
   display: block;
 }
 
 @media (min-width: 480px) {
   .logo__image {
-    height: 63px;
+    height: 77px;
   }
 }
 
 @media (min-width: 768px) {
   .logo__image {
-    height: 72px;
+    height: 87px;
   }
 }
 
 @media (min-width: 1024px) {
   .logo__image {
-    height: 81px;
+    height: 99px;
   }
 }
 
@@ -875,7 +875,7 @@ textarea.form-input {
   position: relative;
   background: var(--colour-black);
   border-top: 1px solid rgba(166, 119, 24, 0.2);
-  padding: 2rem 1rem 0;
+  padding: 2rem 0 0;
 }
 
 .site-footer::before {
@@ -902,13 +902,13 @@ textarea.form-input {
 
 @media (min-width: 480px) {
   .site-footer {
-    padding: 2.5rem 1.5rem;
+    padding: 2.5rem 0 0;
   }
 }
 
 @media (min-width: 768px) {
   .site-footer {
-    padding: 3rem 1.5rem;
+    padding: 3rem 0 0;
   }
 }
 
@@ -917,6 +917,7 @@ textarea.form-input {
   z-index: 1;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
@@ -925,6 +926,7 @@ textarea.form-input {
 @media (min-width: 480px) {
   .site-footer__inner {
     gap: 2rem;
+    padding: 0 1.5rem;
   }
 }
 
