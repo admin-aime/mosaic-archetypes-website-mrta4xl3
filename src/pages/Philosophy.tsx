@@ -79,89 +79,73 @@ export function Philosophy() {
             leadership range and adaptability.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8">
-            {/* Power */}
-            <div className="reveal stagger-1" style={{ borderLeft: '3px solid var(--colour-mosaic-gold)', paddingLeft: '1.5rem' }}>
-              <h3 style={{ fontFamily: 'var(--font-header)', fontSize: '1.5rem', marginBottom: '0.25rem' }}>Power</h3>
-              <p style={{ fontFamily: 'var(--font-subheader)', fontSize: '0.8125rem', fontWeight: 600, color: 'var(--colour-mosaic-gold)', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-                Authority · Drive · Commercial Energy
-              </p>
-              <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9375rem', lineHeight: '1.5', color: 'rgba(255,255,255,0.65)', marginBottom: '0.5rem' }}>
-                <strong>Traits:</strong> Producing, Catalysing
-              </p>
-              <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9375rem', lineHeight: '1.5', color: 'rgba(255,255,255,0.65)' }}>
-                <strong>Focus:</strong> Establishing authority and driving commercial outcomes
-              </p>
-            </div>
-
-            {/* Vision */}
-            <div className="reveal stagger-2" style={{ borderLeft: '3px solid var(--colour-mosaic-gold)', paddingLeft: '1.5rem' }}>
-              <h3 style={{ fontFamily: 'var(--font-header)', fontSize: '1.5rem', marginBottom: '0.25rem' }}>Vision</h3>
-              <p style={{ fontFamily: 'var(--font-subheader)', fontSize: '0.8125rem', fontWeight: 600, color: 'var(--colour-mosaic-gold)', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-                Direction · Sense-Making · Transformation
-              </p>
-              <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9375rem', lineHeight: '1.5', color: 'rgba(255,255,255,0.65)', marginBottom: '0.5rem' }}>
-                <strong>Traits:</strong> Interpreting, Analysing
-              </p>
-              <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9375rem', lineHeight: '1.5', color: 'rgba(255,255,255,0.65)' }}>
-                <strong>Focus:</strong> Seeing possibilities and driving meaningful change
-              </p>
-            </div>
-
-            {/* Process */}
-            <div className="reveal stagger-3" style={{ borderLeft: '3px solid var(--colour-mosaic-gold)', paddingLeft: '1.5rem' }}>
-              <h3 style={{ fontFamily: 'var(--font-header)', fontSize: '1.5rem', marginBottom: '0.25rem' }}>Process</h3>
-              <p style={{ fontFamily: 'var(--font-subheader)', fontSize: '0.8125rem', fontWeight: 600, color: 'var(--colour-mosaic-gold)', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-                Delivery · Reliability · Discipline
-              </p>
-              <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9375rem', lineHeight: '1.5', color: 'rgba(255,255,255,0.65)', marginBottom: '0.5rem' }}>
-                <strong>Traits:</strong> Orchestrating, Systemising
-              </p>
-              <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9375rem', lineHeight: '1.5', color: 'rgba(255,255,255,0.65)' }}>
-                <strong>Focus:</strong> Getting things done consistently and efficiently
-              </p>
-            </div>
-
-            {/* Relationships */}
-            <div className="reveal stagger-4" style={{ borderLeft: '3px solid var(--colour-mosaic-gold)', paddingLeft: '1.5rem' }}>
-              <h3 style={{ fontFamily: 'var(--font-header)', fontSize: '1.5rem', marginBottom: '0.25rem' }}>Relationships</h3>
-              <p style={{ fontFamily: 'var(--font-subheader)', fontSize: '0.8125rem', fontWeight: 600, color: 'var(--colour-mosaic-gold)', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-                Trust · Engagement · Development
-              </p>
-              <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9375rem', lineHeight: '1.5', color: 'rgba(255,255,255,0.65)', marginBottom: '0.5rem' }}>
-                <strong>Traits:</strong> Supporting, Engaging
-              </p>
-              <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9375rem', lineHeight: '1.5', color: 'rgba(255,255,255,0.65)' }}>
-                <strong>Focus:</strong> Building connections and developing people
-              </p>
-            </div>
-          </div>
-
-          {/* Diagram */}
-          <div className="model-diagram mt-12">
-            <div className="wheel-container reveal" style={{ flexShrink: 0 }}>
+          {/* Wheel + Axis Cards — side by side */}
+          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 mt-8">
+            {/* Wheel */}
+            <div className="wheel-container reveal flex-shrink-0" style={{ flex: '0 0 auto' }}>
               <img
                 src="https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/5e28fbd7-4f8a-4c6a-a8c9-fe22f7511ef9-1784557508.png"
                 alt="Mosaic Leadership Archetypes® Model"
                 className="wheel-image"
               />
             </div>
-            <div className="model-axes" style={{ flex: 1 }}>
-              <div className="model-axis">
-                <span className="model-axis__label">Power</span>
-                <div className="model-axis__bar" />
+
+            {/* Axis Cards */}
+            <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
+              {/* Power */}
+              <div className="reveal stagger-1" style={{ borderLeft: '3px solid var(--colour-mosaic-gold)', paddingLeft: '1rem' }}>
+                <h3 style={{ fontFamily: 'var(--font-header)', fontSize: '1.25rem', marginBottom: '0.15rem' }}>Power</h3>
+                <p style={{ fontFamily: 'var(--font-subheader)', fontSize: '0.6875rem', fontWeight: 600, color: 'var(--colour-mosaic-gold)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+                  Authority · Drive · Commercial Energy
+                </p>
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8125rem', lineHeight: '1.45', color: 'rgba(255,255,255,0.65)', marginBottom: '0.25rem' }}>
+                  <strong>Traits:</strong> Producing, Catalysing
+                </p>
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8125rem', lineHeight: '1.45', color: 'rgba(255,255,255,0.65)' }}>
+                  <strong>Focus:</strong> Establishing authority and driving commercial outcomes
+                </p>
               </div>
-              <div className="model-axis">
-                <span className="model-axis__label">Vision</span>
-                <div className="model-axis__bar" />
+
+              {/* Vision */}
+              <div className="reveal stagger-2" style={{ borderLeft: '3px solid var(--colour-mosaic-gold)', paddingLeft: '1rem' }}>
+                <h3 style={{ fontFamily: 'var(--font-header)', fontSize: '1.25rem', marginBottom: '0.15rem' }}>Vision</h3>
+                <p style={{ fontFamily: 'var(--font-subheader)', fontSize: '0.6875rem', fontWeight: 600, color: 'var(--colour-mosaic-gold)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+                  Direction · Sense-Making · Transformation
+                </p>
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8125rem', lineHeight: '1.45', color: 'rgba(255,255,255,0.65)', marginBottom: '0.25rem' }}>
+                  <strong>Traits:</strong> Interpreting, Analysing
+                </p>
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8125rem', lineHeight: '1.45', color: 'rgba(255,255,255,0.65)' }}>
+                  <strong>Focus:</strong> Seeing possibilities and driving meaningful change
+                </p>
               </div>
-              <div className="model-axis">
-                <span className="model-axis__label">Process</span>
-                <div className="model-axis__bar" />
+
+              {/* Process */}
+              <div className="reveal stagger-3" style={{ borderLeft: '3px solid var(--colour-mosaic-gold)', paddingLeft: '1rem' }}>
+                <h3 style={{ fontFamily: 'var(--font-header)', fontSize: '1.25rem', marginBottom: '0.15rem' }}>Process</h3>
+                <p style={{ fontFamily: 'var(--font-subheader)', fontSize: '0.6875rem', fontWeight: 600, color: 'var(--colour-mosaic-gold)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+                  Delivery · Reliability · Discipline
+                </p>
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8125rem', lineHeight: '1.45', color: 'rgba(255,255,255,0.65)', marginBottom: '0.25rem' }}>
+                  <strong>Traits:</strong> Orchestrating, Systemising
+                </p>
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8125rem', lineHeight: '1.45', color: 'rgba(255,255,255,0.65)' }}>
+                  <strong>Focus:</strong> Getting things done consistently and efficiently
+                </p>
               </div>
-              <div className="model-axis">
-                <span className="model-axis__label">Relationships</span>
-                <div className="model-axis__bar" />
+
+              {/* Relationships */}
+              <div className="reveal stagger-4" style={{ borderLeft: '3px solid var(--colour-mosaic-gold)', paddingLeft: '1rem' }}>
+                <h3 style={{ fontFamily: 'var(--font-header)', fontSize: '1.25rem', marginBottom: '0.15rem' }}>Relationships</h3>
+                <p style={{ fontFamily: 'var(--font-subheader)', fontSize: '0.6875rem', fontWeight: 600, color: 'var(--colour-mosaic-gold)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+                  Trust · Engagement · Development
+                </p>
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8125rem', lineHeight: '1.45', color: 'rgba(255,255,255,0.65)', marginBottom: '0.25rem' }}>
+                  <strong>Traits:</strong> Supporting, Engaging
+                </p>
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8125rem', lineHeight: '1.45', color: 'rgba(255,255,255,0.65)' }}>
+                  <strong>Focus:</strong> Building connections and developing people
+                </p>
               </div>
             </div>
           </div>

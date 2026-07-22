@@ -154,8 +154,8 @@
       ]
     },
     "src/pages/Philosophy.tsx": {
-      "lines": 233,
-      "lastModified": "2026-07-20T18:36:20.884Z",
+      "lines": 217,
+      "lastModified": "2026-07-22T18:47:07.990Z",
       "summary": "Philosophy component",
       "exports": [
         "Philosophy"
@@ -438,6 +438,18 @@
   "dependencies": {},
   "recentChanges": [
     {
+      "timestamp": "2026-07-22T18:47:07.970Z",
+      "file": "src/pages/Philosophy.tsx",
+      "change": "modifyd src/pages/Philosophy.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-22T18:45:27.489Z",
+      "file": "src/pages/Philosophy.tsx",
+      "change": "modifyd src/pages/Philosophy.tsx",
+      "type": "modify"
+    },
+    {
       "timestamp": "2026-07-22T18:43:52.202Z",
       "file": "src/index.css",
       "change": "modifyd src/index.css",
@@ -481,18 +493,6 @@
     },
     {
       "timestamp": "2026-07-22T18:26:45.699Z",
-      "file": "src/index.css",
-      "change": "modifyd src/index.css",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-22T18:26:40.212Z",
-      "file": "src/index.css",
-      "change": "modifyd src/index.css",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-22T18:26:34.368Z",
       "file": "src/index.css",
       "change": "modifyd src/index.css",
       "type": "modify"
