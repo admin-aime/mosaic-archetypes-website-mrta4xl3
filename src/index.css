@@ -873,10 +873,9 @@ textarea.form-input {
 
 .site-footer {
   position: relative;
-  overflow: hidden;
   background: var(--colour-black);
   border-top: 1px solid rgba(166, 119, 24, 0.2);
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 0;
 }
 
 .site-footer::before {
@@ -888,6 +887,15 @@ textarea.form-input {
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.65;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.site-footer::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
   z-index: 0;
   pointer-events: none;
 }
@@ -971,10 +979,10 @@ textarea.form-input {
 }
 
 .footer__bottom {
-  max-width: 1200px;
-  margin: 1.5rem auto 0;
-  padding-top: 1rem;
-  border-top: 1px solid rgba(166, 119, 24, 0.1);
+  margin: 2rem 0 0;
+  padding: 1.25rem 1rem;
+  border-top: 1px solid rgba(166, 119, 24, 0.15);
+  background: #000;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -982,14 +990,15 @@ textarea.form-input {
   gap: 0.75rem;
   font-family: var(--font-body);
   font-size: 0.6875rem;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.9);
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 @media (min-width: 480px) {
   .footer__bottom {
-    margin-top: 2rem;
-    padding-top: 1.5rem;
+    padding: 1.25rem 1.5rem;
     justify-content: space-between;
     font-size: 0.75rem;
     text-align: left;
