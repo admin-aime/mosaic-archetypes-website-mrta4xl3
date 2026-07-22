@@ -1,6 +1,6 @@
 import { useState, useCallback } from 'react';
 import { Button } from '../components/Button';
-import { ArchetypeCard } from '../components/ArchetypeCard';
+import { ArchetypeImageCard } from '../components/ArchetypeImageCard';
 import { archetypes } from '../data/archetypes';
 import { Play, ChevronRight } from 'lucide-react';
 import { useDocumentTitle } from '../hooks/useDocumentTitle';
@@ -102,7 +102,7 @@ export function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
             {featuredArchetypes.map((a, i) => (
               <div key={a.id} className={`reveal stagger-${i + 1}`}>
-                <ArchetypeCard archetype={a} />
+                <ArchetypeImageCard archetype={a} />
               </div>
             ))}
           </div>

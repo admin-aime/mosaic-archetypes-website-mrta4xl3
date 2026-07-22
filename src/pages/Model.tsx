@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArchetypeCard } from '../components/ArchetypeCard';
+import { ArchetypeImageCard } from '../components/ArchetypeImageCard';
 import { archetypes, axes } from '../data/archetypes';
 import { Button } from '../components/Button';
 import { useDocumentTitle } from '../hooks/useDocumentTitle';
@@ -90,7 +90,7 @@ export function Model() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             {filtered.map((a, i) => (
               <div key={a.id} className={`reveal stagger-${(i % 10) + 1}`}>
-                <ArchetypeCard archetype={a} />
+                <ArchetypeImageCard archetype={a} />
               </div>
             ))}
           </div>
