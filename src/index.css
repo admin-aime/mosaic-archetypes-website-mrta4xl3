@@ -1560,3 +1560,425 @@ textarea.form-input {
     transform: translateY(0);
   }
 }
+
+/* ========== ARCHETYPE DETAIL PAGE ========== */
+
+.detail-hero {
+  position: relative;
+  padding: 6.25rem 1rem 3rem;
+  background: var(--colour-black);
+  overflow: hidden;
+}
+
+@media (min-width: 480px) {
+  .detail-hero {
+    padding: 7.25rem 1.5rem 3.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .detail-hero {
+    padding: 8.5rem 1.5rem 5rem;
+  }
+}
+
+.detail-hero__texture {
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(166, 119, 24, 0.05) 2px,
+      rgba(166, 119, 24, 0.05) 4px
+    );
+  opacity: var(--texture-leather-opacity);
+  pointer-events: none;
+}
+
+.detail-hero__gradient {
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-header-black);
+  pointer-events: none;
+}
+
+.detail-hero__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .detail-hero__inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .detail-hero__inner {
+    gap: 4rem;
+  }
+}
+
+/* ---------- Text column ---------- */
+
+.detail-hero__text-col {
+  max-width: 500px;
+}
+
+@media (max-width: 767px) {
+  .detail-hero__text-col {
+    order: 2;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+/* ---------- Back link ---------- */
+
+.detail-hero__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-subheader);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--colour-mosaic-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+  transition: opacity 0.3s ease, gap 0.3s ease;
+}
+
+.detail-hero__back:hover {
+  opacity: 0.7;
+  gap: 0.75rem;
+}
+
+/* ---------- Quadrant badge ---------- */
+
+.detail-hero__quadrant {
+  display: inline-block;
+  font-family: var(--font-subheader);
+  font-size: 0.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 0.3125rem 0.875rem;
+  border: 1px solid var(--colour-mosaic-gold);
+  border-radius: 999px;
+  color: var(--colour-mosaic-gold);
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 480px) {
+  .detail-hero__quadrant {
+    font-size: 0.6875rem;
+    padding: 0.375rem 1rem;
+  }
+}
+
+/* ---------- Title / role / tagline ---------- */
+
+.detail-hero__title {
+  font-family: var(--font-header);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--colour-white);
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 480px) {
+  .detail-hero__title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .detail-hero__title {
+    font-size: 3.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .detail-hero__title {
+    font-size: 3.75rem;
+  }
+}
+
+.detail-hero__role {
+  font-family: var(--font-subheader);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--colour-mosaic-gold);
+  margin-bottom: 0.375rem;
+}
+
+@media (min-width: 480px) {
+  .detail-hero__role {
+    font-size: 0.875rem;
+    letter-spacing: 0.12em;
+  }
+}
+
+.detail-hero__tagline {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.55);
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 480px) {
+  .detail-hero__tagline {
+    font-size: 0.875rem;
+    letter-spacing: 0.12em;
+    margin-bottom: 2rem;
+  }
+}
+
+.detail-hero__intro {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  line-height: var(--line-height-default);
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 400px;
+}
+
+@media (min-width: 480px) {
+  .detail-hero__intro {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .detail-hero__intro {
+    margin: 0 auto;
+  }
+}
+
+/* ---------- Image column ---------- */
+
+.detail-hero__image-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .detail-hero__image-col {
+    order: 1;
+  }
+}
+
+.detail-hero__image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 480px) {
+  .detail-hero__image-wrapper {
+    max-width: 380px;
+  }
+}
+
+@media (min-width: 768px) {
+  .detail-hero__image-wrapper {
+    max-width: 440px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .detail-hero__image-wrapper {
+    max-width: 500px;
+  }
+}
+
+/* Golden radial glow behind the image */
+.detail-hero__image-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: -12%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(166, 119, 24, 0.25) 0%,
+    rgba(166, 119, 24, 0.08) 35%,
+    transparent 65%
+  );
+  animation: detail-glow-pulse 4s ease-in-out infinite;
+  z-index: 0;
+}
+
+@keyframes detail-glow-pulse {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.06); }
+}
+
+.detail-hero__image {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  display: block;
+}
+
+/* Subtle float — archetype image gently drifts */
+@media (prefers-reduced-motion: no-preference) {
+  .detail-hero__image {
+    animation: detail-float 6s ease-in-out infinite;
+  }
+}
+
+@keyframes detail-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ---------- M / F toggle ---------- */
+
+.detail-hero__toggle {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  margin-top: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 480px) {
+  .detail-hero__toggle {
+    margin-top: 1.75rem;
+  }
+}
+
+.detail-hero__toggle-btn {
+  font-family: var(--font-subheader);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 0.5rem 1.25rem;
+  border: 1px solid rgba(166, 119, 24, 0.3);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.detail-hero__toggle-btn:first-child {
+  border-radius: 999px 0 0 999px;
+  border-right: 0;
+}
+
+.detail-hero__toggle-btn:last-child {
+  border-radius: 0 999px 999px 0;
+}
+
+.detail-hero__toggle-btn:hover {
+  color: var(--colour-mosaic-gold);
+  border-color: var(--colour-mosaic-gold);
+  background: rgba(166, 119, 24, 0.08);
+}
+
+.detail-hero__toggle-btn--active {
+  background: var(--colour-mosaic-gold);
+  color: var(--colour-black);
+  border-color: var(--colour-mosaic-gold);
+}
+
+.detail-hero__toggle-btn--active:hover {
+  background: #8b6314;
+  color: var(--colour-black);
+  border-color: #8b6314;
+}
+
+@media (min-width: 480px) {
+  .detail-hero__toggle-btn {
+    font-size: 0.8125rem;
+    padding: 0.5625rem 1.5rem;
+  }
+}
+
+/* ---------- Quadrant detail card ---------- */
+
+.quadrant-detail-card {
+  background: rgba(166, 119, 24, 0.04);
+  border: 1px solid rgba(166, 119, 24, 0.12);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-top: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 480px) {
+  .quadrant-detail-card {
+    padding: 2rem;
+  }
+}
+
+.quadrant-detail-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--colour-mosaic-gold);
+  border-radius: 4px 0 0 4px;
+}
+
+.quadrant-detail-card__label {
+  font-family: var(--font-subheader);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--colour-mosaic-gold);
+  margin-bottom: 0.5rem;
+}
+
+.quadrant-detail-card__body {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  line-height: var(--line-height-default);
+  color: var(--colour-black);
+}
+
+@media (min-width: 480px) {
+  .quadrant-detail-card__body {
+    font-size: 1rem;
+  }
+}
+
+/* Disable detail page animations for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .detail-hero__image-wrapper::before {
+    animation: none;
+  }
+  .detail-hero__image {
+    animation: none;
+  }
+}
