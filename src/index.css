@@ -370,8 +370,8 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   inset: 0;
   background-image: url('https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/06280475-4346-4e59-99ba-94209c1f43c9-1784740592.jpeg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: auto;
+  background-repeat: repeat;
   background-position: center;
   image-rendering: auto;
   opacity: 0.65;
@@ -494,8 +494,8 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   background-color: var(--colour-black);
   background-image: url('https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/06280475-4346-4e59-99ba-94209c1f43c9-1784740592.jpeg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: auto;
+  background-repeat: repeat;
   background-position: center;
   overflow: hidden;
   padding-top: 81px;
@@ -892,8 +892,8 @@ textarea.form-input {
   position: absolute;
   inset: 0;
   background-image: url('https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/06280475-4346-4e59-99ba-94209c1f43c9-1784740592.jpeg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: auto;
+  background-repeat: repeat;
   background-position: center;
   opacity: 0.65;
   z-index: 0;
@@ -1281,8 +1281,8 @@ textarea.form-input {
   position: absolute;
   inset: 0;
   background-image: url('https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/06280475-4346-4e59-99ba-94209c1f43c9-1784740592.jpeg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: auto;
+  background-repeat: repeat;
   background-position: center;
   image-rendering: auto;
   opacity: 0.65;
