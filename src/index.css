@@ -369,11 +369,12 @@ h1, h2, h3, h4, h5, h6 {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/9a5cde9b-c66b-4e13-9021-2d2a4304066b-1784724590.jpg');
-  background-size: 100%;
-  background-repeat: repeat;
+  background-image: url('https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/06280475-4346-4e59-99ba-94209c1f43c9-1784740592.jpeg');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
   image-rendering: auto;
-  opacity: 0.35;
+  opacity: 0.65;
   z-index: 0;
   pointer-events: none;
 }
@@ -482,7 +483,11 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--colour-black);
+  background-color: var(--colour-black);
+  background-image: url('https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/06280475-4346-4e59-99ba-94209c1f43c9-1784740592.jpeg');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
   overflow: hidden;
   padding-top: 81px;
 }
@@ -519,18 +524,20 @@ h1, h2, h3, h4, h5, h6 {
     );
   opacity: var(--texture-leather-opacity);
   pointer-events: none;
+  z-index: 2;
 }
 
 .hero__gradient {
   position: absolute;
   inset: 0;
-  background: var(--gradient-header-black);
+  background: rgba(0, 0, 0, 0.35);
   pointer-events: none;
+  z-index: 3;
 }
 
 .hero__content {
   position: relative;
-  z-index: 1;
+  z-index: 4;
   text-align: center;
   max-width: 1350px;
   padding: 1.5rem 1rem;
@@ -765,20 +772,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .wheel-image {
   width: 100%;
-  max-width: 480px;
+  max-width: 408px;
   height: auto;
   display: block;
 }
 
 @media (min-width: 480px) {
   .wheel-image {
-    max-width: 640px;
+    max-width: 544px;
   }
 }
 
 @media (min-width: 640px) {
   .wheel-image {
-    max-width: 840px;
+    max-width: 714px;
   }
 }
 
@@ -876,10 +883,11 @@ textarea.form-input {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/9a5cde9b-c66b-4e13-9021-2d2a4304066b-1784724590.jpg');
-  background-size: 100%;
-  background-repeat: repeat;
-  opacity: 0.35;
+  background-image: url('https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/06280475-4346-4e59-99ba-94209c1f43c9-1784740592.jpeg');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.65;
   z-index: 0;
   pointer-events: none;
 }
@@ -999,6 +1007,7 @@ textarea.form-input {
   border-radius: 0.5rem;
   overflow: hidden;
   border: 1px solid rgba(166, 119, 24, 0.2);
+  background: #000;
 }
 
 @media (min-width: 480px) {
@@ -1022,7 +1031,7 @@ textarea.form-input {
 .video-placeholder {
   width: 100%;
   aspect-ratio: 16 / 9;
-  background: rgba(166, 119, 24, 0.05);
+  background: #111;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1031,7 +1040,7 @@ textarea.form-input {
 }
 
 .video-placeholder:hover {
-  background: rgba(166, 119, 24, 0.1);
+  background: #1a1a1a;
 }
 
 .video-placeholder__icon {
@@ -1251,11 +1260,12 @@ textarea.form-input {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/9a5cde9b-c66b-4e13-9021-2d2a4304066b-1784724590.jpg');
-  background-size: 100%;
-  background-repeat: repeat;
+  background-image: url('https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/06280475-4346-4e59-99ba-94209c1f43c9-1784740592.jpeg');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
   image-rendering: auto;
-  opacity: 0.35;
+  opacity: 0.65;
   z-index: 0;
   pointer-events: none;
 }
