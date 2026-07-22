@@ -73,7 +73,7 @@
     },
     "src/index.css": {
       "lines": 1985,
-      "lastModified": "2026-07-22T12:26:52.241Z",
+      "lastModified": "2026-07-22T12:39:55.504Z",
       "summary": "Stylesheet",
       "exports": [],
       "imports": []
@@ -438,6 +438,18 @@
   "dependencies": {},
   "recentChanges": [
     {
+      "timestamp": "2026-07-22T12:39:55.493Z",
+      "file": "src/index.css",
+      "change": "modifyd src/index.css",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-22T12:38:19.386Z",
+      "file": "src/index.css",
+      "change": "modifyd src/index.css",
+      "type": "modify"
+    },
+    {
       "timestamp": "2026-07-22T12:35:58.793Z",
       "file": "src/components/Button.tsx",
       "change": "modifyd src/components/Button.tsx",
@@ -483,18 +495,6 @@
       "timestamp": "2026-07-22T12:15:30.374Z",
       "file": "src/pages/Home.tsx",
       "change": "modifyd src/pages/Home.tsx",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-22T12:15:26.791Z",
-      "file": "src/index.css",
-      "change": "modifyd src/index.css",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-22T12:15:09.520Z",
-      "file": "src/components/ArchetypeImageCard.tsx",
-      "change": "modifyd src/components/ArchetypeImageCard.tsx",
       "type": "modify"
     }
   ]
