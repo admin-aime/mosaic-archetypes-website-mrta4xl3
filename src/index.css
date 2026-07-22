@@ -220,26 +220,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo__image {
-  height: 36px;
+  height: 54px;
   width: auto;
   display: block;
 }
 
 @media (min-width: 480px) {
   .logo__image {
-    height: 42px;
+    height: 63px;
   }
 }
 
 @media (min-width: 768px) {
   .logo__image {
-    height: 48px;
+    height: 72px;
   }
 }
 
 @media (min-width: 1024px) {
   .logo__image {
-    height: 54px;
+    height: 81px;
   }
 }
 
