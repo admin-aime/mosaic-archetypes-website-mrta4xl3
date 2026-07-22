@@ -24,13 +24,13 @@ export function Button({
   if (href) {
     if (href.startsWith('#')) {
       return (
-        <a href={href} className={classes}>
+        <a href={href} className={classes} onClick={onClick}>
           {children}
         </a>
       );
     }
     return (
-      <Link to={href} className={classes}>
+      <Link to={href} className={classes} onClick={onClick}>
         {children}
       </Link>
     );
