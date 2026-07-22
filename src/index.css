@@ -220,26 +220,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo__image {
-  height: 66px;
+  height: 59px;
   width: auto;
   display: block;
 }
 
 @media (min-width: 480px) {
   .logo__image {
-    height: 77px;
+    height: 69px;
   }
 }
 
 @media (min-width: 768px) {
   .logo__image {
-    height: 87px;
+    height: 78px;
   }
 }
 
 @media (min-width: 1024px) {
   .logo__image {
-    height: 99px;
+    height: 89px;
   }
 }
 
@@ -375,6 +375,15 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center;
   image-rendering: auto;
   opacity: 0.65;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.section--black::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: none;
   z-index: 0;
   pointer-events: none;
 }
@@ -530,7 +539,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero__gradient {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.35);
+  background: none;
   pointer-events: none;
   z-index: 3;
 }
@@ -895,7 +904,7 @@ textarea.form-input {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  background: none;
   z-index: 0;
   pointer-events: none;
 }
@@ -1259,7 +1268,7 @@ textarea.form-input {
 /* ========== PAGE HEADER (inner pages) ========== */
 
 .page-header {
-  padding: 6.25rem 1rem 2.5rem;
+  padding: 8rem 1rem 2.5rem;
   background-color: var(--colour-black);
   text-align: center;
   position: relative;
@@ -1281,15 +1290,24 @@ textarea.form-input {
   pointer-events: none;
 }
 
+.page-header::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: none;
+  z-index: 0;
+  pointer-events: none;
+}
+
 @media (min-width: 480px) {
   .page-header {
-    padding: 7.25rem 1.5rem 3.5rem;
+    padding: 9rem 1.5rem 3.5rem;
   }
 }
 
 @media (min-width: 768px) {
   .page-header {
-    padding: 8.5rem 1.5rem 4rem;
+    padding: 10rem 1.5rem 4rem;
   }
 }
 
