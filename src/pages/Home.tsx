@@ -41,7 +41,7 @@ export function Home() {
               <video
                 controls
                 autoPlay
-                src=""
+                src="https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/MP_Archetype_v1.2.mp4"
                 onEnded={() => setVideoPlaying(false)}
                 style={{ width: '100%', aspectRatio: '16/9', background: '#000' }}
                 poster=""

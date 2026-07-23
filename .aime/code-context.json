@@ -73,7 +73,7 @@
     },
     "src/index.css": {
       "lines": 2072,
-      "lastModified": "2026-07-22T18:43:52.222Z",
+      "lastModified": "2026-07-23T18:36:41.896Z",
       "summary": "Stylesheet",
       "exports": [],
       "imports": []
@@ -139,7 +139,7 @@
     },
     "src/pages/Home.tsx": {
       "lines": 166,
-      "lastModified": "2026-07-22T12:53:03.029Z",
+      "lastModified": "2026-07-23T18:34:17.964Z",
       "summary": "Home component",
       "exports": [
         "Home"
@@ -438,6 +438,18 @@
   "dependencies": {},
   "recentChanges": [
     {
+      "timestamp": "2026-07-23T18:36:41.842Z",
+      "file": "src/index.css",
+      "change": "modifyd src/index.css",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-23T18:34:17.958Z",
+      "file": "src/pages/Home.tsx",
+      "change": "modifyd src/pages/Home.tsx",
+      "type": "modify"
+    },
+    {
       "timestamp": "2026-07-22T18:47:07.970Z",
       "file": "src/pages/Philosophy.tsx",
       "change": "modifyd src/pages/Philosophy.tsx",
@@ -481,18 +493,6 @@
     },
     {
       "timestamp": "2026-07-22T18:31:20.667Z",
-      "file": "src/index.css",
-      "change": "modifyd src/index.css",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-22T18:31:15.406Z",
-      "file": "src/index.css",
-      "change": "modifyd src/index.css",
-      "type": "modify"
-    },
-    {
-      "timestamp": "2026-07-22T18:26:45.699Z",
       "file": "src/index.css",
       "change": "modifyd src/index.css",
       "type": "modify"

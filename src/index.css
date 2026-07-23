@@ -1022,7 +1022,7 @@ textarea.form-input {
 .video-container {
   position: relative;
   width: 100%;
-  max-width: 1620px;
+  max-width: 720px;
   margin: 0 auto 1.5rem;
   border-radius: 0.5rem;
   overflow: hidden;
