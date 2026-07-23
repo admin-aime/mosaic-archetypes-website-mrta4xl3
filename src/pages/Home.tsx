@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useRef, useEffect } from 'react';
 import { Button } from '../components/Button';
 import { ArchetypeImageCard } from '../components/ArchetypeImageCard';
 import { archetypes } from '../data/archetypes';
@@ -9,6 +9,13 @@ export function Home() {
   useDocumentTitle('Home');
   const [videoPlaying, setVideoPlaying] = useState(false);
   const [showAllArchetypes, setShowAllArchetypes] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (videoPlaying && videoRef.current) {
+      videoRef.current.play().catch(() => {});
+    }
+  }, [videoPlaying]);
 
   const featuredArchetypes = showAllArchetypes ? archetypes : archetypes.slice(0, 6);
 
@@ -39,15 +46,13 @@ export function Home() {
           <div className="video-container reveal">
             {videoPlaying ? (
               <video
+                ref={videoRef}
                 controls
-                autoPlay
+                preload="metadata"
                 src="https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/MP_Archetype_v1.2.mp4"
                 onEnded={() => setVideoPlaying(false)}
                 style={{ width: '100%', aspectRatio: '16/9', background: '#000' }}
-                poster=""
-              >
-                <p>Introductory video about Mosaic Leadership Archetypes.</p>
-              </video>
+              />
             ) : (
               <div
                 className="video-placeholder"
