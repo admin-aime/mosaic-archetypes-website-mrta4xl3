@@ -30,16 +30,17 @@ export function Home() {
         <div className="hero__texture" />
         <div className="hero__gradient" />
         <div className="hero__content">
-          <p className="hero__tagline">Discover Your Leadership DNA</p>
+          <p className="hero__tagline">Discover your leadership profile</p>
           <img
             src="https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/0b38331b-e451-4680-ac34-cb7ccd7f1042-1784556518.png"
             alt="Mosaic Leadership Archetypes®"
             className="hero__logo"
           />
           <p className="hero__subtitle">
-            A proprietary framework revealing the full spectrum of leadership archetypes present in
-            every individual and organisation. Understand your natural strengths, hidden potential,
-            and the complete picture of leadership capability.
+            A proprietary framework revealing the full spectrum of leadership archetype potential
+            present in every individual, team, and organisation. Understand your natural
+            strengths, growth areas, and the complete picture of leadership capability to
+            remain future fit.
           </p>
 
           {/* Video */}
@@ -72,11 +73,8 @@ export function Home() {
           </div>
 
           <div className="hero__cta">
-            <Button variant="black" href="/download">
-              Download the Mosaic Leadership Archetype Handbook
-            </Button>
             <Button variant="black" href="/enquiry">
-              Request a Call Back
+              Cross the Threshold
             </Button>
           </div>
         </div>
@@ -160,7 +158,7 @@ export function Home() {
               Explore Workshops
             </Button>
             <Button variant="gold" href="/enquiry">
-              Enquire Now
+              Cross the Threshold
             </Button>
           </div>
         </div>

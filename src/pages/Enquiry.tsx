@@ -1,10 +1,10 @@
 import { useState, FormEvent } from 'react';
 import { Button } from '../components/Button';
-import { CheckCircle, Phone, Mail } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 export function Enquiry() {
-  useDocumentTitle('Enquire Now');
+  useDocumentTitle('Start the Journey');
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({
     name: '',
@@ -16,7 +16,6 @@ export function Enquiry() {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     if (!form.name || !form.email || !form.message) return;
-    // In production, submit to CRM/email/Google Sheets
     setSubmitted(true);
     if (typeof window !== 'undefined' && (window as any).gtag) {
       (window as any).gtag('event', 'submit_form', { form_type: 'enquiry' });
@@ -62,42 +61,13 @@ export function Enquiry() {
         <div className="page-header__texture" />
         <div className="page-header__inner">
           <p className="section__label">Connect</p>
-          <h1 className="section__title">Enquire Now</h1>
-          <p className="section__subtitle" style={{ margin: '0 auto', color: 'rgba(255,255,255,0.7)' }}>
-            Interested in Mosaic workshops, coaching, or leadership development? Fill in the form
-            and we'll be in touch within two business days.
-          </p>
+          <h1 className="section__title">Start the Journey</h1>
         </div>
       </div>
 
       {/* Form */}
       <section className="section section--white">
         <div className="section__inner" style={{ maxWidth: '700px' }}>
-          <div className="two-col mb-10">
-            <div className="flex gap-3 items-start">
-              <Phone size={20} style={{ color: 'var(--colour-mosaic-gold)', marginTop: 2 }} />
-              <div>
-                <p style={{ fontFamily: 'var(--font-subheader)', fontSize: '0.8125rem', fontWeight: 700, color: 'var(--colour-black)', marginBottom: '0.25rem' }}>
-                  Call Us
-                </p>
-                <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9375rem', color: 'rgba(0,0,0,0.6)' }}>
-                  +44 (0) 20 0000 0000
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-3 items-start">
-              <Mail size={20} style={{ color: 'var(--colour-mosaic-gold)', marginTop: 2 }} />
-              <div>
-                <p style={{ fontFamily: 'var(--font-subheader)', fontSize: '0.8125rem', fontWeight: 700, color: 'var(--colour-black)', marginBottom: '0.25rem' }}>
-                  Email Us
-                </p>
-                <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9375rem', color: 'rgba(0,0,0,0.6)' }}>
-                  hello@mosaic-archetypes.co.uk
-                </p>
-              </div>
-            </div>
-          </div>
-
           <form
             onSubmit={handleSubmit}
             className="form-card-dark"
@@ -169,7 +139,7 @@ export function Enquiry() {
               className="btn btn--on-black w-full mt-2"
               style={{ padding: '0.875rem 1.5rem' }}
             >
-              Send Enquiry
+              Submit Enquiry
             </button>
           </form>
         </div>

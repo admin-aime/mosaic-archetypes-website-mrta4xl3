@@ -49,9 +49,6 @@ export function Header() {
           <Button variant="black" href="/enquiry">
             Book a Call
           </Button>
-          <Button variant="black" href="/download">
-            Download Handbook
-          </Button>
           <Button variant="black" href="/login" className="btn--login">
             Login
           </Button>
@@ -80,9 +77,6 @@ export function Header() {
           ))}
           <Button variant="black" href="/enquiry" onClick={closeMobile}>
             Book a Call
-          </Button>
-          <Button variant="black" href="/download" onClick={closeMobile}>
-            Download Handbook
           </Button>
           <Button variant="black" href="/login" onClick={closeMobile} className="btn--login">
             Login

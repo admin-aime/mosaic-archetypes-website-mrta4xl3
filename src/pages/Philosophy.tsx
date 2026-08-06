@@ -36,29 +36,32 @@ export function Philosophy() {
           <p className="section__label">Our Methodology</p>
           <h1 className="section__title">The Mosaic Philosophy</h1>
           <p className="section__subtitle" style={{ margin: '0 auto', color: 'rgba(255,255,255,0.7)' }}>
-            Leadership is not a single trait. It is a pattern — a mosaic of capabilities,
-            tendencies, and potential. Our framework reveals the complete picture.
+            Leadership is not a single trait. It is a system – a mosaic of capabilities,
+            traits, characteristics, and potential. Our framework highlights the complete pattern.
           </p>
         </div>
       </div>
 
-      {/* Core Framework */}
+      {/* Core Systemic Framework */}
       <section className="section section--white">
         <div className="section__inner">
-          <p className="section__label">Core Framework</p>
+          <p className="section__label">Core Systemic Framework</p>
           <h2 className="section__title">Why Mosaic Matters</h2>
           <p className="section__body">
-            Traditional leadership models flatten complexity. They label leaders as one thing —
-            visionary, or operational, or people-focused — ignoring the reality that effective
-            leadership requires range across all dimensions. Mosaic refuses that trade-off. Our
-            framework identifies ten distinct archetypes organised across four quadrants, and
-            measures how strongly each archetype shows up in your leadership.
+            Traditional leadership models flatten complexity and pigeon-hole potential. They
+            label leaders as one thing – visionary, or operational, or people-focused, or
+            outcome-focused etc. – ignoring the reality that leadership, like IQ, requires range
+            across multiple dimensions. The Mosaic method refuses the 'one size fits all' approach.
+            Our framework and system is built on classical as well as progressive thinking and
+            practice, and identifies ten distinct archetypes organised across four quadrants
+            measuring how strongly each archetypal style shows up in your leadership practice.
           </p>
           <p className="section__body">
-            The result is not a category but a fingerprint: a detailed, personal map of your
-            leadership strengths, blind spots, and development opportunities. This map informs
-            everything from individual coaching to team composition to organisational culture
-            transformation.
+            The result is not a category but a profile that is future focused; a detailed personal
+            map of your leadership strengths, preferences, blind spots, and continuous development
+            opportunities. This profile informs everything from individual and team coaching
+            through to team and individual recruitment and composition as well as organisational
+            culture.
           </p>
         </div>
       </section>
@@ -196,19 +199,10 @@ export function Philosophy() {
       <section className="section section--gold">
         <div className="section__inner text-center">
           <p className="section__label">Next Step</p>
-          <h2 className="section__title">Ready to Explore Your Mosaic?</h2>
-          <p className="section__body" style={{ margin: '0 auto 2rem' }}>
-            Discover your leadership archetypes and unlock your full potential with a Mosaic
-            workshop or one-to-one coaching.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Button variant="gold" href="/workshops">
-              Explore Workshops
-            </Button>
-            <Button variant="gold" href="/enquiry">
-              Enquire Now
-            </Button>
-          </div>
+          <h2 className="section__title">Cross the Threshold</h2>
+          <Button variant="gold" href="/enquiry">
+            Cross the Threshold
+          </Button>
         </div>
       </section>
     </>
