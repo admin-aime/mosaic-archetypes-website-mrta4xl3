@@ -47,7 +47,7 @@ export function Header() {
 
         <div className="header-cta">
           <Button variant="black" href="/enquiry">
-            Book a Call
+            START THE JOURNEY
           </Button>
           <Button variant="black" href="/login" className="btn--login">
             Login
@@ -76,7 +76,7 @@ export function Header() {
             </Link>
           ))}
           <Button variant="black" href="/enquiry" onClick={closeMobile}>
-            Book a Call
+            START THE JOURNEY
           </Button>
           <Button variant="black" href="/login" onClick={closeMobile} className="btn--login">
             Login

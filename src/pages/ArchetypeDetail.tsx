@@ -171,7 +171,7 @@ export function ArchetypeDetail() {
               Download Handbook
             </Button>
             <Button variant="gold" href="/enquiry">
-              Book a Call
+              START THE JOURNEY
             </Button>
           </div>
         </div>
