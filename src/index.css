@@ -634,7 +634,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.9375rem;
   line-height: var(--line-height-default);
   color: rgba(255, 255, 255, 0.75);
-  max-width: 600px;
+  max-width: 680px;
   margin: 0 auto 2rem;
 }
 
