@@ -1,14 +1,13 @@
-import { useState, useCallback, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Button } from '../components/Button';
 import { ArchetypeImageCard } from '../components/ArchetypeImageCard';
 import { archetypes } from '../data/archetypes';
-import { Play, ChevronRight } from 'lucide-react';
+import { Play } from 'lucide-react';
 import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 export function Home() {
   useDocumentTitle('Home');
   const [videoPlaying, setVideoPlaying] = useState(false);
-  const [showAllArchetypes, setShowAllArchetypes] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
@@ -17,11 +16,9 @@ export function Home() {
     }
   }, [videoPlaying]);
 
-  const featuredArchetypes = showAllArchetypes ? archetypes : archetypes.slice(0, 6);
-
-  const handleExploreAll = useCallback(() => {
-    setShowAllArchetypes(true);
-  }, []);
+  const featuredArchetypes = archetypes.filter(
+    (a) => a.id === 'heroic' || a.id === 'nurturing' || a.id === 'maverick'
+  );
 
   return (
     <>
@@ -110,18 +107,14 @@ export function Home() {
             ))}
           </div>
 
-          {!showAllArchetypes && (
-            <div className="text-center mt-10">
-              <button
-                onClick={handleExploreAll}
-                className="inline-flex items-center gap-2 font-semibold text-sm uppercase tracking-wider"
-                style={{ color: 'var(--colour-mosaic-gold)', background: 'none', border: 'none', cursor: 'pointer' }}
-              >
-                Explore the Full Archetype Model
-                <ChevronRight size={16} />
-              </button>
-            </div>
-          )}
+          <div className="text-center mt-10">
+            <p className="section__body" style={{ marginBottom: '1.5rem' }}>
+              Contact us to find out more
+            </p>
+            <Button variant="gold" href="/enquiry">
+              Start the Journey
+            </Button>
+          </div>
         </div>
       </section>
 

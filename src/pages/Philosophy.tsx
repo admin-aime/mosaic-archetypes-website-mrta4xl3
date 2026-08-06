@@ -199,7 +199,6 @@ export function Philosophy() {
       <section className="section section--gold">
         <div className="section__inner text-center">
           <p className="section__label">Next Step</p>
-          <h2 className="section__title">Cross the Threshold</h2>
           <Button variant="gold" href="/enquiry">
             Cross the Threshold
           </Button>
