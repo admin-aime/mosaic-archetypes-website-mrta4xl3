@@ -290,12 +290,6 @@ export function Workshops() {
       <section className="section section--gold">
         <div className="section__inner text-center">
           <p className="section__label">Get Started</p>
-          <h2 className="section__title">Find the Right Programme</h2>
-          <p className="section__body" style={{ margin: '0 auto 2rem' }}>
-            Every organisation and leader is different. Cross the threshold — contact a member
-            of our team to discuss which Mosaic experience best fits your context, goals, and
-            ambitions.
-          </p>
           <Button variant="gold" href="/enquiry">
             Cross the Threshold
           </Button>
