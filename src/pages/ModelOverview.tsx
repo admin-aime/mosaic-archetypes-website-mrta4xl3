@@ -23,7 +23,7 @@ export function ModelOverview() {
             framework — a proprietary model that maps ten distinct leadership archetypes across
             four quadrants: Power, Vision, Process, and Relationships. The site serves as both an
             educational resource and a conversion platform, helping visitors understand the framework,
-            explore archetypes, and take action through downloads and enquiries.
+            explore archetypes, and take the next step through the Start the Journey enquiry form.
           </p>
 
           <h2 style={{ fontFamily: 'var(--font-header)', fontSize: '1.75rem', color: 'var(--colour-black)', marginBottom: '1rem', marginTop: '2.5rem' }}>
@@ -37,8 +37,9 @@ export function ModelOverview() {
               </p>
               <p>
                 The landing page introduces the Mosaic framework with a hero section, introductory
-                video, archetype preview cards, philosophy snapshot, and workshops teaser. Visitors
-                can download the guide or request a callback directly from this page.
+                video, three featured archetype cards (Heroic, Nurturing, and Maverick), a
+                philosophy snapshot, and a Solutions call-to-action. Visitors can start their
+                journey directly from this page via the Cross the Threshold button.
               </p>
             </div>
 
@@ -47,9 +48,9 @@ export function ModelOverview() {
                 Archetype Model
               </p>
               <p>
-                Displays all ten leadership archetypes as interactive cards, filterable by the
-                four quadrants (Power, Vision, Process, Relationships). Each card links to a dedicated detail
-                page with a full description, quadrant context, and related archetypes.
+                Displays all ten leadership archetypes as interactive cards. Each card links to a dedicated
+                detail page with the archetype image (with male/female toggle), a full description,
+                quadrant context, and related archetypes from the same quadrant.
               </p>
             </div>
 
@@ -58,54 +59,45 @@ export function ModelOverview() {
                 Philosophy
               </p>
               <p>
-                Explains the Mosaic methodology — the multi-dimensional approach to leadership and
-                four pillars of application: Multi-Dimensional Leadership, Archetypes Not Types,
-                Precision Development, and Collective Leadership. Includes a visual
-                model diagram of the four quadrants.
+                Explains the Mosaic methodology — the multi-dimensional approach to leadership
+                grounded in the circumplex model. Covers the four axes (Power, Vision, Process,
+                Relationships) and why the Mosaic framework is a departure from traditional,
+                one-dimensional leadership models. Includes a visual diagram of the model.
               </p>
             </div>
 
             <div>
               <p style={{ fontWeight: 700, color: 'var(--colour-black)', marginBottom: '0.25rem' }}>
-                Workshops & Programmes
+                Solutions
               </p>
               <p>
-                Lists four workshop formats (Discovery, Deep Dive, Leadership Journey, Team
-                Alignment) with duration, format, descriptions, and learning outcomes. Also
-                covers benefits of the Mosaic approach and a call-to-action to enquire.
+                Presents three workshop tiers — Silver, Gold, and Platinum — each with a
+                description of what the programme includes and typical outcomes. A shared
+                Cross the Threshold call-to-action at the bottom invites visitors to enquire
+                about the right programme for their context.
               </p>
             </div>
 
             <div>
               <p style={{ fontWeight: 700, color: 'var(--colour-black)', marginBottom: '0.25rem' }}>
-                Download Handbook (Gated)
+                Start the Journey
               </p>
               <p>
-                A lead-capture page where visitors submit their name, email, organisation, and phone
-                to receive the Mosaic Leadership Archetype Handbook. After submission, a thank-you confirmation
-                screen appears with delivery instructions.
+                A contact form (name, email, phone, message) for visitors to enquire about
+                Mosaic programmes or request more information. After submission, a
+                confirmation screen confirms receipt and sets expectations for a response
+                within two business days.
               </p>
             </div>
 
             <div>
               <p style={{ fontWeight: 700, color: 'var(--colour-black)', marginBottom: '0.25rem' }}>
-                Enquire Now
+                About — The Mosaic Approach
               </p>
               <p>
-                A contact form (name, email, phone, message) for visitors to request a callback or
-                more information. Includes contact details (phone and email) and a post-submission
-                confirmation screen.
-              </p>
-            </div>
-
-            <div>
-              <p style={{ fontWeight: 700, color: 'var(--colour-black)', marginBottom: '0.25rem' }}>
-                About Mosaic
-              </p>
-              <p>
-                Shares the mission, founder background, and core values of Mosaic Leadership
-                Archetypes® — depth over simplicity, evidence over opinion, growth over fixing, and
-                context over dogma.
+                Shares the Mosaic story: the mission, founder backgrounds (Ian Buckingham and
+                Kate Hargreaves), the core principles behind the framework — including why it
+                was created, the Why Mosaic Archetypes section, and contact details.
               </p>
             </div>
 
@@ -125,9 +117,9 @@ export function ModelOverview() {
           </h2>
           <p className="section__body">
             Browse the archetypes to understand the framework, read the philosophy to see why it
-            matters, explore workshop options for team or individual development, and use the
-            download or enquiry forms to take the next step. The site works on desktop, tablet,
-            and mobile devices.
+            matters, explore the Solutions page for development options, and use the Start the
+            Journey form to take the next step. The site works on desktop, tablet, and mobile
+            devices.
           </p>
 
           <div className="mt-8">

@@ -28,7 +28,7 @@ export function Enquiry() {
         <div className="page-header">
           <div className="page-header__texture" />
           <div className="page-header__inner">
-            <p className="section__label">Enquiry</p>
+            <p className="section__label">Connect</p>
             <h1 className="section__title">Thank You</h1>
           </div>
         </div>

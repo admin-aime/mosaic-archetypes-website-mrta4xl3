@@ -136,7 +136,7 @@ export function Home() {
       </section>
 
       {/* ===== WORKSHOPS SNAPSHOT ===== */}
-      <section className="section section--gold" id="workshops-snapshot">
+      <section className="section section--gold" id="solutions-snapshot">
         <div className="section__inner text-center">
           <p className="section__label">Get Started</p>
           <Button variant="gold" href="/enquiry">

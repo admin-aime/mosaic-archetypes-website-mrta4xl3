@@ -42,10 +42,9 @@ export function Privacy() {
               3. How We Use Your Information
             </h3>
             <p className="mb-4">
-              We use your information to respond to enquiries, deliver requested resources (such as
-              the Mosaic Leadership Archetype Handbook), improve our website and services, and — with your consent —
-              send you relevant information about Mosaic Leadership Archetypes®. We never sell your
-              personal data to third parties.
+              We use your information to respond to enquiries, deliver requested resources, improve
+              our website and services, and — with your consent — send you relevant information about
+              Mosaic Leadership Archetypes®. We never sell your personal data to third parties.
             </p>
 
             <h3 style={{ fontFamily: 'var(--font-header)', fontSize: '1.25rem', color: 'var(--colour-black)', marginBottom: '0.75rem', marginTop: '2rem' }}>

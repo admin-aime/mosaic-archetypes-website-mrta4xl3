@@ -159,7 +159,7 @@ export function ArchetypeDetail() {
       <section className="section section--gold">
         <div className="section__inner text-center reveal">
           <h2 className="section__title" style={{ fontSize: '2rem' }}>
-            Discover Your Archetype Profile
+            Cross the Threshold
           </h2>
           <Button variant="gold" href="/enquiry">
             START THE JOURNEY
