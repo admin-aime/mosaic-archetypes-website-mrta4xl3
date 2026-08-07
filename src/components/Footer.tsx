@@ -36,7 +36,7 @@ export function Footer() {
               <Link to="/about">About Mosaic</Link>
             </li>
             <li>
-              <Link to="/enquiry">Enquire Now</Link>
+              <Link to="/enquiry">Start the Journey</Link>
             </li>
             <li>
               <Link to="/privacy">Privacy Policy</Link>
