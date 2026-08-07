@@ -137,23 +137,11 @@ export function Home() {
 
       {/* ===== WORKSHOPS SNAPSHOT ===== */}
       <section className="section section--gold" id="workshops-snapshot">
-        <div className="section__inner">
-          <p className="section__label">Development</p>
-          <h2 className="section__title">Workshops & Development</h2>
-          <p className="section__body">
-            From half-day intensives to multi-session leadership journeys, Mosaic workshops bring
-            the archetypes to life. Available in-person and virtually, our programmes combine
-            self-assessment, peer feedback, experiential exercises, and practical application —
-            all grounded in the Mosaic framework.
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <Button variant="gold" href="/workshops">
-              Explore Workshops
-            </Button>
-            <Button variant="gold" href="/enquiry">
-              Cross the Threshold
-            </Button>
-          </div>
+        <div className="section__inner text-center">
+          <p className="section__label">Get Started</p>
+          <Button variant="gold" href="/enquiry">
+            Cross the Threshold
+          </Button>
         </div>
       </section>
     </>
