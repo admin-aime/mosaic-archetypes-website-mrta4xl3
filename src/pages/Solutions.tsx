@@ -2,8 +2,8 @@ import { Button } from '../components/Button';
 import { CheckCircle } from 'lucide-react';
 import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
-export function Workshops() {
-  useDocumentTitle('Workshops');
+export function Solutions() {
+  useDocumentTitle('Solutions');
 
   const tiers = [
     {

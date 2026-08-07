@@ -6,10 +6,9 @@ import { CookieBanner } from './components/CookieBanner';
 import { BackToTop } from './components/BackToTop';
 import { Home } from './pages/Home';
 import { Philosophy } from './pages/Philosophy';
-import { Workshops } from './pages/Workshops';
+import { Solutions } from './pages/Solutions';
 import { Model } from './pages/Model';
 import { ArchetypeDetail } from './pages/ArchetypeDetail';
-import { Download } from './pages/Download';
 import { Enquiry } from './pages/Enquiry';
 import { About } from './pages/About';
 import { Privacy } from './pages/Privacy';
@@ -46,7 +45,7 @@ export default function App() {
     (window as any).__APP_ROUTES__ = [
       '/',
       '/philosophy',
-      '/workshops',
+      '/solutions',
       '/model',
       '/archetype/versatile',
       '/archetype/heroic',
@@ -58,7 +57,6 @@ export default function App() {
       '/archetype/architect',
       '/archetype/nurturing',
       '/archetype/maverick',
-      '/download',
       '/enquiry',
       '/about',
       '/privacy',
@@ -87,10 +85,9 @@ export default function App() {
             <Route element={<PageTransition />}>
               <Route path="/" element={<Home />} />
               <Route path="/philosophy" element={<Philosophy />} />
-              <Route path="/workshops" element={<Workshops />} />
+              <Route path="/solutions" element={<Solutions />} />
               <Route path="/model" element={<Model />} />
               <Route path="/archetype/:id" element={<ArchetypeDetail />} />
-              <Route path="/download" element={<Download />} />
               <Route path="/enquiry" element={<Enquiry />} />
               <Route path="/about" element={<About />} />
               <Route path="/privacy" element={<Privacy />} />

@@ -14,7 +14,7 @@ export function Header() {
   const navLinks = [
     { to: '/model', label: 'Archetype Model' },
     { to: '/philosophy', label: 'Philosophy' },
-    { to: '/workshops', label: 'Solutions' },
+    { to: '/solutions', label: 'Solutions' },
     { to: '/about', label: 'About' },
   ];
 

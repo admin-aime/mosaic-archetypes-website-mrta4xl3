@@ -161,19 +161,9 @@ export function ArchetypeDetail() {
           <h2 className="section__title" style={{ fontSize: '2rem' }}>
             Discover Your Archetype Profile
           </h2>
-          <p className="section__body" style={{ margin: '0 auto 2rem' }}>
-            The {archetype.leaderType} Leader is just one part of your mosaic.
-            Explore your full leadership profile with a Mosaic workshop or
-            download the complete guide.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Button variant="gold" href="/download">
-              Download Handbook
-            </Button>
-            <Button variant="gold" href="/enquiry">
-              START THE JOURNEY
-            </Button>
-          </div>
+          <Button variant="gold" href="/enquiry">
+            START THE JOURNEY
+          </Button>
         </div>
       </section>
     </>
