@@ -57,7 +57,7 @@ export function ArchetypeDetail() {
           {/* ---- Left: Text ---- */}
           <div className="detail-hero__text-col reveal">
             <Link to="/model" className="detail-hero__back">
-              <ArrowLeft size={14} /> Back to All Archetypes
+              <ArrowLeft size={14} /> Back
             </Link>
 
             <span className="detail-hero__quadrant">{archetype.axis}</span>
