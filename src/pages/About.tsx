@@ -1,4 +1,4 @@
-import { Button } from '../components/Button';
+import { Link } from 'react-router-dom';
 import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 export function About() {
@@ -137,18 +137,10 @@ export function About() {
       </section>
 
       {/* CTA */}
-      <section className="section section--gold">
-        <div className="section__inner text-center">
-          <h2 className="section__title">Let's Talk</h2>
-          <p className="section__body" style={{ margin: '0 auto 2rem' }}>
-            Ready to explore how Mosaic can transform leadership in your organisation?
-            Get in touch to start the conversation.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Button variant="gold" href="/enquiry">
-              Cross the Threshold
-            </Button>
-          </div>
+      <section className="section section--white" id="about-cta">
+        <div className="section__inner" style={{ textAlign: 'center', maxWidth: 800 }}>
+          <p className="section__label" style={{ color: 'var(--colour-mosaic-gold)' }}>Get Started</p>
+          <Link to="/enquiry" className="btn btn--on-black">Cross the Threshold</Link>
         </div>
       </section>
     </>
