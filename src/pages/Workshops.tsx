@@ -124,7 +124,7 @@ export function Workshops() {
       <div className="page-header">
         <div className="page-header__texture" />
         <div className="page-header__inner">
-          <p className="section__label">Development</p>
+          <p className="section__label">Solutions</p>
           <h1 className="section__title">Team Experiences &amp; Leadership Development Solutions</h1>
           <p className="section__subtitle" style={{ margin: '0 auto', color: 'rgba(255,255,255,0.7)' }}>
             The Mosaic Leadership Archetypes™ methodology is designed to support leaders, teams
