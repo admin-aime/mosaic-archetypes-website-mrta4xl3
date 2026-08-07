@@ -198,7 +198,7 @@ export function Philosophy() {
       {/* CTA */}
       <section className="section section--gold">
         <div className="section__inner text-center">
-          <p className="section__label">Next Step</p>
+          <p className="section__label">GET STARTED</p>
           <Button variant="gold" href="/enquiry">
             Cross the Threshold
           </Button>
