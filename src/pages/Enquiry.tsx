@@ -98,8 +98,112 @@ export function Enquiry() {
         </div>
       </div>
 
+      {/* Sub-Navigation */}
+      <div style={{
+        background: '#f8f8f8',
+        borderBottom: '1px solid rgba(0,0,0,0.06)',
+        padding: '0.875rem 1rem',
+        position: 'sticky',
+        top: 0,
+        zIndex: 40,
+      }}>
+        <div style={{
+          maxWidth: '900px',
+          margin: '0 auto',
+          display: 'flex',
+          justifyContent: 'center',
+          gap: 'clamp(0.5rem, 2vw, 1.5rem)',
+          flexWrap: 'wrap',
+        }}>
+          <button
+            onClick={() => { document.getElementById('section-book-call')?.scrollIntoView({ behavior: 'smooth' }); }}
+            style={{
+              fontFamily: 'var(--font-body)',
+              fontSize: '0.8125rem',
+              fontWeight: 600,
+              color: 'var(--colour-black)',
+              cursor: 'pointer',
+              padding: '0.5rem 1rem',
+              borderRadius: '999px',
+              border: '1px solid rgba(0,0,0,0.12)',
+              background: 'var(--colour-white)',
+              transition: 'border-color 0.2s',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.375rem',
+            }}
+          >
+            <span style={{ fontSize: '0.75rem', color: 'var(--colour-mosaic-gold)' }}>●</span>
+            Book a Call
+          </button>
+          <button
+            onClick={() => { document.getElementById('section-brochure')?.scrollIntoView({ behavior: 'smooth' }); }}
+            style={{
+              fontFamily: 'var(--font-body)',
+              fontSize: '0.8125rem',
+              fontWeight: 600,
+              color: 'var(--colour-black)',
+              cursor: 'pointer',
+              padding: '0.5rem 1rem',
+              borderRadius: '999px',
+              border: '1px solid rgba(0,0,0,0.12)',
+              background: 'var(--colour-white)',
+              transition: 'border-color 0.2s',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.375rem',
+            }}
+          >
+            <span style={{ fontSize: '0.75rem', color: 'var(--colour-mosaic-gold)' }}>●</span>
+            Download Brochure
+          </button>
+          <button
+            onClick={() => { document.getElementById('section-books')?.scrollIntoView({ behavior: 'smooth' }); }}
+            style={{
+              fontFamily: 'var(--font-body)',
+              fontSize: '0.8125rem',
+              fontWeight: 600,
+              color: 'var(--colour-black)',
+              cursor: 'pointer',
+              padding: '0.5rem 1rem',
+              borderRadius: '999px',
+              border: '1px solid rgba(0,0,0,0.12)',
+              background: 'var(--colour-white)',
+              transition: 'border-color 0.2s',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.375rem',
+            }}
+          >
+            <span style={{ fontSize: '0.75rem', color: 'var(--colour-mosaic-gold)' }}>●</span>
+            Books
+          </button>
+          <button
+            onClick={() => { document.getElementById('section-merch')?.scrollIntoView({ behavior: 'smooth' }); }}
+            style={{
+              fontFamily: 'var(--font-body)',
+              fontSize: '0.8125rem',
+              fontWeight: 600,
+              color: 'var(--colour-black)',
+              cursor: 'pointer',
+              padding: '0.5rem 1rem',
+              borderRadius: '999px',
+              border: '1px solid rgba(0,0,0,0.12)',
+              background: 'var(--colour-white)',
+              transition: 'border-color 0.2s',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.375rem',
+            }}
+          >
+            <span style={{ fontSize: '0.75rem', color: 'var(--colour-mosaic-gold)' }}>●</span>
+            Merch
+          </button>
+        </div>
+      </div>
+
       {/* Section 1 — Book a Call */}
-      <section className="section section--white">
+      <section className="section section--white" id="section-book-call" style={{ scrollMarginTop: '4rem' }}>
         <div className="section__inner" style={{ maxWidth: '700px' }}>
           <h2 style={{
             fontFamily: 'var(--font-header)',
@@ -199,7 +303,7 @@ export function Enquiry() {
       </section>
 
       {/* Section 2 — Download the Brochure */}
-      <section className="section section--black">
+      <section className="section section--black" id="section-brochure" style={{ scrollMarginTop: '4rem' }}>
         <div className="section__inner" style={{ maxWidth: '700px' }}>
           <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
             <BookOpen size={36} style={{ color: 'var(--colour-mosaic-gold)', marginBottom: '1rem' }} />
@@ -309,7 +413,7 @@ export function Enquiry() {
       </section>
 
       {/* Section 3 — Books & Merchandise */}
-      <section className="section section--white">
+      <section className="section section--white" id="section-books" style={{ scrollMarginTop: '4rem' }}>
         <div className="section__inner" style={{ maxWidth: '900px' }}>
           {/* Books */}
           <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
@@ -395,7 +499,8 @@ export function Enquiry() {
           </div>
 
           {/* Merchandise */}
-          <div style={{
+          <div id="section-merch" style={{
+            scrollMarginTop: '4rem',
             marginTop: '3rem',
             padding: '2rem',
             background: '#f8f8f8',
