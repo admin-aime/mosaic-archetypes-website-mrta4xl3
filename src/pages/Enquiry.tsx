@@ -1,12 +1,13 @@
 import { useState, FormEvent } from 'react';
 import { Link } from 'react-router-dom';
-import { CheckCircle, BookOpen, ShoppingBag } from 'lucide-react';
+import { CheckCircle, BookOpen, ShoppingBag, X } from 'lucide-react';
 import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 export function Enquiry() {
   useDocumentTitle('Start the Journey');
   const [submitted, setSubmitted] = useState(false);
   const [brochureSubmitted, setBrochureSubmitted] = useState(false);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -521,14 +522,88 @@ export function Enquiry() {
               fontSize: '0.9375rem',
               color: 'rgba(0,0,0,0.55)',
               maxWidth: '500px',
-              margin: '0 auto',
+              margin: '0 auto 2rem auto',
             }}>
               Our merchandise collection is coming soon. Sign up for updates or enquire
               about early access for existing customers.
             </p>
+            <button
+              onClick={() => setLightboxOpen(true)}
+              style={{
+                background: 'none',
+                border: 'none',
+                padding: 0,
+                cursor: 'zoom-in',
+                display: 'block',
+                margin: '0 auto',
+              }}
+              title="Click to enlarge"
+            >
+              <img
+                src="https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/9d0f955a-0d74-40ac-a6d9-e91e3fb2ac15-1786202192.png"
+                alt="Mosaic Merchandise"
+                style={{
+                  maxWidth: '100%',
+                  height: 'auto',
+                  display: 'block',
+                }}
+              />
+            </button>
           </div>
         </div>
       </section>
+
+      {/* Lightbox Overlay */}
+      {lightboxOpen && (
+        <div
+          onClick={() => setLightboxOpen(false)}
+          style={{
+            position: 'fixed',
+            inset: 0,
+            zIndex: 9999,
+            background: 'rgba(0,0,0,0.92)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: '2rem',
+            cursor: 'zoom-out',
+          }}
+        >
+          <button
+            onClick={() => setLightboxOpen(false)}
+            style={{
+              position: 'absolute',
+              top: '1.25rem',
+              right: '1.25rem',
+              background: 'rgba(255,255,255,0.1)',
+              border: '1px solid rgba(255,255,255,0.25)',
+              borderRadius: '50%',
+              width: '44px',
+              height: '44px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              cursor: 'pointer',
+              color: 'var(--colour-white)',
+              transition: 'background 0.2s',
+            }}
+            title="Close"
+          >
+            <X size={22} />
+          </button>
+          <img
+            src="https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/9d0f955a-0d74-40ac-a6d9-e91e3fb2ac15-1786202192.png"
+            alt="Mosaic Merchandise"
+            style={{
+              maxWidth: '100%',
+              maxHeight: '90vh',
+              objectFit: 'contain',
+              cursor: 'default',
+            }}
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
     </>
   );
 }
