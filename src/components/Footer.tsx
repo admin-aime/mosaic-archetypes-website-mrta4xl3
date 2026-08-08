@@ -5,10 +5,10 @@ export function Footer() {
     <footer className="site-footer">
       <div className="site-footer__inner">
         <div>
-          <p className="footer__brand">MOSAIC® LEADERSHIP ARCHETYPES®</p>
+          <p className="footer__brand">MOSAIC LEADERSHIP ARCHETYPES®</p>
           <p className="footer__text">
             A proprietary framework for understanding and developing leadership capability. Mosaic
-            reveals the full spectrum of leadership archetypes present in every individual and
+            reveals the full spectrum of leadership archetypes present in every individual, team and
             organisation.
           </p>
         </div>
@@ -50,7 +50,7 @@ export function Footer() {
 
       <div className="footer__bottom">
         <span>© {new Date().getFullYear()} Mosaic Leadership Archetypes®. All rights reserved.</span>
-        <span>MOSAIC® and LEADERSHIP ARCHETYPES® are registered trademarks.</span>
+        <span>MOSAIC and LEADERSHIP ARCHETYPES® are registered trademarks.</span>
       </div>
     </footer>
   );

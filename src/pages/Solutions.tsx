@@ -1,4 +1,4 @@
-import { Button } from '../components/Button';
+import { Link } from 'react-router-dom';
 import { CheckCircle } from 'lucide-react';
 import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
@@ -9,6 +9,7 @@ export function Solutions() {
     {
       name: 'Silver Experience',
       subtitle: 'Insight & Awareness',
+      color: '#9CA3AF',
       bestForTitle: 'Best for',
       bestFor: [
         'Team away days',
@@ -42,6 +43,7 @@ export function Solutions() {
     {
       name: 'Gold Experience',
       subtitle: 'Team Development & Effectiveness',
+      color: '#a67718',
       bestForTitle: 'Best for',
       bestFor: [
         'Leadership and management teams',
@@ -79,6 +81,7 @@ export function Solutions() {
     {
       name: 'Platinum Experience',
       subtitle: 'Strategic Leadership & Organisational Transformation',
+      color: '#B8A99A',
       bestForTitle: 'Best for',
       bestFor: [
         'Executive teams',
@@ -118,6 +121,10 @@ export function Solutions() {
     },
   ];
 
+  const bulletColor = (tierColor: string, isDarkBg: boolean) => {
+    return tierColor;
+  };
+
   return (
     <>
       {/* Page Header */}
@@ -151,148 +158,158 @@ export function Solutions() {
       </section>
 
       {/* Tier Cards */}
-      {tiers.map((tier, i) => (
-        <section key={tier.name} className={`section ${i % 2 === 0 ? 'section--black' : 'section--white'}`}>
-          <div className="section__inner" style={{ maxWidth: '900px' }}>
-            <p className="section__label">{tier.name}</p>
-            <h2 className="section__title" style={i % 2 === 0 ? {} : { color: 'var(--colour-black)' }}>
-              {tier.subtitle}
-            </h2>
+      {tiers.map((tier, i) => {
+        const isDark = i % 2 === 0;
+        const bgClass = isDark ? 'section--black' : 'section--white';
 
-            {/* Best For */}
-            <div className="mt-6 mb-6">
+        return (
+          <section key={tier.name} className={`section ${bgClass}`}>
+            <div className="section__inner" style={{ maxWidth: '900px' }}>
+              <p className="section__label" style={{ color: tier.color }}>
+                {tier.name}
+              </p>
+              <h2
+                className="section__title"
+                style={{ color: isDark ? tier.color : 'var(--colour-black)' }}
+              >
+                {tier.subtitle}
+              </h2>
+
+              {/* Best For */}
+              <div className="mt-6 mb-6">
+                <p style={{
+                  fontFamily: 'var(--font-subheader)',
+                  fontSize: '0.8125rem',
+                  fontWeight: 700,
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.1em',
+                  color: tier.color,
+                  marginBottom: '0.75rem',
+                }}>
+                  {tier.bestForTitle}
+                </p>
+                <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
+                  {tier.bestFor.map((item) => (
+                    <li
+                      key={item}
+                      className="flex items-start gap-2"
+                      style={{
+                        fontFamily: 'var(--font-body)',
+                        fontSize: '0.875rem',
+                        color: isDark ? 'rgba(255,255,255,0.7)' : 'rgba(0,0,0,0.65)',
+                      }}
+                    >
+                      <CheckCircle size={14} style={{ color: tier.color, marginTop: 3, flexShrink: 0 }} />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Overview */}
+              <h3 style={{
+                fontFamily: 'var(--font-header)',
+                fontSize: '1.5rem',
+                marginBottom: '0.75rem',
+                color: isDark ? tier.color : 'var(--colour-black)',
+              }}>
+                Overview
+              </h3>
+              <p className="section__body" style={isDark ? { color: 'rgba(255,255,255,0.7)' } : {}}>
+                {tier.overview}
+              </p>
               <p style={{
-                fontFamily: 'var(--font-subheader)',
-                fontSize: '0.8125rem',
-                fontWeight: 700,
-                textTransform: 'uppercase',
-                letterSpacing: '0.1em',
-                color: 'var(--colour-mosaic-gold)',
+                fontFamily: 'var(--font-body)',
+                fontSize: '0.875rem',
+                fontStyle: 'italic',
+                lineHeight: '1.5',
+                color: isDark ? 'rgba(255,255,255,0.5)' : 'rgba(0,0,0,0.45)',
+                marginBottom: '2rem',
+              }}>
+                {tier.overviewNote}
+              </p>
+
+              {/* Programme */}
+              <h3 style={{
+                fontFamily: 'var(--font-header)',
+                fontSize: '1.5rem',
+                marginBottom: '0.75rem',
+                color: isDark ? tier.color : 'var(--colour-black)',
+              }}>
+                {tier.programmeTitle}
+              </h3>
+              <p style={{
+                fontFamily: 'var(--font-body)',
+                fontSize: '0.9375rem',
+                lineHeight: '1.5',
+                color: isDark ? 'rgba(255,255,255,0.7)' : 'rgba(0,0,0,0.65)',
                 marginBottom: '0.75rem',
               }}>
-                {tier.bestForTitle}
+                {tier.programmeIntro}
               </p>
-              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
-                {tier.bestFor.map((item) => (
+              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.35rem', marginBottom: '2rem' }}>
+                {tier.programmeItems.map((item) => (
                   <li
                     key={item}
                     className="flex items-start gap-2"
                     style={{
                       fontFamily: 'var(--font-body)',
                       fontSize: '0.875rem',
-                      color: i % 2 === 0 ? 'rgba(255,255,255,0.7)' : 'rgba(0,0,0,0.65)',
+                      color: isDark ? 'rgba(255,255,255,0.7)' : 'rgba(0,0,0,0.65)',
                     }}
                   >
-                    <CheckCircle size={14} style={{ color: 'var(--colour-mosaic-gold)', marginTop: 3, flexShrink: 0 }} />
+                    <CheckCircle size={14} style={{ color: tier.color, marginTop: 3, flexShrink: 0 }} />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+
+              {/* Outcomes */}
+              <h3 style={{
+                fontFamily: 'var(--font-header)',
+                fontSize: '1.5rem',
+                marginBottom: '0.75rem',
+                color: isDark ? tier.color : 'var(--colour-black)',
+              }}>
+                {tier.outcomesTitle}
+              </h3>
+              <p style={{
+                fontFamily: 'var(--font-body)',
+                fontSize: '0.9375rem',
+                lineHeight: '1.5',
+                color: isDark ? 'rgba(255,255,255,0.7)' : 'rgba(0,0,0,0.65)',
+                marginBottom: '0.75rem',
+              }}>
+                {tier.outcomesIntro}
+              </p>
+              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
+                {tier.outcomes.map((item) => (
+                  <li
+                    key={item}
+                    className="flex items-start gap-2"
+                    style={{
+                      fontFamily: 'var(--font-body)',
+                      fontSize: '0.875rem',
+                      color: isDark ? 'rgba(255,255,255,0.7)' : 'rgba(0,0,0,0.65)',
+                    }}
+                  >
+                    <CheckCircle size={14} style={{ color: tier.color, marginTop: 3, flexShrink: 0 }} />
                     {item}
                   </li>
                 ))}
               </ul>
             </div>
-
-            {/* Overview */}
-            <h3 style={{
-              fontFamily: 'var(--font-header)',
-              fontSize: '1.5rem',
-              marginBottom: '0.75rem',
-              color: i % 2 === 0 ? 'var(--colour-white)' : 'var(--colour-black)',
-            }}>
-              Overview
-            </h3>
-            <p className="section__body" style={i % 2 === 0 ? { color: 'rgba(255,255,255,0.7)' } : {}}>
-              {tier.overview}
-            </p>
-            <p style={{
-              fontFamily: 'var(--font-body)',
-              fontSize: '0.875rem',
-              fontStyle: 'italic',
-              lineHeight: '1.5',
-              color: i % 2 === 0 ? 'rgba(255,255,255,0.5)' : 'rgba(0,0,0,0.45)',
-              marginBottom: '2rem',
-            }}>
-              {tier.overviewNote}
-            </p>
-
-            {/* Programme */}
-            <h3 style={{
-              fontFamily: 'var(--font-header)',
-              fontSize: '1.5rem',
-              marginBottom: '0.75rem',
-              color: i % 2 === 0 ? 'var(--colour-white)' : 'var(--colour-black)',
-            }}>
-              {tier.programmeTitle}
-            </h3>
-            <p style={{
-              fontFamily: 'var(--font-body)',
-              fontSize: '0.9375rem',
-              lineHeight: '1.5',
-              color: i % 2 === 0 ? 'rgba(255,255,255,0.7)' : 'rgba(0,0,0,0.65)',
-              marginBottom: '0.75rem',
-            }}>
-              {tier.programmeIntro}
-            </p>
-            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.35rem', marginBottom: '2rem' }}>
-              {tier.programmeItems.map((item) => (
-                <li
-                  key={item}
-                  className="flex items-start gap-2"
-                  style={{
-                    fontFamily: 'var(--font-body)',
-                    fontSize: '0.875rem',
-                    color: i % 2 === 0 ? 'rgba(255,255,255,0.7)' : 'rgba(0,0,0,0.65)',
-                  }}
-                >
-                  <CheckCircle size={14} style={{ color: 'var(--colour-mosaic-gold)', marginTop: 3, flexShrink: 0 }} />
-                  {item}
-                </li>
-              ))}
-            </ul>
-
-            {/* Outcomes */}
-            <h3 style={{
-              fontFamily: 'var(--font-header)',
-              fontSize: '1.5rem',
-              marginBottom: '0.75rem',
-              color: i % 2 === 0 ? 'var(--colour-white)' : 'var(--colour-black)',
-            }}>
-              {tier.outcomesTitle}
-            </h3>
-            <p style={{
-              fontFamily: 'var(--font-body)',
-              fontSize: '0.9375rem',
-              lineHeight: '1.5',
-              color: i % 2 === 0 ? 'rgba(255,255,255,0.7)' : 'rgba(0,0,0,0.65)',
-              marginBottom: '0.75rem',
-            }}>
-              {tier.outcomesIntro}
-            </p>
-            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
-              {tier.outcomes.map((item) => (
-                <li
-                  key={item}
-                  className="flex items-start gap-2"
-                  style={{
-                    fontFamily: 'var(--font-body)',
-                    fontSize: '0.875rem',
-                    color: i % 2 === 0 ? 'rgba(255,255,255,0.7)' : 'rgba(0,0,0,0.65)',
-                  }}
-                >
-                  <CheckCircle size={14} style={{ color: 'var(--colour-mosaic-gold)', marginTop: 3, flexShrink: 0 }} />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-      ))}
+          </section>
+        );
+      })}
 
       {/* CTA */}
       <section className="section section--gold">
         <div className="section__inner text-center">
           <p className="section__label">Get Started</p>
-          <Button variant="gold" href="/enquiry">
+          <Link to="/enquiry" className="btn btn--on-gold">
             Cross the Threshold
-          </Button>
+          </Link>
         </div>
       </section>
     </>

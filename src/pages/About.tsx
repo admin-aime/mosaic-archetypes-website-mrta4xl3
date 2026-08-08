@@ -120,7 +120,7 @@ export function About() {
             {[
               { title: 'Depth Over Simplicity', body: 'Leadership is complex. We refuse to reduce it to a four-letter code or a single label. Our framework honours that complexity while making it usable.' },
               { title: 'Evidence Over Opinion', body: 'Every archetype in the Mosaic framework is grounded in observed leadership behaviour and field-tested across hundreds of real-world applications.' },
-              { title: 'Sustainable Improvement', body: 'Mosaic is not about what is wrong with your leadership. It is about what is possible — expanding range, not correcting flaws and pivoting to meet new challenges.' },
+              { title: 'Sustainable Improvement', body: 'The Mosaic approach does not obsess about what is wrong with your leadership. It focuses on what is possible—expanding your range and pivoting to meet new challenges, not just correcting flaws.' },
               { title: 'Context Over Dogma', body: 'There is no single "best" archetype. The right leadership pattern depends on context, challenge, and the people you lead.' },
             ].map((v, i) => (
               <div key={v.title} className={`reveal stagger-${i + 1}`}>
