@@ -50,7 +50,7 @@ export function Footer() {
 
       <div className="footer__bottom">
         <span>© {new Date().getFullYear()} Mosaic Leadership Archetypes®. All rights reserved.</span>
-        <span>MOSAIC and LEADERSHIP ARCHETYPES® are registered trademarks.</span>
+        <span>MOSAIC PARTNERS® and MOSAIC LEADERSHIP ARCHETYPES® are registered trademarks.</span>
       </div>
     </footer>
   );
