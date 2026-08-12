@@ -40,19 +40,40 @@ export function Enquiry() {
 
   const books = [
     {
+      title: 'Sustainable Brand Leadership',
+      subtitle: 'How to build a lasting legacy (pre-order)',
+      author: 'Kate Hargreaves & Ian P Buckingham',
+      description: 'Written by Kate Hargreaves and Ian P Buckingham, this is the long-awaited third book in the Brand Leadership trilogy at the interface of Leadership; HR; Comms and Marketing.',
+      price: '£35.00',
+      image: 'https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/4bf52d96-00c7-42d5-ad7c-5878b8691b45-1786536667.png',
+      link: 'https://www.mosaicpartners.co.uk/product/sustainable-brand-leadership-how-to-build-a-lasting-legacy-pre-order/',
+    },
+    {
+      title: 'My Little Black Book of Change',
+      subtitle: '',
+      author: '',
+      description: 'An engaging self-directed guide to the journey of change – a must have for anyone navigating the change journey from Project Managers to CEOs.',
+      price: '£18.99',
+      image: 'https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/0988e2f8-5551-4bb7-8da8-a1cb855fef85-1786536666.jpg',
+      link: 'https://www.mosaicpartners.co.uk/product/my-little-black-book-of-change/',
+    },
+    {
+      title: 'Brand Champions',
+      subtitle: 'How superheroes bring brands to life',
+      author: 'Ian P Buckingham',
+      description: 'The second in Ian\'s brand trilogy, this pivotal text takes a deeper dive into the relationship between high-performing organisations and sustainable leadership practices that deliver hard results.',
+      price: '£45.00',
+      image: 'https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/73031e6a-1a72-4972-839f-31226563dbb4-1786536666.jpg',
+      link: 'https://www.mosaicpartners.co.uk/product/brand-champions-how-superheroes-bring-brands-to-life/',
+    },
+    {
       title: 'Brand Engagement',
+      subtitle: 'How Employees Make or Break Brands',
       author: 'Ian P Buckingham',
-      description: 'How to make your brand truly live inside your organisation — a practical guide to aligning brand promise with employee experience.',
-    },
-    {
-      title: 'Culture, Leadership, and the Brand',
-      author: 'Ian P Buckingham',
-      description: 'Exploring the critical intersection of organisational culture, authentic leadership, and brand identity in driving sustainable performance.',
-    },
-    {
-      title: 'The Engagement Manifesto',
-      author: 'Ian P Buckingham',
-      description: 'A systemic approach to employee engagement — moving beyond quick fixes to build organisations where people genuinely want to contribute.',
+      description: 'A ground-breaking book that explores the intersection between the disciplines of HR, Comms and Marketing from a leadership perspective. Ian unpacks, with the use of case studies, how employees are a critical stakeholder community, making or breaking the promise any organisation makes to the markets they serve.',
+      price: '£45.00',
+      image: 'https://d38fqvqd8cmu1f.cloudfront.net/org/68d38d4de0df342f4aebb6d0/proj/6a5e2708d0111e8be008316c/think_space/assets/f94ff73e-5ab4-4ec8-aa2b-fb65c73c9916-1786537361.jpg',
+      link: 'https://www.mosaicpartners.co.uk/product/brand-engagement-how-employees-make-or-break-brands/',
     },
   ];
 
@@ -436,7 +457,7 @@ export function Enquiry() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
             {books.map((book) => (
               <div
                 key={book.title}
@@ -450,51 +471,73 @@ export function Enquiry() {
                   textAlign: 'center',
                 }}
               >
-                {/* Placeholder book cover */}
-                <div style={{
-                  width: '120px',
-                  height: '170px',
-                  background: `linear-gradient(135deg, #333 0%, #555 50%, #333 100%)`,
-                  marginBottom: '1.25rem',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
-                }}>
-                  <BookOpen size={32} style={{ color: 'rgba(255,255,255,0.4)' }} />
-                </div>
+                <img
+                  src={book.image}
+                  alt={book.title}
+                  style={{
+                    width: '140px',
+                    height: 'auto',
+                    marginBottom: '1.25rem',
+                    boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+                  }}
+                />
                 <h3 style={{
                   fontFamily: 'var(--font-header)',
-                  fontSize: '1.25rem',
+                  fontSize: '1.2rem',
                   color: 'var(--colour-black)',
-                  marginBottom: '0.25rem',
+                  marginBottom: book.subtitle ? '0.125rem' : '0.25rem',
                 }}>
                   {book.title}
                 </h3>
-                <p style={{
-                  fontFamily: 'var(--font-body)',
-                  fontSize: '0.8125rem',
-                  color: 'var(--colour-mosaic-gold)',
-                  marginBottom: '0.75rem',
-                }}>
-                  {book.author}
-                </p>
+                {book.subtitle && (
+                  <p style={{
+                    fontFamily: 'var(--font-body)',
+                    fontSize: '0.75rem',
+                    fontStyle: 'italic',
+                    color: 'rgba(0,0,0,0.45)',
+                    marginBottom: '0.25rem',
+                  }}>
+                    {book.subtitle}
+                  </p>
+                )}
+                {book.author && (
+                  <p style={{
+                    fontFamily: 'var(--font-body)',
+                    fontSize: '0.8125rem',
+                    color: 'var(--colour-mosaic-gold)',
+                    marginBottom: '0.75rem',
+                  }}>
+                    {book.author}
+                  </p>
+                )}
                 <p style={{
                   fontFamily: 'var(--font-body)',
                   fontSize: '0.8125rem',
                   lineHeight: '1.5',
                   color: 'rgba(0,0,0,0.55)',
-                  marginBottom: '1.25rem',
+                  marginBottom: '0.75rem',
                   flex: 1,
                 }}>
                   {book.description}
                 </p>
-                <button
+                <p style={{
+                  fontFamily: 'var(--font-body)',
+                  fontSize: '1rem',
+                  fontWeight: 700,
+                  color: 'var(--colour-black)',
+                  marginBottom: '0.75rem',
+                }}>
+                  {book.price}
+                </p>
+                <a
+                  href={book.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn btn--on-black"
-                  style={{ fontSize: '0.8125rem', padding: '0.5rem 1.25rem' }}
+                  style={{ fontSize: '0.8125rem', padding: '0.5rem 1.25rem', textDecoration: 'none', display: 'inline-block' }}
                 >
-                  Order a Copy
-                </button>
+                  Buy Now
+                </a>
               </div>
             ))}
           </div>
